@@ -13,7 +13,6 @@ This repository explores the following areas of interest:
 
 - **Web Development**: Frontend and backend technologies, including frameworks like React and Vue.js, as well as server-side development with tools like Spring.
 - **Mobile App Development**: Native and cross-platform app development for Android and iOS.
-- [**Game Development**](https://gitlab.com/kim-hyunjin/study-game): Experiments and projects using game engines like Unity or Unreal Engine.
 
 ## 🚀 How to Use
 Feel free to browse and explore the code. Each folder is organized by programming language or topic to ensure easy navigation.
