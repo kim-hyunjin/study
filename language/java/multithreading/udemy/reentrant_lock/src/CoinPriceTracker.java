@@ -11,7 +11,7 @@ import java.util.Random;
 import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantLock;
 
-public class Main {
+public class CoinPriceTracker {
 
     private static final DecimalFormat PRICE_FORMAT = new DecimalFormat("#,##0.00");
 
