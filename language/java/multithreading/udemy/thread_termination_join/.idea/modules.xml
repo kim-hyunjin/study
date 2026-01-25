@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/section2.iml" filepath="$PROJECT_DIR$/section2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/thread_termination_join.iml" filepath="$PROJECT_DIR$/thread_termination_join.iml" />
     </modules>
   </component>
 </project>
