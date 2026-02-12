@@ -2,6 +2,8 @@
 
 This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
 
+Whenever working with any third-party library or something similar, you MUST look up the official documentation to ensure that you're working with up-to-date information. Use the DocsExplorer subagent for efficient documentation lookup.
+
 ## Repository Overview
 
 This is a personal learning archive (학습 내용 저장소) containing study materials, practice projects, and course exercises across multiple languages and frameworks. It is **not** a single application — each subdirectory is an independent project with its own build system.
