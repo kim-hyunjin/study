@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/concurrency_problem_solution/data_race/data_race.iml" filepath="$PROJECT_DIR$/concurrency_problem_solution/data_race/data_race.iml" />
+      <module fileurl="file://$PROJECT_DIR$/concurrency_problem_solution/deadlock/deadlock.iml" filepath="$PROJECT_DIR$/concurrency_problem_solution/deadlock/deadlock.iml" />
+      <module fileurl="file://$PROJECT_DIR$/performance_optimization/performance_optimization.iml" filepath="$PROJECT_DIR$/performance_optimization/performance_optimization.iml" />
+      <module fileurl="file://$PROJECT_DIR$/reentrant_lock/reentrant_lock.iml" filepath="$PROJECT_DIR$/reentrant_lock/reentrant_lock.iml" />
+      <module fileurl="file://$PROJECT_DIR$/concurrency_problem_solution/synchronized/synchronized.iml" filepath="$PROJECT_DIR$/concurrency_problem_solution/synchronized/synchronized.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/udemy.iml" filepath="$PROJECT_DIR$/.idea/udemy.iml" />
+      <module fileurl="file://$PROJECT_DIR$/concurrency_problem_solution/volatile/volatile.iml" filepath="$PROJECT_DIR$/concurrency_problem_solution/volatile/volatile.iml" />
+    </modules>
+  </component>
+</project>
