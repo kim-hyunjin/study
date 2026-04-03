@@ -1,6 +1,7 @@
 import cluster.management.LeaderElection;
 import cluster.management.OnElectionCallback;
 import cluster.management.ServiceRegistry;
+import networking.FrontServer;
 import networking.WebServer;
 import org.apache.zookeeper.KeeperException;
 import org.apache.zookeeper.WatchedEvent;
@@ -8,6 +9,7 @@ import org.apache.zookeeper.Watcher;
 import org.apache.zookeeper.ZooKeeper;
 import search.SearchCoordinator;
 import search.SearchWorker;
+import search.UserSearchHandler;
 
 import java.io.IOException;
 import java.net.InetAddress;
@@ -16,8 +18,10 @@ import java.net.UnknownHostException;
 public class Application implements Watcher {
     private static final String ZOOKEEPER_ADDRESS = "localhost:2181";
     private static final int SESSION_TIMEOUT = 3000;
-    private static final int DEFAULT_PORT = 8080;
+    private static final int DEFAULT_PORT = 8081;
+    private static final int FRONTEND_PORT = 9000;
     private static WebServer webServer;
+    private static FrontServer frontendServer;
     private ZooKeeper zooKeeper;
 
 
@@ -39,6 +43,9 @@ public class Application implements Watcher {
                     SearchCoordinator searchCoordinator = new SearchCoordinator(workersServiceRegistry);
                     webServer = new WebServer(currentServerPort, searchCoordinator);
                     webServer.startServer();
+
+                    frontendServer = new FrontServer(FRONTEND_PORT, new UserSearchHandler(coordinatorsServiceRegistry));
+                    frontendServer.startServer();
 
                     workersServiceRegistry.unregisterFromCluster();
                     workersServiceRegistry.registerForUpdates();

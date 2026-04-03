@@ -6,13 +6,11 @@ import java.util.Objects;
 public class Document implements Serializable {
     private final String path;
     private final String name;
-    private final String author;
     private final long size;
 
     private Document(Builder builder) {
         this.path = builder.path;
         this.name = builder.name;
-        this.author = builder.author;
         this.size = builder.size;
     }
 
@@ -28,9 +26,6 @@ public class Document implements Serializable {
         return name;
     }
 
-    public String getAuthor() {
-        return author;
-    }
 
     public long getSize() {
         return size;
@@ -45,15 +40,13 @@ public class Document implements Serializable {
 
         if (size != document.size) return false;
         if (!Objects.equals(path, document.path)) return false;
-        if (!Objects.equals(name, document.name)) return false;
-        return Objects.equals(author, document.author);
+        return Objects.equals(name, document.name);
     }
 
     @Override
     public int hashCode() {
         int result = path != null ? path.hashCode() : 0;
         result = 31 * result + (name != null ? name.hashCode() : 0);
-        result = 31 * result + (author != null ? author.hashCode() : 0);
         result = 31 * result + Long.hashCode(size);
         return result;
     }
@@ -61,7 +54,6 @@ public class Document implements Serializable {
     public static class Builder {
         private String path;
         private String name;
-        private String author;
         private long size;
 
         public Builder path(String path) {
@@ -71,11 +63,6 @@ public class Document implements Serializable {
 
         public Builder name(String name) {
             this.name = name;
-            return this;
-        }
-
-        public Builder author(String author) {
-            this.author = author;
             return this;
         }
 

@@ -83,8 +83,10 @@ public class SearchCoordinator implements RequestHandler {
             for (Document document : docScorePair.getValue()) {
 
                 SearchModel.Response.DocumentStats documentStats = SearchModel.Response.DocumentStats.newBuilder()
+                        .setPath(document.getPath())
                         .setScore(score)
                         .setDocumentName(document.getName())
+                        .setDocumentSize(document.getSize())
                         .build();
 
                 sortedDocumentsStatsList.add(documentStats);

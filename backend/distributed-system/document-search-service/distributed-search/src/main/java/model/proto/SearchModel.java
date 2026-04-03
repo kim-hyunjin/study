@@ -668,60 +668,60 @@ public final class SearchModel extends com.google.protobuf.GeneratedFile {
         com.google.protobuf.MessageOrBuilder {
 
       /**
-       * <code>required string document_name = 1;</code>
+       * <code>required string path = 1;</code>
+       * @return Whether the path field is set.
+       */
+      boolean hasPath();
+      /**
+       * <code>required string path = 1;</code>
+       * @return The path.
+       */
+      java.lang.String getPath();
+      /**
+       * <code>required string path = 1;</code>
+       * @return The bytes for path.
+       */
+      com.google.protobuf.ByteString
+          getPathBytes();
+
+      /**
+       * <code>required string document_name = 2;</code>
        * @return Whether the documentName field is set.
        */
       boolean hasDocumentName();
       /**
-       * <code>required string document_name = 1;</code>
+       * <code>required string document_name = 2;</code>
        * @return The documentName.
        */
       java.lang.String getDocumentName();
       /**
-       * <code>required string document_name = 1;</code>
+       * <code>required string document_name = 2;</code>
        * @return The bytes for documentName.
        */
       com.google.protobuf.ByteString
           getDocumentNameBytes();
 
       /**
-       * <code>optional double score = 2;</code>
+       * <code>optional double score = 3;</code>
        * @return Whether the score field is set.
        */
       boolean hasScore();
       /**
-       * <code>optional double score = 2;</code>
+       * <code>optional double score = 3;</code>
        * @return The score.
        */
       double getScore();
 
       /**
-       * <code>optional int64 document_size = 3;</code>
+       * <code>optional int64 document_size = 4;</code>
        * @return Whether the documentSize field is set.
        */
       boolean hasDocumentSize();
       /**
-       * <code>optional int64 document_size = 3;</code>
+       * <code>optional int64 document_size = 4;</code>
        * @return The documentSize.
        */
       long getDocumentSize();
-
-      /**
-       * <code>optional string author = 4;</code>
-       * @return Whether the author field is set.
-       */
-      boolean hasAuthor();
-      /**
-       * <code>optional string author = 4;</code>
-       * @return The author.
-       */
-      java.lang.String getAuthor();
-      /**
-       * <code>optional string author = 4;</code>
-       * @return The bytes for author.
-       */
-      com.google.protobuf.ByteString
-          getAuthorBytes();
     }
     /**
      * Protobuf type {@code distributed.search.Response.DocumentStats}
@@ -745,8 +745,8 @@ public final class SearchModel extends com.google.protobuf.GeneratedFile {
         super(builder);
       }
       private DocumentStats() {
+        path_ = "";
         documentName_ = "";
-        author_ = "";
       }
 
       public static final com.google.protobuf.Descriptors.Descriptor
@@ -768,19 +768,68 @@ public final class SearchModel extends com.google.protobuf.GeneratedFile {
       }
 
       private int bitField0_;
-      public static final int DOCUMENT_NAME_FIELD_NUMBER = 1;
+      public static final int PATH_FIELD_NUMBER = 1;
+      @SuppressWarnings("serial")
+      private volatile java.lang.Object path_ = "";
+      /**
+       * <code>required string path = 1;</code>
+       * @return Whether the path field is set.
+       */
+      @java.lang.Override
+      public boolean hasPath() {
+        return ((bitField0_ & 0x00000001) != 0);
+      }
+      /**
+       * <code>required string path = 1;</code>
+       * @return The path.
+       */
+      @java.lang.Override
+      public java.lang.String getPath() {
+        java.lang.Object ref = path_;
+        if (ref instanceof java.lang.String) {
+          return (java.lang.String) ref;
+        } else {
+          com.google.protobuf.ByteString bs = 
+              (com.google.protobuf.ByteString) ref;
+          java.lang.String s = bs.toStringUtf8();
+          if (bs.isValidUtf8()) {
+            path_ = s;
+          }
+          return s;
+        }
+      }
+      /**
+       * <code>required string path = 1;</code>
+       * @return The bytes for path.
+       */
+      @java.lang.Override
+      public com.google.protobuf.ByteString
+          getPathBytes() {
+        java.lang.Object ref = path_;
+        if (ref instanceof java.lang.String) {
+          com.google.protobuf.ByteString b = 
+              com.google.protobuf.ByteString.copyFromUtf8(
+                  (java.lang.String) ref);
+          path_ = b;
+          return b;
+        } else {
+          return (com.google.protobuf.ByteString) ref;
+        }
+      }
+
+      public static final int DOCUMENT_NAME_FIELD_NUMBER = 2;
       @SuppressWarnings("serial")
       private volatile java.lang.Object documentName_ = "";
       /**
-       * <code>required string document_name = 1;</code>
+       * <code>required string document_name = 2;</code>
        * @return Whether the documentName field is set.
        */
       @java.lang.Override
       public boolean hasDocumentName() {
-        return ((bitField0_ & 0x00000001) != 0);
+        return ((bitField0_ & 0x00000002) != 0);
       }
       /**
-       * <code>required string document_name = 1;</code>
+       * <code>required string document_name = 2;</code>
        * @return The documentName.
        */
       @java.lang.Override
@@ -799,7 +848,7 @@ public final class SearchModel extends com.google.protobuf.GeneratedFile {
         }
       }
       /**
-       * <code>required string document_name = 1;</code>
+       * <code>required string document_name = 2;</code>
        * @return The bytes for documentName.
        */
       @java.lang.Override
@@ -817,18 +866,18 @@ public final class SearchModel extends com.google.protobuf.GeneratedFile {
         }
       }
 
-      public static final int SCORE_FIELD_NUMBER = 2;
+      public static final int SCORE_FIELD_NUMBER = 3;
       private double score_ = 0D;
       /**
-       * <code>optional double score = 2;</code>
+       * <code>optional double score = 3;</code>
        * @return Whether the score field is set.
        */
       @java.lang.Override
       public boolean hasScore() {
-        return ((bitField0_ & 0x00000002) != 0);
+        return ((bitField0_ & 0x00000004) != 0);
       }
       /**
-       * <code>optional double score = 2;</code>
+       * <code>optional double score = 3;</code>
        * @return The score.
        */
       @java.lang.Override
@@ -836,72 +885,23 @@ public final class SearchModel extends com.google.protobuf.GeneratedFile {
         return score_;
       }
 
-      public static final int DOCUMENT_SIZE_FIELD_NUMBER = 3;
+      public static final int DOCUMENT_SIZE_FIELD_NUMBER = 4;
       private long documentSize_ = 0L;
       /**
-       * <code>optional int64 document_size = 3;</code>
+       * <code>optional int64 document_size = 4;</code>
        * @return Whether the documentSize field is set.
        */
       @java.lang.Override
       public boolean hasDocumentSize() {
-        return ((bitField0_ & 0x00000004) != 0);
+        return ((bitField0_ & 0x00000008) != 0);
       }
       /**
-       * <code>optional int64 document_size = 3;</code>
+       * <code>optional int64 document_size = 4;</code>
        * @return The documentSize.
        */
       @java.lang.Override
       public long getDocumentSize() {
         return documentSize_;
-      }
-
-      public static final int AUTHOR_FIELD_NUMBER = 4;
-      @SuppressWarnings("serial")
-      private volatile java.lang.Object author_ = "";
-      /**
-       * <code>optional string author = 4;</code>
-       * @return Whether the author field is set.
-       */
-      @java.lang.Override
-      public boolean hasAuthor() {
-        return ((bitField0_ & 0x00000008) != 0);
-      }
-      /**
-       * <code>optional string author = 4;</code>
-       * @return The author.
-       */
-      @java.lang.Override
-      public java.lang.String getAuthor() {
-        java.lang.Object ref = author_;
-        if (ref instanceof java.lang.String) {
-          return (java.lang.String) ref;
-        } else {
-          com.google.protobuf.ByteString bs = 
-              (com.google.protobuf.ByteString) ref;
-          java.lang.String s = bs.toStringUtf8();
-          if (bs.isValidUtf8()) {
-            author_ = s;
-          }
-          return s;
-        }
-      }
-      /**
-       * <code>optional string author = 4;</code>
-       * @return The bytes for author.
-       */
-      @java.lang.Override
-      public com.google.protobuf.ByteString
-          getAuthorBytes() {
-        java.lang.Object ref = author_;
-        if (ref instanceof java.lang.String) {
-          com.google.protobuf.ByteString b = 
-              com.google.protobuf.ByteString.copyFromUtf8(
-                  (java.lang.String) ref);
-          author_ = b;
-          return b;
-        } else {
-          return (com.google.protobuf.ByteString) ref;
-        }
       }
 
       private byte memoizedIsInitialized = -1;
@@ -911,6 +911,10 @@ public final class SearchModel extends com.google.protobuf.GeneratedFile {
         if (isInitialized == 1) return true;
         if (isInitialized == 0) return false;
 
+        if (!hasPath()) {
+          memoizedIsInitialized = 0;
+          return false;
+        }
         if (!hasDocumentName()) {
           memoizedIsInitialized = 0;
           return false;
@@ -923,16 +927,16 @@ public final class SearchModel extends com.google.protobuf.GeneratedFile {
       public void writeTo(com.google.protobuf.CodedOutputStream output)
                           throws java.io.IOException {
         if (((bitField0_ & 0x00000001) != 0)) {
-          com.google.protobuf.GeneratedMessage.writeString(output, 1, documentName_);
+          com.google.protobuf.GeneratedMessage.writeString(output, 1, path_);
         }
         if (((bitField0_ & 0x00000002) != 0)) {
-          output.writeDouble(2, score_);
+          com.google.protobuf.GeneratedMessage.writeString(output, 2, documentName_);
         }
         if (((bitField0_ & 0x00000004) != 0)) {
-          output.writeInt64(3, documentSize_);
+          output.writeDouble(3, score_);
         }
         if (((bitField0_ & 0x00000008) != 0)) {
-          com.google.protobuf.GeneratedMessage.writeString(output, 4, author_);
+          output.writeInt64(4, documentSize_);
         }
         getUnknownFields().writeTo(output);
       }
@@ -944,18 +948,18 @@ public final class SearchModel extends com.google.protobuf.GeneratedFile {
 
         size = 0;
         if (((bitField0_ & 0x00000001) != 0)) {
-          size += com.google.protobuf.GeneratedMessage.computeStringSize(1, documentName_);
+          size += com.google.protobuf.GeneratedMessage.computeStringSize(1, path_);
         }
         if (((bitField0_ & 0x00000002) != 0)) {
-          size += com.google.protobuf.CodedOutputStream
-            .computeDoubleSize(2, score_);
+          size += com.google.protobuf.GeneratedMessage.computeStringSize(2, documentName_);
         }
         if (((bitField0_ & 0x00000004) != 0)) {
           size += com.google.protobuf.CodedOutputStream
-            .computeInt64Size(3, documentSize_);
+            .computeDoubleSize(3, score_);
         }
         if (((bitField0_ & 0x00000008) != 0)) {
-          size += com.google.protobuf.GeneratedMessage.computeStringSize(4, author_);
+          size += com.google.protobuf.CodedOutputStream
+            .computeInt64Size(4, documentSize_);
         }
         size += getUnknownFields().getSerializedSize();
         memoizedSize = size;
@@ -972,6 +976,11 @@ public final class SearchModel extends com.google.protobuf.GeneratedFile {
         }
         model.proto.SearchModel.Response.DocumentStats other = (model.proto.SearchModel.Response.DocumentStats) obj;
 
+        if (hasPath() != other.hasPath()) return false;
+        if (hasPath()) {
+          if (!getPath()
+              .equals(other.getPath())) return false;
+        }
         if (hasDocumentName() != other.hasDocumentName()) return false;
         if (hasDocumentName()) {
           if (!getDocumentName()
@@ -988,11 +997,6 @@ public final class SearchModel extends com.google.protobuf.GeneratedFile {
           if (getDocumentSize()
               != other.getDocumentSize()) return false;
         }
-        if (hasAuthor() != other.hasAuthor()) return false;
-        if (hasAuthor()) {
-          if (!getAuthor()
-              .equals(other.getAuthor())) return false;
-        }
         if (!getUnknownFields().equals(other.getUnknownFields())) return false;
         return true;
       }
@@ -1004,6 +1008,10 @@ public final class SearchModel extends com.google.protobuf.GeneratedFile {
         }
         int hash = 41;
         hash = (19 * hash) + getDescriptor().hashCode();
+        if (hasPath()) {
+          hash = (37 * hash) + PATH_FIELD_NUMBER;
+          hash = (53 * hash) + getPath().hashCode();
+        }
         if (hasDocumentName()) {
           hash = (37 * hash) + DOCUMENT_NAME_FIELD_NUMBER;
           hash = (53 * hash) + getDocumentName().hashCode();
@@ -1017,10 +1025,6 @@ public final class SearchModel extends com.google.protobuf.GeneratedFile {
           hash = (37 * hash) + DOCUMENT_SIZE_FIELD_NUMBER;
           hash = (53 * hash) + com.google.protobuf.Internal.hashLong(
               getDocumentSize());
-        }
-        if (hasAuthor()) {
-          hash = (37 * hash) + AUTHOR_FIELD_NUMBER;
-          hash = (53 * hash) + getAuthor().hashCode();
         }
         hash = (29 * hash) + getUnknownFields().hashCode();
         memoizedHashCode = hash;
@@ -1153,10 +1157,10 @@ public final class SearchModel extends com.google.protobuf.GeneratedFile {
         public Builder clear() {
           super.clear();
           bitField0_ = 0;
+          path_ = "";
           documentName_ = "";
           score_ = 0D;
           documentSize_ = 0L;
-          author_ = "";
           return this;
         }
 
@@ -1192,19 +1196,19 @@ public final class SearchModel extends com.google.protobuf.GeneratedFile {
           int from_bitField0_ = bitField0_;
           int to_bitField0_ = 0;
           if (((from_bitField0_ & 0x00000001) != 0)) {
-            result.documentName_ = documentName_;
+            result.path_ = path_;
             to_bitField0_ |= 0x00000001;
           }
           if (((from_bitField0_ & 0x00000002) != 0)) {
-            result.score_ = score_;
+            result.documentName_ = documentName_;
             to_bitField0_ |= 0x00000002;
           }
           if (((from_bitField0_ & 0x00000004) != 0)) {
-            result.documentSize_ = documentSize_;
+            result.score_ = score_;
             to_bitField0_ |= 0x00000004;
           }
           if (((from_bitField0_ & 0x00000008) != 0)) {
-            result.author_ = author_;
+            result.documentSize_ = documentSize_;
             to_bitField0_ |= 0x00000008;
           }
           result.bitField0_ |= to_bitField0_;
@@ -1222,9 +1226,14 @@ public final class SearchModel extends com.google.protobuf.GeneratedFile {
 
         public Builder mergeFrom(model.proto.SearchModel.Response.DocumentStats other) {
           if (other == model.proto.SearchModel.Response.DocumentStats.getDefaultInstance()) return this;
+          if (other.hasPath()) {
+            path_ = other.path_;
+            bitField0_ |= 0x00000001;
+            onChanged();
+          }
           if (other.hasDocumentName()) {
             documentName_ = other.documentName_;
-            bitField0_ |= 0x00000001;
+            bitField0_ |= 0x00000002;
             onChanged();
           }
           if (other.hasScore()) {
@@ -1233,11 +1242,6 @@ public final class SearchModel extends com.google.protobuf.GeneratedFile {
           if (other.hasDocumentSize()) {
             setDocumentSize(other.getDocumentSize());
           }
-          if (other.hasAuthor()) {
-            author_ = other.author_;
-            bitField0_ |= 0x00000008;
-            onChanged();
-          }
           this.mergeUnknownFields(other.getUnknownFields());
           onChanged();
           return this;
@@ -1245,6 +1249,9 @@ public final class SearchModel extends com.google.protobuf.GeneratedFile {
 
         @java.lang.Override
         public final boolean isInitialized() {
+          if (!hasPath()) {
+            return false;
+          }
           if (!hasDocumentName()) {
             return false;
           }
@@ -1268,25 +1275,25 @@ public final class SearchModel extends com.google.protobuf.GeneratedFile {
                   done = true;
                   break;
                 case 10: {
-                  documentName_ = input.readBytes();
+                  path_ = input.readBytes();
                   bitField0_ |= 0x00000001;
                   break;
                 } // case 10
-                case 17: {
-                  score_ = input.readDouble();
+                case 18: {
+                  documentName_ = input.readBytes();
                   bitField0_ |= 0x00000002;
                   break;
-                } // case 17
-                case 24: {
-                  documentSize_ = input.readInt64();
+                } // case 18
+                case 25: {
+                  score_ = input.readDouble();
                   bitField0_ |= 0x00000004;
                   break;
-                } // case 24
-                case 34: {
-                  author_ = input.readBytes();
+                } // case 25
+                case 32: {
+                  documentSize_ = input.readInt64();
                   bitField0_ |= 0x00000008;
                   break;
-                } // case 34
+                } // case 32
                 default: {
                   if (!super.parseUnknownField(input, extensionRegistry, tag)) {
                     done = true; // was an endgroup tag
@@ -1304,16 +1311,96 @@ public final class SearchModel extends com.google.protobuf.GeneratedFile {
         }
         private int bitField0_;
 
-        private java.lang.Object documentName_ = "";
+        private java.lang.Object path_ = "";
         /**
-         * <code>required string document_name = 1;</code>
-         * @return Whether the documentName field is set.
+         * <code>required string path = 1;</code>
+         * @return Whether the path field is set.
          */
-        public boolean hasDocumentName() {
+        public boolean hasPath() {
           return ((bitField0_ & 0x00000001) != 0);
         }
         /**
-         * <code>required string document_name = 1;</code>
+         * <code>required string path = 1;</code>
+         * @return The path.
+         */
+        public java.lang.String getPath() {
+          java.lang.Object ref = path_;
+          if (!(ref instanceof java.lang.String)) {
+            com.google.protobuf.ByteString bs =
+                (com.google.protobuf.ByteString) ref;
+            java.lang.String s = bs.toStringUtf8();
+            if (bs.isValidUtf8()) {
+              path_ = s;
+            }
+            return s;
+          } else {
+            return (java.lang.String) ref;
+          }
+        }
+        /**
+         * <code>required string path = 1;</code>
+         * @return The bytes for path.
+         */
+        public com.google.protobuf.ByteString
+            getPathBytes() {
+          java.lang.Object ref = path_;
+          if (ref instanceof String) {
+            com.google.protobuf.ByteString b = 
+                com.google.protobuf.ByteString.copyFromUtf8(
+                    (java.lang.String) ref);
+            path_ = b;
+            return b;
+          } else {
+            return (com.google.protobuf.ByteString) ref;
+          }
+        }
+        /**
+         * <code>required string path = 1;</code>
+         * @param value The path to set.
+         * @return This builder for chaining.
+         */
+        public Builder setPath(
+            java.lang.String value) {
+          if (value == null) { throw new NullPointerException(); }
+          path_ = value;
+          bitField0_ |= 0x00000001;
+          onChanged();
+          return this;
+        }
+        /**
+         * <code>required string path = 1;</code>
+         * @return This builder for chaining.
+         */
+        public Builder clearPath() {
+          path_ = getDefaultInstance().getPath();
+          bitField0_ = (bitField0_ & ~0x00000001);
+          onChanged();
+          return this;
+        }
+        /**
+         * <code>required string path = 1;</code>
+         * @param value The bytes for path to set.
+         * @return This builder for chaining.
+         */
+        public Builder setPathBytes(
+            com.google.protobuf.ByteString value) {
+          if (value == null) { throw new NullPointerException(); }
+          path_ = value;
+          bitField0_ |= 0x00000001;
+          onChanged();
+          return this;
+        }
+
+        private java.lang.Object documentName_ = "";
+        /**
+         * <code>required string document_name = 2;</code>
+         * @return Whether the documentName field is set.
+         */
+        public boolean hasDocumentName() {
+          return ((bitField0_ & 0x00000002) != 0);
+        }
+        /**
+         * <code>required string document_name = 2;</code>
          * @return The documentName.
          */
         public java.lang.String getDocumentName() {
@@ -1331,7 +1418,7 @@ public final class SearchModel extends com.google.protobuf.GeneratedFile {
           }
         }
         /**
-         * <code>required string document_name = 1;</code>
+         * <code>required string document_name = 2;</code>
          * @return The bytes for documentName.
          */
         public com.google.protobuf.ByteString
@@ -1348,7 +1435,7 @@ public final class SearchModel extends com.google.protobuf.GeneratedFile {
           }
         }
         /**
-         * <code>required string document_name = 1;</code>
+         * <code>required string document_name = 2;</code>
          * @param value The documentName to set.
          * @return This builder for chaining.
          */
@@ -1356,22 +1443,22 @@ public final class SearchModel extends com.google.protobuf.GeneratedFile {
             java.lang.String value) {
           if (value == null) { throw new NullPointerException(); }
           documentName_ = value;
-          bitField0_ |= 0x00000001;
+          bitField0_ |= 0x00000002;
           onChanged();
           return this;
         }
         /**
-         * <code>required string document_name = 1;</code>
+         * <code>required string document_name = 2;</code>
          * @return This builder for chaining.
          */
         public Builder clearDocumentName() {
           documentName_ = getDefaultInstance().getDocumentName();
-          bitField0_ = (bitField0_ & ~0x00000001);
+          bitField0_ = (bitField0_ & ~0x00000002);
           onChanged();
           return this;
         }
         /**
-         * <code>required string document_name = 1;</code>
+         * <code>required string document_name = 2;</code>
          * @param value The bytes for documentName to set.
          * @return This builder for chaining.
          */
@@ -1379,22 +1466,22 @@ public final class SearchModel extends com.google.protobuf.GeneratedFile {
             com.google.protobuf.ByteString value) {
           if (value == null) { throw new NullPointerException(); }
           documentName_ = value;
-          bitField0_ |= 0x00000001;
+          bitField0_ |= 0x00000002;
           onChanged();
           return this;
         }
 
         private double score_ ;
         /**
-         * <code>optional double score = 2;</code>
+         * <code>optional double score = 3;</code>
          * @return Whether the score field is set.
          */
         @java.lang.Override
         public boolean hasScore() {
-          return ((bitField0_ & 0x00000002) != 0);
+          return ((bitField0_ & 0x00000004) != 0);
         }
         /**
-         * <code>optional double score = 2;</code>
+         * <code>optional double score = 3;</code>
          * @return The score.
          */
         @java.lang.Override
@@ -1402,23 +1489,23 @@ public final class SearchModel extends com.google.protobuf.GeneratedFile {
           return score_;
         }
         /**
-         * <code>optional double score = 2;</code>
+         * <code>optional double score = 3;</code>
          * @param value The score to set.
          * @return This builder for chaining.
          */
         public Builder setScore(double value) {
 
           score_ = value;
-          bitField0_ |= 0x00000002;
+          bitField0_ |= 0x00000004;
           onChanged();
           return this;
         }
         /**
-         * <code>optional double score = 2;</code>
+         * <code>optional double score = 3;</code>
          * @return This builder for chaining.
          */
         public Builder clearScore() {
-          bitField0_ = (bitField0_ & ~0x00000002);
+          bitField0_ = (bitField0_ & ~0x00000004);
           score_ = 0D;
           onChanged();
           return this;
@@ -1426,15 +1513,15 @@ public final class SearchModel extends com.google.protobuf.GeneratedFile {
 
         private long documentSize_ ;
         /**
-         * <code>optional int64 document_size = 3;</code>
+         * <code>optional int64 document_size = 4;</code>
          * @return Whether the documentSize field is set.
          */
         @java.lang.Override
         public boolean hasDocumentSize() {
-          return ((bitField0_ & 0x00000004) != 0);
+          return ((bitField0_ & 0x00000008) != 0);
         }
         /**
-         * <code>optional int64 document_size = 3;</code>
+         * <code>optional int64 document_size = 4;</code>
          * @return The documentSize.
          */
         @java.lang.Override
@@ -1442,104 +1529,24 @@ public final class SearchModel extends com.google.protobuf.GeneratedFile {
           return documentSize_;
         }
         /**
-         * <code>optional int64 document_size = 3;</code>
+         * <code>optional int64 document_size = 4;</code>
          * @param value The documentSize to set.
          * @return This builder for chaining.
          */
         public Builder setDocumentSize(long value) {
 
           documentSize_ = value;
-          bitField0_ |= 0x00000004;
+          bitField0_ |= 0x00000008;
           onChanged();
           return this;
         }
         /**
-         * <code>optional int64 document_size = 3;</code>
+         * <code>optional int64 document_size = 4;</code>
          * @return This builder for chaining.
          */
         public Builder clearDocumentSize() {
-          bitField0_ = (bitField0_ & ~0x00000004);
-          documentSize_ = 0L;
-          onChanged();
-          return this;
-        }
-
-        private java.lang.Object author_ = "";
-        /**
-         * <code>optional string author = 4;</code>
-         * @return Whether the author field is set.
-         */
-        public boolean hasAuthor() {
-          return ((bitField0_ & 0x00000008) != 0);
-        }
-        /**
-         * <code>optional string author = 4;</code>
-         * @return The author.
-         */
-        public java.lang.String getAuthor() {
-          java.lang.Object ref = author_;
-          if (!(ref instanceof java.lang.String)) {
-            com.google.protobuf.ByteString bs =
-                (com.google.protobuf.ByteString) ref;
-            java.lang.String s = bs.toStringUtf8();
-            if (bs.isValidUtf8()) {
-              author_ = s;
-            }
-            return s;
-          } else {
-            return (java.lang.String) ref;
-          }
-        }
-        /**
-         * <code>optional string author = 4;</code>
-         * @return The bytes for author.
-         */
-        public com.google.protobuf.ByteString
-            getAuthorBytes() {
-          java.lang.Object ref = author_;
-          if (ref instanceof String) {
-            com.google.protobuf.ByteString b = 
-                com.google.protobuf.ByteString.copyFromUtf8(
-                    (java.lang.String) ref);
-            author_ = b;
-            return b;
-          } else {
-            return (com.google.protobuf.ByteString) ref;
-          }
-        }
-        /**
-         * <code>optional string author = 4;</code>
-         * @param value The author to set.
-         * @return This builder for chaining.
-         */
-        public Builder setAuthor(
-            java.lang.String value) {
-          if (value == null) { throw new NullPointerException(); }
-          author_ = value;
-          bitField0_ |= 0x00000008;
-          onChanged();
-          return this;
-        }
-        /**
-         * <code>optional string author = 4;</code>
-         * @return This builder for chaining.
-         */
-        public Builder clearAuthor() {
-          author_ = getDefaultInstance().getAuthor();
           bitField0_ = (bitField0_ & ~0x00000008);
-          onChanged();
-          return this;
-        }
-        /**
-         * <code>optional string author = 4;</code>
-         * @param value The bytes for author to set.
-         * @return This builder for chaining.
-         */
-        public Builder setAuthorBytes(
-            com.google.protobuf.ByteString value) {
-          if (value == null) { throw new NullPointerException(); }
-          author_ = value;
-          bitField0_ |= 0x00000008;
+          documentSize_ = 0L;
           onChanged();
           return this;
         }
@@ -2315,12 +2322,12 @@ public final class SearchModel extends com.google.protobuf.GeneratedFile {
     java.lang.String[] descriptorData = {
       "\n5src/main/java/model/proto/search_clust" +
       "er_protos.proto\022\022distributed.search\"\037\n\007R" +
-      "equest\022\024\n\014search_query\030\001 \002(\t\"\260\001\n\010Respons" +
+      "equest\022\024\n\014search_query\030\001 \002(\t\"\256\001\n\010Respons" +
       "e\022F\n\022relevant_documents\030\001 \003(\0132*.distribu" +
-      "ted.search.Response.DocumentStats\032\\\n\rDoc" +
-      "umentStats\022\025\n\rdocument_name\030\001 \002(\t\022\r\n\005sco" +
-      "re\030\002 \001(\001\022\025\n\rdocument_size\030\003 \001(\003\022\016\n\006autho" +
-      "r\030\004 \001(\tB\032\n\013model.protoB\013SearchModel"
+      "ted.search.Response.DocumentStats\032Z\n\rDoc" +
+      "umentStats\022\014\n\004path\030\001 \002(\t\022\025\n\rdocument_nam" +
+      "e\030\002 \002(\t\022\r\n\005score\030\003 \001(\001\022\025\n\rdocument_size\030" +
+      "\004 \001(\003B\032\n\013model.protoB\013SearchModel"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -2343,7 +2350,7 @@ public final class SearchModel extends com.google.protobuf.GeneratedFile {
     internal_static_distributed_search_Response_DocumentStats_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessage.FieldAccessorTable(
         internal_static_distributed_search_Response_DocumentStats_descriptor,
-        new java.lang.String[] { "DocumentName", "Score", "DocumentSize", "Author", });
+        new java.lang.String[] { "Path", "DocumentName", "Score", "DocumentSize", });
     descriptor.resolveAllFeaturesImmutable();
   }
 
