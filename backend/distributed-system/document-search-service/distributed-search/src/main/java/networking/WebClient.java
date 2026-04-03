@@ -28,4 +28,14 @@ public class WebClient {
                 .thenApply(HttpResponse::body)
                 .thenApply(responseBody -> (DocumentTFMap) SerializationUtils.deserialize(responseBody));
     }
+
+    public CompletableFuture<byte[]> sendSearchRequest(String url, byte[] requestPayload) {
+        HttpRequest request = HttpRequest.newBuilder()
+                .POST(HttpRequest.BodyPublishers.ofByteArray(requestPayload))
+                .uri(URI.create(url))
+                .build();
+
+        return client.sendAsync(request, HttpResponse.BodyHandlers.ofByteArray())
+                .thenApply(HttpResponse::body);
+    }
 }

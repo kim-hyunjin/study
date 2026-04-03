@@ -12,28 +12,26 @@ import java.util.concurrent.Executors;
 
 public class WebServer {
     private static final String STATUS_ENDPOINT = "/status";
+
+    protected HttpServer server;
+
     private RequestHandler requestHandler;
 
-    private final int port;
-    private HttpServer server;
-
     public WebServer(int port, RequestHandler requestHandler) {
-        this.port = port;
         this.requestHandler = requestHandler;
-    }
 
-    public void startServer() {
         try {
             server = HttpServer.create(new InetSocketAddress(port), 0);
         } catch (IOException e) {
             e.printStackTrace();
-            return;
         }
+    }
 
+    public void startServer() {
         HttpContext statusContext = server.createContext(STATUS_ENDPOINT);
-        HttpContext taskContext = server.createContext(requestHandler.getEndpoint());
-
         statusContext.setHandler(this::handleStatusCheckRequest);
+
+        HttpContext taskContext = server.createContext(requestHandler.getEndpoint());
         taskContext.setHandler(this::handleTaskRequest);
 
         server.setExecutor(Executors.newFixedThreadPool(8));
@@ -44,6 +42,13 @@ public class WebServer {
         if (server != null) {
             server.stop(10);
             server = null;
+        }
+    }
+
+    protected void sendResponse(byte[] responseBytes, HttpExchange exchange) throws IOException {
+        exchange.sendResponseHeaders(200, responseBytes.length);
+        try (OutputStream outputStream = exchange.getResponseBody()) {
+            outputStream.write(responseBytes);
         }
     }
 
@@ -100,13 +105,6 @@ public class WebServer {
     private void sendErrorResponse(HttpExchange exchange, int statusCode, String message) throws IOException {
         byte[] responseBytes = message.getBytes();
         exchange.sendResponseHeaders(statusCode, responseBytes.length);
-        try (OutputStream outputStream = exchange.getResponseBody()) {
-            outputStream.write(responseBytes);
-        }
-    }
-
-    private void sendResponse(byte[] responseBytes, HttpExchange exchange) throws IOException {
-        exchange.sendResponseHeaders(200, responseBytes.length);
         try (OutputStream outputStream = exchange.getResponseBody()) {
             outputStream.write(responseBytes);
         }
