@@ -4,18 +4,18 @@ site_author: kim-hyunjin
 site_url: https://kim-hyunjin.github.io/study/
 
 docs_dir: .
-exclude_docs:
-  - ".git/*"
-  - ".github/*"
-  - "node_modules/*"
-  - "venv/*"
-  - "build/*"
-  - "site/*"
-  - "*.exe"
-  - "*.lock"
-  - "Pipfile*"
-  - "package-lock.json"
-  - "uv.lock"
+exclude_docs: |
+  .git/*
+  .github/*
+  node_modules/*
+  venv/*
+  build/*
+  site/*
+  *.exe
+  *.lock
+  Pipfile*
+  package-lock.json
+  uv.lock
 
 theme:
   name: material
