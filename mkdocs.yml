@@ -16,12 +16,23 @@ exclude_docs: |
   Pipfile*
   package-lock.json
   uv.lock
+  **/*.py
+  **/*.kt
+  **/*.rs
+  **/*.go
+  **/*.js
+  **/*.ts
+  **/*.java
+  **/*.sql
+  **/*.gradle
+  **/*.xml
 
 theme:
   name: material
   language: ko
-  # favicon: assets/favicon.png
-  # logo: assets/logo.png
+  # ... (기타 설정)
+  validation:
+    omitted: warn
   palette:
     - scheme: default
       primary: indigo
