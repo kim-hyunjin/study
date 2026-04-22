@@ -37,7 +37,7 @@
          <lastmod>2026-04-22</lastmod>
     </url>
     <url>
-         <loc>https://kim-hyunjin.github.io/study/ai/deeplearning-master/ch02%20%EB%94%A5%EB%9F%AC%EB%8B%9D%EC%9D%98%20%ED%95%B5%EC%8B%AC%20%20%EB%AF%B8%EB%A6%AC%EB%B3%B4%EA%B8%B0/</loc>
+         <loc>https://kim-hyunjin.github.io/study/ai/deeplearning-master/ch02%20%EB%94%A5%EB%9F%AC%EB%8B%9D%EC%9D%98%20%ED%95%B5%EC%8B%AC%20%EB%AF%B8%EB%A6%AC%EB%B3%B4%EA%B8%B0/</loc>
          <lastmod>2026-04-22</lastmod>
     </url>
     <url>
@@ -77,7 +77,7 @@
          <lastmod>2026-04-22</lastmod>
     </url>
     <url>
-         <loc>https://kim-hyunjin.github.io/study/ai/deeplearning-master/ch15%20%EC%8B%A4%EC%A0%9C%20%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%A1%9C%20%EB%A7%8C%EB%93%A4%EC%96%B4%20%EB%B3%B4%EB%8A%94%20%EB%AA%A8%EB%8D%B8%27/</loc>
+         <loc>https://kim-hyunjin.github.io/study/ai/deeplearning-master/ch15%20%EC%8B%A4%EC%A0%9C%20%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%A1%9C%20%EB%A7%8C%EB%93%A4%EC%96%B4%20%EB%B3%B4%EB%8A%94%20%EB%AA%A8%EB%8D%B8/</loc>
          <lastmod>2026-04-22</lastmod>
     </url>
     <url>
@@ -737,6 +737,10 @@
          <lastmod>2026-04-22</lastmod>
     </url>
     <url>
+         <loc>https://kim-hyunjin.github.io/study/backend/</loc>
+         <lastmod>2026-04-22</lastmod>
+    </url>
+    <url>
          <loc>https://kim-hyunjin.github.io/study/backend/backend-engineering/backend-course-code/long-polling/</loc>
          <lastmod>2026-04-22</lastmod>
     </url>
@@ -1021,10 +1025,6 @@
          <lastmod>2026-04-22</lastmod>
     </url>
     <url>
-         <loc>https://kim-hyunjin.github.io/study/backend/database-engineering/tune/sql/</loc>
-         <lastmod>2026-04-22</lastmod>
-    </url>
-    <url>
          <loc>https://kim-hyunjin.github.io/study/backend/database-engineering/tune/sql/%EB%8D%B0%EC%9D%B4%ED%84%B0%20%EC%84%A4%EC%A0%95%EB%B2%95/</loc>
          <lastmod>2026-04-22</lastmod>
     </url>
@@ -1090,10 +1090,6 @@
     </url>
     <url>
          <loc>https://kim-hyunjin.github.io/study/backend/distributed-system/sharding/%EC%83%A4%EB%94%A9%EA%B3%BC%20%EC%9D%BC%EA%B4%80%EC%A0%81%20%ED%95%B4%EC%8B%B1/</loc>
-         <lastmod>2026-04-22</lastmod>
-    </url>
-    <url>
-         <loc>https://kim-hyunjin.github.io/study/backend/django/airbnb-fullstack/</loc>
          <lastmod>2026-04-22</lastmod>
     </url>
     <url>
@@ -1813,19 +1809,11 @@
          <lastmod>2026-04-22</lastmod>
     </url>
     <url>
-         <loc>https://kim-hyunjin.github.io/study/backend/nodejs/graphql/</loc>
-         <lastmod>2026-04-22</lastmod>
-    </url>
-    <url>
          <loc>https://kim-hyunjin.github.io/study/backend/nodejs/graphql/client/</loc>
          <lastmod>2026-04-22</lastmod>
     </url>
     <url>
          <loc>https://kim-hyunjin.github.io/study/backend/nodejs/graphql/note/note/</loc>
-         <lastmod>2026-04-22</lastmod>
-    </url>
-    <url>
-         <loc>https://kim-hyunjin.github.io/study/backend/nodejs/node.js-practice/</loc>
          <lastmod>2026-04-22</lastmod>
     </url>
     <url>
@@ -1858,10 +1846,6 @@
     </url>
     <url>
          <loc>https://kim-hyunjin.github.io/study/backend/python/opensea-selenium-scraper/utils/</loc>
-         <lastmod>2026-04-22</lastmod>
-    </url>
-    <url>
-         <loc>https://kim-hyunjin.github.io/study/backend/python/web-scraper/</loc>
          <lastmod>2026-04-22</lastmod>
     </url>
     <url>
@@ -1941,26 +1925,6 @@
          <lastmod>2026-04-22</lastmod>
     </url>
     <url>
-         <loc>https://kim-hyunjin.github.io/study/backend/spring/spring-web-project/src/main/webapp/upload/lesson/assignment/</loc>
-         <lastmod>2026-04-22</lastmod>
-    </url>
-    <url>
-         <loc>https://kim-hyunjin.github.io/study/backend/spring/spring-web-project/src/main/webapp/upload/lesson/assignmentSubmit/</loc>
-         <lastmod>2026-04-22</lastmod>
-    </url>
-    <url>
-         <loc>https://kim-hyunjin.github.io/study/backend/spring/spring-web-project/src/main/webapp/upload/lesson/question/</loc>
-         <lastmod>2026-04-22</lastmod>
-    </url>
-    <url>
-         <loc>https://kim-hyunjin.github.io/study/backend/spring/spring-web-project/src/main/webapp/upload/post/</loc>
-         <lastmod>2026-04-22</lastmod>
-    </url>
-    <url>
-         <loc>https://kim-hyunjin.github.io/study/backend/spring/spring-web-project/src/main/webapp/upload/user/</loc>
-         <lastmod>2026-04-22</lastmod>
-    </url>
-    <url>
          <loc>https://kim-hyunjin.github.io/study/backend/spring/springboot-webservice/</loc>
          <lastmod>2026-04-22</lastmod>
     </url>
@@ -1978,10 +1942,6 @@
     </url>
     <url>
          <loc>https://kim-hyunjin.github.io/study/blockchain/create-next-web3/template/README-template/</loc>
-         <lastmod>2026-04-22</lastmod>
-    </url>
-    <url>
-         <loc>https://kim-hyunjin.github.io/study/blockchain/hello-blockchain/</loc>
          <lastmod>2026-04-22</lastmod>
     </url>
     <url>
@@ -2077,14 +2037,6 @@
          <lastmod>2026-04-22</lastmod>
     </url>
     <url>
-         <loc>https://kim-hyunjin.github.io/study/frontend/nextjs/chimflix/</loc>
-         <lastmod>2026-04-22</lastmod>
-    </url>
-    <url>
-         <loc>https://kim-hyunjin.github.io/study/frontend/nextjs/discover-coffee-store/</loc>
-         <lastmod>2026-04-22</lastmod>
-    </url>
-    <url>
          <loc>https://kim-hyunjin.github.io/study/frontend/nextjs/discover-coffee-store/notes/helpful_material/</loc>
          <lastmod>2026-04-22</lastmod>
     </url>
@@ -2129,10 +2081,6 @@
          <lastmod>2026-04-22</lastmod>
     </url>
     <url>
-         <loc>https://kim-hyunjin.github.io/study/frontend/nextjs/react-plotly-exam/</loc>
-         <lastmod>2026-04-22</lastmod>
-    </url>
-    <url>
          <loc>https://kim-hyunjin.github.io/study/frontend/nextjs/tutorial/</loc>
          <lastmod>2026-04-22</lastmod>
     </url>
@@ -2146,10 +2094,6 @@
     </url>
     <url>
          <loc>https://kim-hyunjin.github.io/study/frontend/react/redux/</loc>
-         <lastmod>2026-04-22</lastmod>
-    </url>
-    <url>
-         <loc>https://kim-hyunjin.github.io/study/frontend/react/twitter-clone/</loc>
          <lastmod>2026-04-22</lastmod>
     </url>
     <url>
@@ -2230,10 +2174,6 @@
     </url>
     <url>
          <loc>https://kim-hyunjin.github.io/study/frontend/react/%EB%A6%AC%EC%95%A1%ED%8A%B8%EB%A5%BC%20%EB%8B%A4%EB%A3%A8%EB%8A%94%20%EA%B8%B0%EC%88%A0/15_context_api/</loc>
-         <lastmod>2026-04-22</lastmod>
-    </url>
-    <url>
-         <loc>https://kim-hyunjin.github.io/study/frontend/react/%EB%A6%AC%EC%95%A1%ED%8A%B8%EB%A5%BC%20%EB%8B%A4%EB%A3%A8%EB%8A%94%20%EA%B8%B0%EC%88%A0/20_serverSideRendering/</loc>
          <lastmod>2026-04-22</lastmod>
     </url>
     <url>
@@ -2381,10 +2321,6 @@
          <lastmod>2026-04-22</lastmod>
     </url>
     <url>
-         <loc>https://kim-hyunjin.github.io/study/language/java/java-basic/src/main/java/</loc>
-         <lastmod>2026-04-22</lastmod>
-    </url>
-    <url>
          <loc>https://kim-hyunjin.github.io/study/language/java/java-basic/src/main/java/com/eomcs/algorithm/data_structure/linkedlist/practice/Readme/</loc>
          <lastmod>2026-04-22</lastmod>
     </url>
@@ -2437,75 +2373,7 @@
          <lastmod>2026-04-22</lastmod>
     </url>
     <url>
-         <loc>https://kim-hyunjin.github.io/study/language/java/java-web-library/src-01/main/java/</loc>
-         <lastmod>2026-04-22</lastmod>
-    </url>
-    <url>
-         <loc>https://kim-hyunjin.github.io/study/language/java/java-web-library/src-01/main/resources/</loc>
-         <lastmod>2026-04-22</lastmod>
-    </url>
-    <url>
-         <loc>https://kim-hyunjin.github.io/study/language/java/java-web-library/src-01/test/java/</loc>
-         <lastmod>2026-04-22</lastmod>
-    </url>
-    <url>
-         <loc>https://kim-hyunjin.github.io/study/language/java/java-web-library/src-01/test/resources/</loc>
-         <lastmod>2026-04-22</lastmod>
-    </url>
-    <url>
-         <loc>https://kim-hyunjin.github.io/study/language/java/java-web-library/src-02/main/java/</loc>
-         <lastmod>2026-04-22</lastmod>
-    </url>
-    <url>
-         <loc>https://kim-hyunjin.github.io/study/language/java/java-web-library/src-02/main/resources/</loc>
-         <lastmod>2026-04-22</lastmod>
-    </url>
-    <url>
-         <loc>https://kim-hyunjin.github.io/study/language/java/java-web-library/src-02/test/java/</loc>
-         <lastmod>2026-04-22</lastmod>
-    </url>
-    <url>
-         <loc>https://kim-hyunjin.github.io/study/language/java/java-web-library/src-02/test/resources/</loc>
-         <lastmod>2026-04-22</lastmod>
-    </url>
-    <url>
-         <loc>https://kim-hyunjin.github.io/study/language/java/java-web-library/src-03/main/java/</loc>
-         <lastmod>2026-04-22</lastmod>
-    </url>
-    <url>
-         <loc>https://kim-hyunjin.github.io/study/language/java/java-web-library/src-03/main/resources/</loc>
-         <lastmod>2026-04-22</lastmod>
-    </url>
-    <url>
-         <loc>https://kim-hyunjin.github.io/study/language/java/java-web-library/src-03/test/java/</loc>
-         <lastmod>2026-04-22</lastmod>
-    </url>
-    <url>
-         <loc>https://kim-hyunjin.github.io/study/language/java/java-web-library/src-03/test/resources/</loc>
-         <lastmod>2026-04-22</lastmod>
-    </url>
-    <url>
-         <loc>https://kim-hyunjin.github.io/study/language/java/java-web-library/src-04/main/java/</loc>
-         <lastmod>2026-04-22</lastmod>
-    </url>
-    <url>
-         <loc>https://kim-hyunjin.github.io/study/language/java/java-web-library/src-04/main/resources/</loc>
-         <lastmod>2026-04-22</lastmod>
-    </url>
-    <url>
-         <loc>https://kim-hyunjin.github.io/study/language/java/java-web-library/src-04/test/java/</loc>
-         <lastmod>2026-04-22</lastmod>
-    </url>
-    <url>
-         <loc>https://kim-hyunjin.github.io/study/language/java/java-web-library/src-04/test/resources/</loc>
-         <lastmod>2026-04-22</lastmod>
-    </url>
-    <url>
          <loc>https://kim-hyunjin.github.io/study/language/java/lms-app/src/main/resources/</loc>
-         <lastmod>2026-04-22</lastmod>
-    </url>
-    <url>
-         <loc>https://kim-hyunjin.github.io/study/language/java/lms-app/src/test/java/</loc>
          <lastmod>2026-04-22</lastmod>
     </url>
     <url>
@@ -2521,10 +2389,6 @@
          <lastmod>2026-04-22</lastmod>
     </url>
     <url>
-         <loc>https://kim-hyunjin.github.io/study/language/java/lms-app/version/v01/src/test/java/</loc>
-         <lastmod>2026-04-22</lastmod>
-    </url>
-    <url>
          <loc>https://kim-hyunjin.github.io/study/language/java/lms-app/version/v01/src/test/resources/</loc>
          <lastmod>2026-04-22</lastmod>
     </url>
@@ -2534,10 +2398,6 @@
     </url>
     <url>
          <loc>https://kim-hyunjin.github.io/study/language/java/lms-app/version/v02/src/main/resources/</loc>
-         <lastmod>2026-04-22</lastmod>
-    </url>
-    <url>
-         <loc>https://kim-hyunjin.github.io/study/language/java/lms-app/version/v02/src/test/java/</loc>
          <lastmod>2026-04-22</lastmod>
     </url>
     <url>
@@ -2553,10 +2413,6 @@
          <lastmod>2026-04-22</lastmod>
     </url>
     <url>
-         <loc>https://kim-hyunjin.github.io/study/language/java/lms-app/version/v03/src/test/java/</loc>
-         <lastmod>2026-04-22</lastmod>
-    </url>
-    <url>
          <loc>https://kim-hyunjin.github.io/study/language/java/lms-app/version/v03/src/test/resources/</loc>
          <lastmod>2026-04-22</lastmod>
     </url>
@@ -2566,10 +2422,6 @@
     </url>
     <url>
          <loc>https://kim-hyunjin.github.io/study/language/java/lms-app/version/v04/src/main/resources/</loc>
-         <lastmod>2026-04-22</lastmod>
-    </url>
-    <url>
-         <loc>https://kim-hyunjin.github.io/study/language/java/lms-app/version/v04/src/test/java/</loc>
          <lastmod>2026-04-22</lastmod>
     </url>
     <url>
@@ -2585,10 +2437,6 @@
          <lastmod>2026-04-22</lastmod>
     </url>
     <url>
-         <loc>https://kim-hyunjin.github.io/study/language/java/lms-app/version/v05/src/test/java/</loc>
-         <lastmod>2026-04-22</lastmod>
-    </url>
-    <url>
          <loc>https://kim-hyunjin.github.io/study/language/java/lms-app/version/v05/src/test/resources/</loc>
          <lastmod>2026-04-22</lastmod>
     </url>
@@ -2598,10 +2446,6 @@
     </url>
     <url>
          <loc>https://kim-hyunjin.github.io/study/language/java/lms-app/version/v06/src/main/resources/</loc>
-         <lastmod>2026-04-22</lastmod>
-    </url>
-    <url>
-         <loc>https://kim-hyunjin.github.io/study/language/java/lms-app/version/v06/src/test/java/</loc>
          <lastmod>2026-04-22</lastmod>
     </url>
     <url>
@@ -2617,10 +2461,6 @@
          <lastmod>2026-04-22</lastmod>
     </url>
     <url>
-         <loc>https://kim-hyunjin.github.io/study/language/java/lms-app/version/v07/src/test/java/</loc>
-         <lastmod>2026-04-22</lastmod>
-    </url>
-    <url>
          <loc>https://kim-hyunjin.github.io/study/language/java/lms-app/version/v07/src/test/resources/</loc>
          <lastmod>2026-04-22</lastmod>
     </url>
@@ -2630,10 +2470,6 @@
     </url>
     <url>
          <loc>https://kim-hyunjin.github.io/study/language/java/lms-app/version/v08/src/main/resources/</loc>
-         <lastmod>2026-04-22</lastmod>
-    </url>
-    <url>
-         <loc>https://kim-hyunjin.github.io/study/language/java/lms-app/version/v08/src/test/java/</loc>
          <lastmod>2026-04-22</lastmod>
     </url>
     <url>
@@ -2649,10 +2485,6 @@
          <lastmod>2026-04-22</lastmod>
     </url>
     <url>
-         <loc>https://kim-hyunjin.github.io/study/language/java/lms-app/version/v09/src/test/java/</loc>
-         <lastmod>2026-04-22</lastmod>
-    </url>
-    <url>
          <loc>https://kim-hyunjin.github.io/study/language/java/lms-app/version/v09/src/test/resources/</loc>
          <lastmod>2026-04-22</lastmod>
     </url>
@@ -2662,10 +2494,6 @@
     </url>
     <url>
          <loc>https://kim-hyunjin.github.io/study/language/java/lms-app/version/v10/src/main/resources/</loc>
-         <lastmod>2026-04-22</lastmod>
-    </url>
-    <url>
-         <loc>https://kim-hyunjin.github.io/study/language/java/lms-app/version/v10/src/test/java/</loc>
          <lastmod>2026-04-22</lastmod>
     </url>
     <url>
@@ -2681,10 +2509,6 @@
          <lastmod>2026-04-22</lastmod>
     </url>
     <url>
-         <loc>https://kim-hyunjin.github.io/study/language/java/lms-app/version/v11/src/test/java/</loc>
-         <lastmod>2026-04-22</lastmod>
-    </url>
-    <url>
          <loc>https://kim-hyunjin.github.io/study/language/java/lms-app/version/v11/src/test/resources/</loc>
          <lastmod>2026-04-22</lastmod>
     </url>
@@ -2694,10 +2518,6 @@
     </url>
     <url>
          <loc>https://kim-hyunjin.github.io/study/language/java/lms-app/version/v12/src/main/resources/</loc>
-         <lastmod>2026-04-22</lastmod>
-    </url>
-    <url>
-         <loc>https://kim-hyunjin.github.io/study/language/java/lms-app/version/v12/src/test/java/</loc>
          <lastmod>2026-04-22</lastmod>
     </url>
     <url>
@@ -2713,10 +2533,6 @@
          <lastmod>2026-04-22</lastmod>
     </url>
     <url>
-         <loc>https://kim-hyunjin.github.io/study/language/java/lms-app/version/v13/src/test/java/</loc>
-         <lastmod>2026-04-22</lastmod>
-    </url>
-    <url>
          <loc>https://kim-hyunjin.github.io/study/language/java/lms-app/version/v13/src/test/resources/</loc>
          <lastmod>2026-04-22</lastmod>
     </url>
@@ -2726,10 +2542,6 @@
     </url>
     <url>
          <loc>https://kim-hyunjin.github.io/study/language/java/lms-app/version/v14/src/main/resources/</loc>
-         <lastmod>2026-04-22</lastmod>
-    </url>
-    <url>
-         <loc>https://kim-hyunjin.github.io/study/language/java/lms-app/version/v14/src/test/java/</loc>
          <lastmod>2026-04-22</lastmod>
     </url>
     <url>
@@ -2745,10 +2557,6 @@
          <lastmod>2026-04-22</lastmod>
     </url>
     <url>
-         <loc>https://kim-hyunjin.github.io/study/language/java/lms-app/version/v15/src/test/java/</loc>
-         <lastmod>2026-04-22</lastmod>
-    </url>
-    <url>
          <loc>https://kim-hyunjin.github.io/study/language/java/lms-app/version/v15/src/test/resources/</loc>
          <lastmod>2026-04-22</lastmod>
     </url>
@@ -2758,10 +2566,6 @@
     </url>
     <url>
          <loc>https://kim-hyunjin.github.io/study/language/java/lms-app/version/v16/src/main/resources/</loc>
-         <lastmod>2026-04-22</lastmod>
-    </url>
-    <url>
-         <loc>https://kim-hyunjin.github.io/study/language/java/lms-app/version/v16/src/test/java/</loc>
          <lastmod>2026-04-22</lastmod>
     </url>
     <url>
@@ -2777,10 +2581,6 @@
          <lastmod>2026-04-22</lastmod>
     </url>
     <url>
-         <loc>https://kim-hyunjin.github.io/study/language/java/lms-app/version/v17/src/test/java/</loc>
-         <lastmod>2026-04-22</lastmod>
-    </url>
-    <url>
          <loc>https://kim-hyunjin.github.io/study/language/java/lms-app/version/v17/src/test/resources/</loc>
          <lastmod>2026-04-22</lastmod>
     </url>
@@ -2793,10 +2593,6 @@
          <lastmod>2026-04-22</lastmod>
     </url>
     <url>
-         <loc>https://kim-hyunjin.github.io/study/language/java/lms-app/version/v18/src/test/java/</loc>
-         <lastmod>2026-04-22</lastmod>
-    </url>
-    <url>
          <loc>https://kim-hyunjin.github.io/study/language/java/lms-app/version/v18/src/test/resources/</loc>
          <lastmod>2026-04-22</lastmod>
     </url>
@@ -2806,10 +2602,6 @@
     </url>
     <url>
          <loc>https://kim-hyunjin.github.io/study/language/java/lms-app/version/v19/src/main/resources/</loc>
-         <lastmod>2026-04-22</lastmod>
-    </url>
-    <url>
-         <loc>https://kim-hyunjin.github.io/study/language/java/lms-app/version/v19/src/test/java/</loc>
          <lastmod>2026-04-22</lastmod>
     </url>
     <url>
@@ -2829,10 +2621,6 @@
          <lastmod>2026-04-22</lastmod>
     </url>
     <url>
-         <loc>https://kim-hyunjin.github.io/study/language/java/lms-app/version/v19_1/src/test/java/</loc>
-         <lastmod>2026-04-22</lastmod>
-    </url>
-    <url>
          <loc>https://kim-hyunjin.github.io/study/language/java/lms-app/version/v19_1/src/test/resources/</loc>
          <lastmod>2026-04-22</lastmod>
     </url>
@@ -2842,10 +2630,6 @@
     </url>
     <url>
          <loc>https://kim-hyunjin.github.io/study/language/java/lms-app/version/v19_2/src/main/resources/</loc>
-         <lastmod>2026-04-22</lastmod>
-    </url>
-    <url>
-         <loc>https://kim-hyunjin.github.io/study/language/java/lms-app/version/v19_2/src/test/java/</loc>
          <lastmod>2026-04-22</lastmod>
     </url>
     <url>
@@ -2861,10 +2645,6 @@
          <lastmod>2026-04-22</lastmod>
     </url>
     <url>
-         <loc>https://kim-hyunjin.github.io/study/language/java/lms-app/version/v19_3/src/test/java/</loc>
-         <lastmod>2026-04-22</lastmod>
-    </url>
-    <url>
          <loc>https://kim-hyunjin.github.io/study/language/java/lms-app/version/v19_3/src/test/resources/</loc>
          <lastmod>2026-04-22</lastmod>
     </url>
@@ -2874,10 +2654,6 @@
     </url>
     <url>
          <loc>https://kim-hyunjin.github.io/study/language/java/lms-app/version/v20/src/main/resources/</loc>
-         <lastmod>2026-04-22</lastmod>
-    </url>
-    <url>
-         <loc>https://kim-hyunjin.github.io/study/language/java/lms-app/version/v20/src/test/java/</loc>
          <lastmod>2026-04-22</lastmod>
     </url>
     <url>
@@ -2893,10 +2669,6 @@
          <lastmod>2026-04-22</lastmod>
     </url>
     <url>
-         <loc>https://kim-hyunjin.github.io/study/language/java/lms-app/version/v21/src/test/java/</loc>
-         <lastmod>2026-04-22</lastmod>
-    </url>
-    <url>
          <loc>https://kim-hyunjin.github.io/study/language/java/lms-app/version/v21/src/test/resources/</loc>
          <lastmod>2026-04-22</lastmod>
     </url>
@@ -2906,10 +2678,6 @@
     </url>
     <url>
          <loc>https://kim-hyunjin.github.io/study/language/java/lms-app/version/v22/src/main/resources/</loc>
-         <lastmod>2026-04-22</lastmod>
-    </url>
-    <url>
-         <loc>https://kim-hyunjin.github.io/study/language/java/lms-app/version/v22/src/test/java/</loc>
          <lastmod>2026-04-22</lastmod>
     </url>
     <url>
@@ -2925,10 +2693,6 @@
          <lastmod>2026-04-22</lastmod>
     </url>
     <url>
-         <loc>https://kim-hyunjin.github.io/study/language/java/lms-app/version/v23_1/src/test/java/</loc>
-         <lastmod>2026-04-22</lastmod>
-    </url>
-    <url>
          <loc>https://kim-hyunjin.github.io/study/language/java/lms-app/version/v23_1/src/test/resources/</loc>
          <lastmod>2026-04-22</lastmod>
     </url>
@@ -2938,10 +2702,6 @@
     </url>
     <url>
          <loc>https://kim-hyunjin.github.io/study/language/java/lms-app/version/v23_2/src/main/resources/</loc>
-         <lastmod>2026-04-22</lastmod>
-    </url>
-    <url>
-         <loc>https://kim-hyunjin.github.io/study/language/java/lms-app/version/v23_2/src/test/java/</loc>
          <lastmod>2026-04-22</lastmod>
     </url>
     <url>
@@ -2957,10 +2717,6 @@
          <lastmod>2026-04-22</lastmod>
     </url>
     <url>
-         <loc>https://kim-hyunjin.github.io/study/language/java/lms-app/version/v23_3/src/test/java/</loc>
-         <lastmod>2026-04-22</lastmod>
-    </url>
-    <url>
          <loc>https://kim-hyunjin.github.io/study/language/java/lms-app/version/v23_3/src/test/resources/</loc>
          <lastmod>2026-04-22</lastmod>
     </url>
@@ -2970,10 +2726,6 @@
     </url>
     <url>
          <loc>https://kim-hyunjin.github.io/study/language/java/lms-app/version/v24_1/src/main/resources/</loc>
-         <lastmod>2026-04-22</lastmod>
-    </url>
-    <url>
-         <loc>https://kim-hyunjin.github.io/study/language/java/lms-app/version/v24_1/src/test/java/</loc>
          <lastmod>2026-04-22</lastmod>
     </url>
     <url>
@@ -2989,10 +2741,6 @@
          <lastmod>2026-04-22</lastmod>
     </url>
     <url>
-         <loc>https://kim-hyunjin.github.io/study/language/java/lms-app/version/v24_2/src/test/java/</loc>
-         <lastmod>2026-04-22</lastmod>
-    </url>
-    <url>
          <loc>https://kim-hyunjin.github.io/study/language/java/lms-app/version/v24_2/src/test/resources/</loc>
          <lastmod>2026-04-22</lastmod>
     </url>
@@ -3002,10 +2750,6 @@
     </url>
     <url>
          <loc>https://kim-hyunjin.github.io/study/language/java/lms-app/version/v24_3/src/main/resources/</loc>
-         <lastmod>2026-04-22</lastmod>
-    </url>
-    <url>
-         <loc>https://kim-hyunjin.github.io/study/language/java/lms-app/version/v24_3/src/test/java/</loc>
          <lastmod>2026-04-22</lastmod>
     </url>
     <url>
@@ -3021,10 +2765,6 @@
          <lastmod>2026-04-22</lastmod>
     </url>
     <url>
-         <loc>https://kim-hyunjin.github.io/study/language/java/lms-app/version/v24_4/src/test/java/</loc>
-         <lastmod>2026-04-22</lastmod>
-    </url>
-    <url>
          <loc>https://kim-hyunjin.github.io/study/language/java/lms-app/version/v24_4/src/test/resources/</loc>
          <lastmod>2026-04-22</lastmod>
     </url>
@@ -3034,10 +2774,6 @@
     </url>
     <url>
          <loc>https://kim-hyunjin.github.io/study/language/java/lms-app/version/v24_5/src/main/resources/</loc>
-         <lastmod>2026-04-22</lastmod>
-    </url>
-    <url>
-         <loc>https://kim-hyunjin.github.io/study/language/java/lms-app/version/v24_5/src/test/java/</loc>
          <lastmod>2026-04-22</lastmod>
     </url>
     <url>
@@ -3053,10 +2789,6 @@
          <lastmod>2026-04-22</lastmod>
     </url>
     <url>
-         <loc>https://kim-hyunjin.github.io/study/language/java/lms-app/version/v25/src/test/java/</loc>
-         <lastmod>2026-04-22</lastmod>
-    </url>
-    <url>
          <loc>https://kim-hyunjin.github.io/study/language/java/lms-app/version/v25/src/test/resources/</loc>
          <lastmod>2026-04-22</lastmod>
     </url>
@@ -3069,10 +2801,6 @@
          <lastmod>2026-04-22</lastmod>
     </url>
     <url>
-         <loc>https://kim-hyunjin.github.io/study/language/java/lms-app/version/v26/src/test/java/</loc>
-         <lastmod>2026-04-22</lastmod>
-    </url>
-    <url>
          <loc>https://kim-hyunjin.github.io/study/language/java/lms-app/version/v26/src/test/resources/</loc>
          <lastmod>2026-04-22</lastmod>
     </url>
@@ -3082,10 +2810,6 @@
     </url>
     <url>
          <loc>https://kim-hyunjin.github.io/study/language/java/lms-app/version/v27/src/main/resources/</loc>
-         <lastmod>2026-04-22</lastmod>
-    </url>
-    <url>
-         <loc>https://kim-hyunjin.github.io/study/language/java/lms-app/version/v27/src/test/java/</loc>
          <lastmod>2026-04-22</lastmod>
     </url>
     <url>
@@ -3105,10 +2829,6 @@
          <lastmod>2026-04-22</lastmod>
     </url>
     <url>
-         <loc>https://kim-hyunjin.github.io/study/language/java/lms-app/version/v28_1-2/src/test/java/</loc>
-         <lastmod>2026-04-22</lastmod>
-    </url>
-    <url>
          <loc>https://kim-hyunjin.github.io/study/language/java/lms-app/version/v28_1-2/src/test/resources/</loc>
          <lastmod>2026-04-22</lastmod>
     </url>
@@ -3118,10 +2838,6 @@
     </url>
     <url>
          <loc>https://kim-hyunjin.github.io/study/language/java/lms-app/version/v28_3/src/main/resources/</loc>
-         <lastmod>2026-04-22</lastmod>
-    </url>
-    <url>
-         <loc>https://kim-hyunjin.github.io/study/language/java/lms-app/version/v28_3/src/test/java/</loc>
          <lastmod>2026-04-22</lastmod>
     </url>
     <url>
@@ -3137,10 +2853,6 @@
          <lastmod>2026-04-22</lastmod>
     </url>
     <url>
-         <loc>https://kim-hyunjin.github.io/study/language/java/lms-app/version/v28_4/src/test/java/</loc>
-         <lastmod>2026-04-22</lastmod>
-    </url>
-    <url>
          <loc>https://kim-hyunjin.github.io/study/language/java/lms-app/version/v28_4/src/test/resources/</loc>
          <lastmod>2026-04-22</lastmod>
     </url>
@@ -3150,10 +2862,6 @@
     </url>
     <url>
          <loc>https://kim-hyunjin.github.io/study/language/java/lms-app/version/v29/src/main/resources/</loc>
-         <lastmod>2026-04-22</lastmod>
-    </url>
-    <url>
-         <loc>https://kim-hyunjin.github.io/study/language/java/lms-app/version/v29/src/test/java/</loc>
          <lastmod>2026-04-22</lastmod>
     </url>
     <url>
@@ -3169,10 +2877,6 @@
          <lastmod>2026-04-22</lastmod>
     </url>
     <url>
-         <loc>https://kim-hyunjin.github.io/study/language/java/lms-app/version/v30/src/test/java/</loc>
-         <lastmod>2026-04-22</lastmod>
-    </url>
-    <url>
          <loc>https://kim-hyunjin.github.io/study/language/java/lms-app/version/v30/src/test/resources/</loc>
          <lastmod>2026-04-22</lastmod>
     </url>
@@ -3182,10 +2886,6 @@
     </url>
     <url>
          <loc>https://kim-hyunjin.github.io/study/language/java/lms-app/version/v31_1/src/main/resources/</loc>
-         <lastmod>2026-04-22</lastmod>
-    </url>
-    <url>
-         <loc>https://kim-hyunjin.github.io/study/language/java/lms-app/version/v31_1/src/test/java/</loc>
          <lastmod>2026-04-22</lastmod>
     </url>
     <url>
@@ -3201,10 +2901,6 @@
          <lastmod>2026-04-22</lastmod>
     </url>
     <url>
-         <loc>https://kim-hyunjin.github.io/study/language/java/lms-app/version/v31_2/src/test/java/</loc>
-         <lastmod>2026-04-22</lastmod>
-    </url>
-    <url>
          <loc>https://kim-hyunjin.github.io/study/language/java/lms-app/version/v31_2/src/test/resources/</loc>
          <lastmod>2026-04-22</lastmod>
     </url>
@@ -3217,10 +2913,6 @@
          <lastmod>2026-04-22</lastmod>
     </url>
     <url>
-         <loc>https://kim-hyunjin.github.io/study/language/java/lms-app/version/v31_3/src/test/java/</loc>
-         <lastmod>2026-04-22</lastmod>
-    </url>
-    <url>
          <loc>https://kim-hyunjin.github.io/study/language/java/lms-app/version/v31_3/src/test/resources/</loc>
          <lastmod>2026-04-22</lastmod>
     </url>
@@ -3229,23 +2921,7 @@
          <lastmod>2026-04-22</lastmod>
     </url>
     <url>
-         <loc>https://kim-hyunjin.github.io/study/language/java/lms-client/src/main/resources/</loc>
-         <lastmod>2026-04-22</lastmod>
-    </url>
-    <url>
-         <loc>https://kim-hyunjin.github.io/study/language/java/lms-client/src/test/resources/</loc>
-         <lastmod>2026-04-22</lastmod>
-    </url>
-    <url>
          <loc>https://kim-hyunjin.github.io/study/language/java/lms-client/version/v32_1/</loc>
-         <lastmod>2026-04-22</lastmod>
-    </url>
-    <url>
-         <loc>https://kim-hyunjin.github.io/study/language/java/lms-client/version/v32_1/src/main/resources/</loc>
-         <lastmod>2026-04-22</lastmod>
-    </url>
-    <url>
-         <loc>https://kim-hyunjin.github.io/study/language/java/lms-client/version/v32_1/src/test/resources/</loc>
          <lastmod>2026-04-22</lastmod>
     </url>
     <url>
@@ -3253,23 +2929,7 @@
          <lastmod>2026-04-22</lastmod>
     </url>
     <url>
-         <loc>https://kim-hyunjin.github.io/study/language/java/lms-client/version/v32_11/src/main/resources/</loc>
-         <lastmod>2026-04-22</lastmod>
-    </url>
-    <url>
-         <loc>https://kim-hyunjin.github.io/study/language/java/lms-client/version/v32_11/src/test/resources/</loc>
-         <lastmod>2026-04-22</lastmod>
-    </url>
-    <url>
          <loc>https://kim-hyunjin.github.io/study/language/java/lms-client/version/v32_2/</loc>
-         <lastmod>2026-04-22</lastmod>
-    </url>
-    <url>
-         <loc>https://kim-hyunjin.github.io/study/language/java/lms-client/version/v32_2/src/main/resources/</loc>
-         <lastmod>2026-04-22</lastmod>
-    </url>
-    <url>
-         <loc>https://kim-hyunjin.github.io/study/language/java/lms-client/version/v32_2/src/test/resources/</loc>
          <lastmod>2026-04-22</lastmod>
     </url>
     <url>
@@ -3277,23 +2937,7 @@
          <lastmod>2026-04-22</lastmod>
     </url>
     <url>
-         <loc>https://kim-hyunjin.github.io/study/language/java/lms-client/version/v32_3/src/main/resources/</loc>
-         <lastmod>2026-04-22</lastmod>
-    </url>
-    <url>
-         <loc>https://kim-hyunjin.github.io/study/language/java/lms-client/version/v32_3/src/test/resources/</loc>
-         <lastmod>2026-04-22</lastmod>
-    </url>
-    <url>
          <loc>https://kim-hyunjin.github.io/study/language/java/lms-client/version/v32_4/</loc>
-         <lastmod>2026-04-22</lastmod>
-    </url>
-    <url>
-         <loc>https://kim-hyunjin.github.io/study/language/java/lms-client/version/v32_4/src/main/resources/</loc>
-         <lastmod>2026-04-22</lastmod>
-    </url>
-    <url>
-         <loc>https://kim-hyunjin.github.io/study/language/java/lms-client/version/v32_4/src/test/resources/</loc>
          <lastmod>2026-04-22</lastmod>
     </url>
     <url>
@@ -3301,23 +2945,7 @@
          <lastmod>2026-04-22</lastmod>
     </url>
     <url>
-         <loc>https://kim-hyunjin.github.io/study/language/java/lms-client/version/v33_1/src/main/resources/</loc>
-         <lastmod>2026-04-22</lastmod>
-    </url>
-    <url>
-         <loc>https://kim-hyunjin.github.io/study/language/java/lms-client/version/v33_1/src/test/resources/</loc>
-         <lastmod>2026-04-22</lastmod>
-    </url>
-    <url>
          <loc>https://kim-hyunjin.github.io/study/language/java/lms-client/version/v33_2/</loc>
-         <lastmod>2026-04-22</lastmod>
-    </url>
-    <url>
-         <loc>https://kim-hyunjin.github.io/study/language/java/lms-client/version/v33_2/src/main/resources/</loc>
-         <lastmod>2026-04-22</lastmod>
-    </url>
-    <url>
-         <loc>https://kim-hyunjin.github.io/study/language/java/lms-client/version/v33_2/src/test/resources/</loc>
          <lastmod>2026-04-22</lastmod>
     </url>
     <url>
@@ -3325,23 +2953,7 @@
          <lastmod>2026-04-22</lastmod>
     </url>
     <url>
-         <loc>https://kim-hyunjin.github.io/study/language/java/lms-client/version/v33_3/src/main/resources/</loc>
-         <lastmod>2026-04-22</lastmod>
-    </url>
-    <url>
-         <loc>https://kim-hyunjin.github.io/study/language/java/lms-client/version/v33_3/src/test/resources/</loc>
-         <lastmod>2026-04-22</lastmod>
-    </url>
-    <url>
          <loc>https://kim-hyunjin.github.io/study/language/java/lms-client/version/v36_1/</loc>
-         <lastmod>2026-04-22</lastmod>
-    </url>
-    <url>
-         <loc>https://kim-hyunjin.github.io/study/language/java/lms-client/version/v36_1/src/main/resources/</loc>
-         <lastmod>2026-04-22</lastmod>
-    </url>
-    <url>
-         <loc>https://kim-hyunjin.github.io/study/language/java/lms-client/version/v36_1/src/test/resources/</loc>
          <lastmod>2026-04-22</lastmod>
     </url>
     <url>
@@ -3349,23 +2961,7 @@
          <lastmod>2026-04-22</lastmod>
     </url>
     <url>
-         <loc>https://kim-hyunjin.github.io/study/language/java/lms-client/version/v36_2/src/main/resources/</loc>
-         <lastmod>2026-04-22</lastmod>
-    </url>
-    <url>
-         <loc>https://kim-hyunjin.github.io/study/language/java/lms-client/version/v36_2/src/test/resources/</loc>
-         <lastmod>2026-04-22</lastmod>
-    </url>
-    <url>
          <loc>https://kim-hyunjin.github.io/study/language/java/lms-client/version/v37_1/</loc>
-         <lastmod>2026-04-22</lastmod>
-    </url>
-    <url>
-         <loc>https://kim-hyunjin.github.io/study/language/java/lms-client/version/v37_1/src/main/resources/</loc>
-         <lastmod>2026-04-22</lastmod>
-    </url>
-    <url>
-         <loc>https://kim-hyunjin.github.io/study/language/java/lms-client/version/v37_1/src/test/resources/</loc>
          <lastmod>2026-04-22</lastmod>
     </url>
     <url>
@@ -3373,31 +2969,7 @@
          <lastmod>2026-04-22</lastmod>
     </url>
     <url>
-         <loc>https://kim-hyunjin.github.io/study/language/java/lms-client/version/v37_3/src/main/resources/</loc>
-         <lastmod>2026-04-22</lastmod>
-    </url>
-    <url>
-         <loc>https://kim-hyunjin.github.io/study/language/java/lms-client/version/v37_3/src/test/resources/</loc>
-         <lastmod>2026-04-22</lastmod>
-    </url>
-    <url>
          <loc>https://kim-hyunjin.github.io/study/language/java/lms-server/</loc>
-         <lastmod>2026-04-22</lastmod>
-    </url>
-    <url>
-         <loc>https://kim-hyunjin.github.io/study/language/java/lms-server/src/main/resources/</loc>
-         <lastmod>2026-04-22</lastmod>
-    </url>
-    <url>
-         <loc>https://kim-hyunjin.github.io/study/language/java/lms-server/src/main/webapp/upload/member/</loc>
-         <lastmod>2026-04-22</lastmod>
-    </url>
-    <url>
-         <loc>https://kim-hyunjin.github.io/study/language/java/lms-server/src/main/webapp/upload/photoboard/</loc>
-         <lastmod>2026-04-22</lastmod>
-    </url>
-    <url>
-         <loc>https://kim-hyunjin.github.io/study/language/java/lms-server/src/test/resources/</loc>
          <lastmod>2026-04-22</lastmod>
     </url>
     <url>
@@ -3405,31 +2977,7 @@
          <lastmod>2026-04-22</lastmod>
     </url>
     <url>
-         <loc>https://kim-hyunjin.github.io/study/language/java/lms-server/version/V58_2/src/main/resources/</loc>
-         <lastmod>2026-04-22</lastmod>
-    </url>
-    <url>
-         <loc>https://kim-hyunjin.github.io/study/language/java/lms-server/version/V58_2/src/main/webapp/upload/member/</loc>
-         <lastmod>2026-04-22</lastmod>
-    </url>
-    <url>
-         <loc>https://kim-hyunjin.github.io/study/language/java/lms-server/version/V58_2/src/main/webapp/upload/photoboard/</loc>
-         <lastmod>2026-04-22</lastmod>
-    </url>
-    <url>
-         <loc>https://kim-hyunjin.github.io/study/language/java/lms-server/version/V58_2/src/test/resources/</loc>
-         <lastmod>2026-04-22</lastmod>
-    </url>
-    <url>
          <loc>https://kim-hyunjin.github.io/study/language/java/lms-server/version/v32_1/</loc>
-         <lastmod>2026-04-22</lastmod>
-    </url>
-    <url>
-         <loc>https://kim-hyunjin.github.io/study/language/java/lms-server/version/v32_1/src/main/resources/</loc>
-         <lastmod>2026-04-22</lastmod>
-    </url>
-    <url>
-         <loc>https://kim-hyunjin.github.io/study/language/java/lms-server/version/v32_1/src/test/resources/</loc>
          <lastmod>2026-04-22</lastmod>
     </url>
     <url>
@@ -3437,23 +2985,7 @@
          <lastmod>2026-04-22</lastmod>
     </url>
     <url>
-         <loc>https://kim-hyunjin.github.io/study/language/java/lms-server/version/v32_10/src/main/resources/</loc>
-         <lastmod>2026-04-22</lastmod>
-    </url>
-    <url>
-         <loc>https://kim-hyunjin.github.io/study/language/java/lms-server/version/v32_10/src/test/resources/</loc>
-         <lastmod>2026-04-22</lastmod>
-    </url>
-    <url>
          <loc>https://kim-hyunjin.github.io/study/language/java/lms-server/version/v32_11/</loc>
-         <lastmod>2026-04-22</lastmod>
-    </url>
-    <url>
-         <loc>https://kim-hyunjin.github.io/study/language/java/lms-server/version/v32_11/src/main/resources/</loc>
-         <lastmod>2026-04-22</lastmod>
-    </url>
-    <url>
-         <loc>https://kim-hyunjin.github.io/study/language/java/lms-server/version/v32_11/src/test/resources/</loc>
          <lastmod>2026-04-22</lastmod>
     </url>
     <url>
@@ -3461,23 +2993,7 @@
          <lastmod>2026-04-22</lastmod>
     </url>
     <url>
-         <loc>https://kim-hyunjin.github.io/study/language/java/lms-server/version/v32_2/src/main/resources/</loc>
-         <lastmod>2026-04-22</lastmod>
-    </url>
-    <url>
-         <loc>https://kim-hyunjin.github.io/study/language/java/lms-server/version/v32_2/src/test/resources/</loc>
-         <lastmod>2026-04-22</lastmod>
-    </url>
-    <url>
          <loc>https://kim-hyunjin.github.io/study/language/java/lms-server/version/v32_3/</loc>
-         <lastmod>2026-04-22</lastmod>
-    </url>
-    <url>
-         <loc>https://kim-hyunjin.github.io/study/language/java/lms-server/version/v32_3/src/main/resources/</loc>
-         <lastmod>2026-04-22</lastmod>
-    </url>
-    <url>
-         <loc>https://kim-hyunjin.github.io/study/language/java/lms-server/version/v32_3/src/test/resources/</loc>
          <lastmod>2026-04-22</lastmod>
     </url>
     <url>
@@ -3485,23 +3001,7 @@
          <lastmod>2026-04-22</lastmod>
     </url>
     <url>
-         <loc>https://kim-hyunjin.github.io/study/language/java/lms-server/version/v32_4/src/main/resources/</loc>
-         <lastmod>2026-04-22</lastmod>
-    </url>
-    <url>
-         <loc>https://kim-hyunjin.github.io/study/language/java/lms-server/version/v32_4/src/test/resources/</loc>
-         <lastmod>2026-04-22</lastmod>
-    </url>
-    <url>
          <loc>https://kim-hyunjin.github.io/study/language/java/lms-server/version/v32_5/</loc>
-         <lastmod>2026-04-22</lastmod>
-    </url>
-    <url>
-         <loc>https://kim-hyunjin.github.io/study/language/java/lms-server/version/v32_5/src/main/resources/</loc>
-         <lastmod>2026-04-22</lastmod>
-    </url>
-    <url>
-         <loc>https://kim-hyunjin.github.io/study/language/java/lms-server/version/v32_5/src/test/resources/</loc>
          <lastmod>2026-04-22</lastmod>
     </url>
     <url>
@@ -3509,23 +3009,7 @@
          <lastmod>2026-04-22</lastmod>
     </url>
     <url>
-         <loc>https://kim-hyunjin.github.io/study/language/java/lms-server/version/v32_6/src/main/resources/</loc>
-         <lastmod>2026-04-22</lastmod>
-    </url>
-    <url>
-         <loc>https://kim-hyunjin.github.io/study/language/java/lms-server/version/v32_6/src/test/resources/</loc>
-         <lastmod>2026-04-22</lastmod>
-    </url>
-    <url>
          <loc>https://kim-hyunjin.github.io/study/language/java/lms-server/version/v32_7/</loc>
-         <lastmod>2026-04-22</lastmod>
-    </url>
-    <url>
-         <loc>https://kim-hyunjin.github.io/study/language/java/lms-server/version/v32_7/src/main/resources/</loc>
-         <lastmod>2026-04-22</lastmod>
-    </url>
-    <url>
-         <loc>https://kim-hyunjin.github.io/study/language/java/lms-server/version/v32_7/src/test/resources/</loc>
          <lastmod>2026-04-22</lastmod>
     </url>
     <url>
@@ -3533,23 +3017,7 @@
          <lastmod>2026-04-22</lastmod>
     </url>
     <url>
-         <loc>https://kim-hyunjin.github.io/study/language/java/lms-server/version/v32_8/src/main/resources/</loc>
-         <lastmod>2026-04-22</lastmod>
-    </url>
-    <url>
-         <loc>https://kim-hyunjin.github.io/study/language/java/lms-server/version/v32_8/src/test/resources/</loc>
-         <lastmod>2026-04-22</lastmod>
-    </url>
-    <url>
          <loc>https://kim-hyunjin.github.io/study/language/java/lms-server/version/v32_9/</loc>
-         <lastmod>2026-04-22</lastmod>
-    </url>
-    <url>
-         <loc>https://kim-hyunjin.github.io/study/language/java/lms-server/version/v32_9/src/main/resources/</loc>
-         <lastmod>2026-04-22</lastmod>
-    </url>
-    <url>
-         <loc>https://kim-hyunjin.github.io/study/language/java/lms-server/version/v32_9/src/test/resources/</loc>
          <lastmod>2026-04-22</lastmod>
     </url>
     <url>
@@ -3557,23 +3025,7 @@
          <lastmod>2026-04-22</lastmod>
     </url>
     <url>
-         <loc>https://kim-hyunjin.github.io/study/language/java/lms-server/version/v33/src/main/resources/</loc>
-         <lastmod>2026-04-22</lastmod>
-    </url>
-    <url>
-         <loc>https://kim-hyunjin.github.io/study/language/java/lms-server/version/v33/src/test/resources/</loc>
-         <lastmod>2026-04-22</lastmod>
-    </url>
-    <url>
          <loc>https://kim-hyunjin.github.io/study/language/java/lms-server/version/v34/</loc>
-         <lastmod>2026-04-22</lastmod>
-    </url>
-    <url>
-         <loc>https://kim-hyunjin.github.io/study/language/java/lms-server/version/v34/src/main/resources/</loc>
-         <lastmod>2026-04-22</lastmod>
-    </url>
-    <url>
-         <loc>https://kim-hyunjin.github.io/study/language/java/lms-server/version/v34/src/test/resources/</loc>
          <lastmod>2026-04-22</lastmod>
     </url>
     <url>
@@ -3581,23 +3033,7 @@
          <lastmod>2026-04-22</lastmod>
     </url>
     <url>
-         <loc>https://kim-hyunjin.github.io/study/language/java/lms-server/version/v35/src/main/resources/</loc>
-         <lastmod>2026-04-22</lastmod>
-    </url>
-    <url>
-         <loc>https://kim-hyunjin.github.io/study/language/java/lms-server/version/v35/src/test/resources/</loc>
-         <lastmod>2026-04-22</lastmod>
-    </url>
-    <url>
          <loc>https://kim-hyunjin.github.io/study/language/java/lms-server/version/v37_1/</loc>
-         <lastmod>2026-04-22</lastmod>
-    </url>
-    <url>
-         <loc>https://kim-hyunjin.github.io/study/language/java/lms-server/version/v37_1/src/main/resources/</loc>
-         <lastmod>2026-04-22</lastmod>
-    </url>
-    <url>
-         <loc>https://kim-hyunjin.github.io/study/language/java/lms-server/version/v37_1/src/test/resources/</loc>
          <lastmod>2026-04-22</lastmod>
     </url>
     <url>
@@ -3605,23 +3041,7 @@
          <lastmod>2026-04-22</lastmod>
     </url>
     <url>
-         <loc>https://kim-hyunjin.github.io/study/language/java/lms-server/version/v37_2/src/main/resources/</loc>
-         <lastmod>2026-04-22</lastmod>
-    </url>
-    <url>
-         <loc>https://kim-hyunjin.github.io/study/language/java/lms-server/version/v37_2/src/test/resources/</loc>
-         <lastmod>2026-04-22</lastmod>
-    </url>
-    <url>
          <loc>https://kim-hyunjin.github.io/study/language/java/lms-server/version/v37_3/</loc>
-         <lastmod>2026-04-22</lastmod>
-    </url>
-    <url>
-         <loc>https://kim-hyunjin.github.io/study/language/java/lms-server/version/v37_3/src/main/resources/</loc>
-         <lastmod>2026-04-22</lastmod>
-    </url>
-    <url>
-         <loc>https://kim-hyunjin.github.io/study/language/java/lms-server/version/v37_3/src/test/resources/</loc>
          <lastmod>2026-04-22</lastmod>
     </url>
     <url>
@@ -3629,23 +3049,7 @@
          <lastmod>2026-04-22</lastmod>
     </url>
     <url>
-         <loc>https://kim-hyunjin.github.io/study/language/java/lms-server/version/v37_4/src/main/resources/</loc>
-         <lastmod>2026-04-22</lastmod>
-    </url>
-    <url>
-         <loc>https://kim-hyunjin.github.io/study/language/java/lms-server/version/v37_4/src/test/resources/</loc>
-         <lastmod>2026-04-22</lastmod>
-    </url>
-    <url>
          <loc>https://kim-hyunjin.github.io/study/language/java/lms-server/version/v37_5/</loc>
-         <lastmod>2026-04-22</lastmod>
-    </url>
-    <url>
-         <loc>https://kim-hyunjin.github.io/study/language/java/lms-server/version/v37_5/src/main/resources/</loc>
-         <lastmod>2026-04-22</lastmod>
-    </url>
-    <url>
-         <loc>https://kim-hyunjin.github.io/study/language/java/lms-server/version/v37_5/src/test/resources/</loc>
          <lastmod>2026-04-22</lastmod>
     </url>
     <url>
@@ -3653,23 +3057,7 @@
          <lastmod>2026-04-22</lastmod>
     </url>
     <url>
-         <loc>https://kim-hyunjin.github.io/study/language/java/lms-server/version/v38_1/src/main/resources/</loc>
-         <lastmod>2026-04-22</lastmod>
-    </url>
-    <url>
-         <loc>https://kim-hyunjin.github.io/study/language/java/lms-server/version/v38_1/src/test/resources/</loc>
-         <lastmod>2026-04-22</lastmod>
-    </url>
-    <url>
          <loc>https://kim-hyunjin.github.io/study/language/java/lms-server/version/v38_2/</loc>
-         <lastmod>2026-04-22</lastmod>
-    </url>
-    <url>
-         <loc>https://kim-hyunjin.github.io/study/language/java/lms-server/version/v38_2/src/main/resources/</loc>
-         <lastmod>2026-04-22</lastmod>
-    </url>
-    <url>
-         <loc>https://kim-hyunjin.github.io/study/language/java/lms-server/version/v38_2/src/test/resources/</loc>
          <lastmod>2026-04-22</lastmod>
     </url>
     <url>
@@ -3677,23 +3065,7 @@
          <lastmod>2026-04-22</lastmod>
     </url>
     <url>
-         <loc>https://kim-hyunjin.github.io/study/language/java/lms-server/version/v38_3/src/main/resources/</loc>
-         <lastmod>2026-04-22</lastmod>
-    </url>
-    <url>
-         <loc>https://kim-hyunjin.github.io/study/language/java/lms-server/version/v38_3/src/test/resources/</loc>
-         <lastmod>2026-04-22</lastmod>
-    </url>
-    <url>
          <loc>https://kim-hyunjin.github.io/study/language/java/lms-server/version/v38_4/</loc>
-         <lastmod>2026-04-22</lastmod>
-    </url>
-    <url>
-         <loc>https://kim-hyunjin.github.io/study/language/java/lms-server/version/v38_4/src/main/resources/</loc>
-         <lastmod>2026-04-22</lastmod>
-    </url>
-    <url>
-         <loc>https://kim-hyunjin.github.io/study/language/java/lms-server/version/v38_4/src/test/resources/</loc>
          <lastmod>2026-04-22</lastmod>
     </url>
     <url>
@@ -3701,23 +3073,7 @@
          <lastmod>2026-04-22</lastmod>
     </url>
     <url>
-         <loc>https://kim-hyunjin.github.io/study/language/java/lms-server/version/v39_1/src/main/resources/</loc>
-         <lastmod>2026-04-22</lastmod>
-    </url>
-    <url>
-         <loc>https://kim-hyunjin.github.io/study/language/java/lms-server/version/v39_1/src/test/resources/</loc>
-         <lastmod>2026-04-22</lastmod>
-    </url>
-    <url>
          <loc>https://kim-hyunjin.github.io/study/language/java/lms-server/version/v39_2/</loc>
-         <lastmod>2026-04-22</lastmod>
-    </url>
-    <url>
-         <loc>https://kim-hyunjin.github.io/study/language/java/lms-server/version/v39_2/src/main/resources/</loc>
-         <lastmod>2026-04-22</lastmod>
-    </url>
-    <url>
-         <loc>https://kim-hyunjin.github.io/study/language/java/lms-server/version/v39_2/src/test/resources/</loc>
          <lastmod>2026-04-22</lastmod>
     </url>
     <url>
@@ -3725,23 +3081,7 @@
          <lastmod>2026-04-22</lastmod>
     </url>
     <url>
-         <loc>https://kim-hyunjin.github.io/study/language/java/lms-server/version/v40_1/src/main/resources/</loc>
-         <lastmod>2026-04-22</lastmod>
-    </url>
-    <url>
-         <loc>https://kim-hyunjin.github.io/study/language/java/lms-server/version/v40_1/src/test/resources/</loc>
-         <lastmod>2026-04-22</lastmod>
-    </url>
-    <url>
          <loc>https://kim-hyunjin.github.io/study/language/java/lms-server/version/v40_2/</loc>
-         <lastmod>2026-04-22</lastmod>
-    </url>
-    <url>
-         <loc>https://kim-hyunjin.github.io/study/language/java/lms-server/version/v40_2/src/main/resources/</loc>
-         <lastmod>2026-04-22</lastmod>
-    </url>
-    <url>
-         <loc>https://kim-hyunjin.github.io/study/language/java/lms-server/version/v40_2/src/test/resources/</loc>
          <lastmod>2026-04-22</lastmod>
     </url>
     <url>
@@ -3749,23 +3089,7 @@
          <lastmod>2026-04-22</lastmod>
     </url>
     <url>
-         <loc>https://kim-hyunjin.github.io/study/language/java/lms-server/version/v40_3/src/main/resources/</loc>
-         <lastmod>2026-04-22</lastmod>
-    </url>
-    <url>
-         <loc>https://kim-hyunjin.github.io/study/language/java/lms-server/version/v40_3/src/test/resources/</loc>
-         <lastmod>2026-04-22</lastmod>
-    </url>
-    <url>
          <loc>https://kim-hyunjin.github.io/study/language/java/lms-server/version/v40_4/</loc>
-         <lastmod>2026-04-22</lastmod>
-    </url>
-    <url>
-         <loc>https://kim-hyunjin.github.io/study/language/java/lms-server/version/v40_4/src/main/resources/</loc>
-         <lastmod>2026-04-22</lastmod>
-    </url>
-    <url>
-         <loc>https://kim-hyunjin.github.io/study/language/java/lms-server/version/v40_4/src/test/resources/</loc>
          <lastmod>2026-04-22</lastmod>
     </url>
     <url>
@@ -3773,23 +3097,7 @@
          <lastmod>2026-04-22</lastmod>
     </url>
     <url>
-         <loc>https://kim-hyunjin.github.io/study/language/java/lms-server/version/v41_1/src/main/resources/</loc>
-         <lastmod>2026-04-22</lastmod>
-    </url>
-    <url>
-         <loc>https://kim-hyunjin.github.io/study/language/java/lms-server/version/v41_1/src/test/resources/</loc>
-         <lastmod>2026-04-22</lastmod>
-    </url>
-    <url>
          <loc>https://kim-hyunjin.github.io/study/language/java/lms-server/version/v41_2/</loc>
-         <lastmod>2026-04-22</lastmod>
-    </url>
-    <url>
-         <loc>https://kim-hyunjin.github.io/study/language/java/lms-server/version/v41_2/src/main/resources/</loc>
-         <lastmod>2026-04-22</lastmod>
-    </url>
-    <url>
-         <loc>https://kim-hyunjin.github.io/study/language/java/lms-server/version/v41_2/src/test/resources/</loc>
          <lastmod>2026-04-22</lastmod>
     </url>
     <url>
@@ -3797,23 +3105,7 @@
          <lastmod>2026-04-22</lastmod>
     </url>
     <url>
-         <loc>https://kim-hyunjin.github.io/study/language/java/lms-server/version/v42_1/src/main/resources/</loc>
-         <lastmod>2026-04-22</lastmod>
-    </url>
-    <url>
-         <loc>https://kim-hyunjin.github.io/study/language/java/lms-server/version/v42_1/src/test/resources/</loc>
-         <lastmod>2026-04-22</lastmod>
-    </url>
-    <url>
          <loc>https://kim-hyunjin.github.io/study/language/java/lms-server/version/v42_2/</loc>
-         <lastmod>2026-04-22</lastmod>
-    </url>
-    <url>
-         <loc>https://kim-hyunjin.github.io/study/language/java/lms-server/version/v42_2/src/main/resources/</loc>
-         <lastmod>2026-04-22</lastmod>
-    </url>
-    <url>
-         <loc>https://kim-hyunjin.github.io/study/language/java/lms-server/version/v42_2/src/test/resources/</loc>
          <lastmod>2026-04-22</lastmod>
     </url>
     <url>
@@ -3821,23 +3113,7 @@
          <lastmod>2026-04-22</lastmod>
     </url>
     <url>
-         <loc>https://kim-hyunjin.github.io/study/language/java/lms-server/version/v43_1/src/main/resources/</loc>
-         <lastmod>2026-04-22</lastmod>
-    </url>
-    <url>
-         <loc>https://kim-hyunjin.github.io/study/language/java/lms-server/version/v43_1/src/test/resources/</loc>
-         <lastmod>2026-04-22</lastmod>
-    </url>
-    <url>
          <loc>https://kim-hyunjin.github.io/study/language/java/lms-server/version/v43_2/</loc>
-         <lastmod>2026-04-22</lastmod>
-    </url>
-    <url>
-         <loc>https://kim-hyunjin.github.io/study/language/java/lms-server/version/v43_2/src/main/resources/</loc>
-         <lastmod>2026-04-22</lastmod>
-    </url>
-    <url>
-         <loc>https://kim-hyunjin.github.io/study/language/java/lms-server/version/v43_2/src/test/resources/</loc>
          <lastmod>2026-04-22</lastmod>
     </url>
     <url>
@@ -3845,23 +3121,7 @@
          <lastmod>2026-04-22</lastmod>
     </url>
     <url>
-         <loc>https://kim-hyunjin.github.io/study/language/java/lms-server/version/v43_3/src/main/resources/</loc>
-         <lastmod>2026-04-22</lastmod>
-    </url>
-    <url>
-         <loc>https://kim-hyunjin.github.io/study/language/java/lms-server/version/v43_3/src/test/resources/</loc>
-         <lastmod>2026-04-22</lastmod>
-    </url>
-    <url>
          <loc>https://kim-hyunjin.github.io/study/language/java/lms-server/version/v44_1/</loc>
-         <lastmod>2026-04-22</lastmod>
-    </url>
-    <url>
-         <loc>https://kim-hyunjin.github.io/study/language/java/lms-server/version/v44_1/src/main/resources/</loc>
-         <lastmod>2026-04-22</lastmod>
-    </url>
-    <url>
-         <loc>https://kim-hyunjin.github.io/study/language/java/lms-server/version/v44_1/src/test/resources/</loc>
          <lastmod>2026-04-22</lastmod>
     </url>
     <url>
@@ -3869,23 +3129,7 @@
          <lastmod>2026-04-22</lastmod>
     </url>
     <url>
-         <loc>https://kim-hyunjin.github.io/study/language/java/lms-server/version/v45_1/src/main/resources/</loc>
-         <lastmod>2026-04-22</lastmod>
-    </url>
-    <url>
-         <loc>https://kim-hyunjin.github.io/study/language/java/lms-server/version/v45_1/src/test/resources/</loc>
-         <lastmod>2026-04-22</lastmod>
-    </url>
-    <url>
          <loc>https://kim-hyunjin.github.io/study/language/java/lms-server/version/v45_2/</loc>
-         <lastmod>2026-04-22</lastmod>
-    </url>
-    <url>
-         <loc>https://kim-hyunjin.github.io/study/language/java/lms-server/version/v45_2/src/main/resources/</loc>
-         <lastmod>2026-04-22</lastmod>
-    </url>
-    <url>
-         <loc>https://kim-hyunjin.github.io/study/language/java/lms-server/version/v45_2/src/test/resources/</loc>
          <lastmod>2026-04-22</lastmod>
     </url>
     <url>
@@ -3893,23 +3137,7 @@
          <lastmod>2026-04-22</lastmod>
     </url>
     <url>
-         <loc>https://kim-hyunjin.github.io/study/language/java/lms-server/version/v46_1/src/main/resources/</loc>
-         <lastmod>2026-04-22</lastmod>
-    </url>
-    <url>
-         <loc>https://kim-hyunjin.github.io/study/language/java/lms-server/version/v46_1/src/test/resources/</loc>
-         <lastmod>2026-04-22</lastmod>
-    </url>
-    <url>
          <loc>https://kim-hyunjin.github.io/study/language/java/lms-server/version/v50_1/</loc>
-         <lastmod>2026-04-22</lastmod>
-    </url>
-    <url>
-         <loc>https://kim-hyunjin.github.io/study/language/java/lms-server/version/v50_1/src/main/resources/</loc>
-         <lastmod>2026-04-22</lastmod>
-    </url>
-    <url>
-         <loc>https://kim-hyunjin.github.io/study/language/java/lms-server/version/v50_1/src/test/resources/</loc>
          <lastmod>2026-04-22</lastmod>
     </url>
     <url>
@@ -3917,23 +3145,7 @@
          <lastmod>2026-04-22</lastmod>
     </url>
     <url>
-         <loc>https://kim-hyunjin.github.io/study/language/java/lms-server/version/v51_1/src/main/resources/</loc>
-         <lastmod>2026-04-22</lastmod>
-    </url>
-    <url>
-         <loc>https://kim-hyunjin.github.io/study/language/java/lms-server/version/v51_1/src/test/resources/</loc>
-         <lastmod>2026-04-22</lastmod>
-    </url>
-    <url>
          <loc>https://kim-hyunjin.github.io/study/language/java/lms-server/version/v51_2/</loc>
-         <lastmod>2026-04-22</lastmod>
-    </url>
-    <url>
-         <loc>https://kim-hyunjin.github.io/study/language/java/lms-server/version/v51_2/src/main/resources/</loc>
-         <lastmod>2026-04-22</lastmod>
-    </url>
-    <url>
-         <loc>https://kim-hyunjin.github.io/study/language/java/lms-server/version/v51_2/src/test/resources/</loc>
          <lastmod>2026-04-22</lastmod>
     </url>
     <url>
@@ -3941,23 +3153,7 @@
          <lastmod>2026-04-22</lastmod>
     </url>
     <url>
-         <loc>https://kim-hyunjin.github.io/study/language/java/lms-server/version/v52_1/src/main/resources/</loc>
-         <lastmod>2026-04-22</lastmod>
-    </url>
-    <url>
-         <loc>https://kim-hyunjin.github.io/study/language/java/lms-server/version/v52_1/src/test/resources/</loc>
-         <lastmod>2026-04-22</lastmod>
-    </url>
-    <url>
          <loc>https://kim-hyunjin.github.io/study/language/java/lms-server/version/v53_1/</loc>
-         <lastmod>2026-04-22</lastmod>
-    </url>
-    <url>
-         <loc>https://kim-hyunjin.github.io/study/language/java/lms-server/version/v53_1/src/main/resources/</loc>
-         <lastmod>2026-04-22</lastmod>
-    </url>
-    <url>
-         <loc>https://kim-hyunjin.github.io/study/language/java/lms-server/version/v53_1/src/test/resources/</loc>
          <lastmod>2026-04-22</lastmod>
     </url>
     <url>
@@ -3965,23 +3161,7 @@
          <lastmod>2026-04-22</lastmod>
     </url>
     <url>
-         <loc>https://kim-hyunjin.github.io/study/language/java/lms-server/version/v53_2/src/main/resources/</loc>
-         <lastmod>2026-04-22</lastmod>
-    </url>
-    <url>
-         <loc>https://kim-hyunjin.github.io/study/language/java/lms-server/version/v53_2/src/test/resources/</loc>
-         <lastmod>2026-04-22</lastmod>
-    </url>
-    <url>
          <loc>https://kim-hyunjin.github.io/study/language/java/lms-server/version/v54_1/</loc>
-         <lastmod>2026-04-22</lastmod>
-    </url>
-    <url>
-         <loc>https://kim-hyunjin.github.io/study/language/java/lms-server/version/v54_1/src/main/resources/</loc>
-         <lastmod>2026-04-22</lastmod>
-    </url>
-    <url>
-         <loc>https://kim-hyunjin.github.io/study/language/java/lms-server/version/v54_1/src/test/resources/</loc>
          <lastmod>2026-04-22</lastmod>
     </url>
     <url>
@@ -3989,23 +3169,7 @@
          <lastmod>2026-04-22</lastmod>
     </url>
     <url>
-         <loc>https://kim-hyunjin.github.io/study/language/java/lms-server/version/v54_2/src/main/resources/</loc>
-         <lastmod>2026-04-22</lastmod>
-    </url>
-    <url>
-         <loc>https://kim-hyunjin.github.io/study/language/java/lms-server/version/v54_2/src/test/resources/</loc>
-         <lastmod>2026-04-22</lastmod>
-    </url>
-    <url>
          <loc>https://kim-hyunjin.github.io/study/language/java/lms-server/version/v54_3/</loc>
-         <lastmod>2026-04-22</lastmod>
-    </url>
-    <url>
-         <loc>https://kim-hyunjin.github.io/study/language/java/lms-server/version/v54_3/src/main/resources/</loc>
-         <lastmod>2026-04-22</lastmod>
-    </url>
-    <url>
-         <loc>https://kim-hyunjin.github.io/study/language/java/lms-server/version/v54_3/src/test/resources/</loc>
          <lastmod>2026-04-22</lastmod>
     </url>
     <url>
@@ -4013,23 +3177,7 @@
          <lastmod>2026-04-22</lastmod>
     </url>
     <url>
-         <loc>https://kim-hyunjin.github.io/study/language/java/lms-server/version/v55_1/src/main/resources/</loc>
-         <lastmod>2026-04-22</lastmod>
-    </url>
-    <url>
-         <loc>https://kim-hyunjin.github.io/study/language/java/lms-server/version/v55_1/src/test/resources/</loc>
-         <lastmod>2026-04-22</lastmod>
-    </url>
-    <url>
          <loc>https://kim-hyunjin.github.io/study/language/java/lms-server/version/v55_2/</loc>
-         <lastmod>2026-04-22</lastmod>
-    </url>
-    <url>
-         <loc>https://kim-hyunjin.github.io/study/language/java/lms-server/version/v55_2/src/main/resources/</loc>
-         <lastmod>2026-04-22</lastmod>
-    </url>
-    <url>
-         <loc>https://kim-hyunjin.github.io/study/language/java/lms-server/version/v55_2/src/test/resources/</loc>
          <lastmod>2026-04-22</lastmod>
     </url>
     <url>
@@ -4037,23 +3185,7 @@
          <lastmod>2026-04-22</lastmod>
     </url>
     <url>
-         <loc>https://kim-hyunjin.github.io/study/language/java/lms-server/version/v56_1/src/main/resources/</loc>
-         <lastmod>2026-04-22</lastmod>
-    </url>
-    <url>
-         <loc>https://kim-hyunjin.github.io/study/language/java/lms-server/version/v56_1/src/test/resources/</loc>
-         <lastmod>2026-04-22</lastmod>
-    </url>
-    <url>
          <loc>https://kim-hyunjin.github.io/study/language/java/lms-server/version/v56_2/</loc>
-         <lastmod>2026-04-22</lastmod>
-    </url>
-    <url>
-         <loc>https://kim-hyunjin.github.io/study/language/java/lms-server/version/v56_2/src/main/resources/</loc>
-         <lastmod>2026-04-22</lastmod>
-    </url>
-    <url>
-         <loc>https://kim-hyunjin.github.io/study/language/java/lms-server/version/v56_2/src/test/resources/</loc>
          <lastmod>2026-04-22</lastmod>
     </url>
     <url>
@@ -4061,23 +3193,7 @@
          <lastmod>2026-04-22</lastmod>
     </url>
     <url>
-         <loc>https://kim-hyunjin.github.io/study/language/java/lms-server/version/v56_3/src/main/resources/</loc>
-         <lastmod>2026-04-22</lastmod>
-    </url>
-    <url>
-         <loc>https://kim-hyunjin.github.io/study/language/java/lms-server/version/v56_3/src/test/resources/</loc>
-         <lastmod>2026-04-22</lastmod>
-    </url>
-    <url>
          <loc>https://kim-hyunjin.github.io/study/language/java/lms-server/version/v56_4/</loc>
-         <lastmod>2026-04-22</lastmod>
-    </url>
-    <url>
-         <loc>https://kim-hyunjin.github.io/study/language/java/lms-server/version/v56_4/src/main/resources/</loc>
-         <lastmod>2026-04-22</lastmod>
-    </url>
-    <url>
-         <loc>https://kim-hyunjin.github.io/study/language/java/lms-server/version/v56_4/src/test/resources/</loc>
          <lastmod>2026-04-22</lastmod>
     </url>
     <url>
@@ -4085,23 +3201,7 @@
          <lastmod>2026-04-22</lastmod>
     </url>
     <url>
-         <loc>https://kim-hyunjin.github.io/study/language/java/lms-server/version/v56_5/src/main/resources/</loc>
-         <lastmod>2026-04-22</lastmod>
-    </url>
-    <url>
-         <loc>https://kim-hyunjin.github.io/study/language/java/lms-server/version/v56_5/src/test/resources/</loc>
-         <lastmod>2026-04-22</lastmod>
-    </url>
-    <url>
          <loc>https://kim-hyunjin.github.io/study/language/java/lms-server/version/v56_6/</loc>
-         <lastmod>2026-04-22</lastmod>
-    </url>
-    <url>
-         <loc>https://kim-hyunjin.github.io/study/language/java/lms-server/version/v56_6/src/main/resources/</loc>
-         <lastmod>2026-04-22</lastmod>
-    </url>
-    <url>
-         <loc>https://kim-hyunjin.github.io/study/language/java/lms-server/version/v56_6/src/test/resources/</loc>
          <lastmod>2026-04-22</lastmod>
     </url>
     <url>
@@ -4109,31 +3209,7 @@
          <lastmod>2026-04-22</lastmod>
     </url>
     <url>
-         <loc>https://kim-hyunjin.github.io/study/language/java/lms-server/version/v56_7/src/main/resources/</loc>
-         <lastmod>2026-04-22</lastmod>
-    </url>
-    <url>
-         <loc>https://kim-hyunjin.github.io/study/language/java/lms-server/version/v56_7/src/test/resources/</loc>
-         <lastmod>2026-04-22</lastmod>
-    </url>
-    <url>
          <loc>https://kim-hyunjin.github.io/study/language/java/lms-server/version/v56_8/</loc>
-         <lastmod>2026-04-22</lastmod>
-    </url>
-    <url>
-         <loc>https://kim-hyunjin.github.io/study/language/java/lms-server/version/v56_8/src/main/resources/</loc>
-         <lastmod>2026-04-22</lastmod>
-    </url>
-    <url>
-         <loc>https://kim-hyunjin.github.io/study/language/java/lms-server/version/v56_8/src/main/webapp/upload/member/</loc>
-         <lastmod>2026-04-22</lastmod>
-    </url>
-    <url>
-         <loc>https://kim-hyunjin.github.io/study/language/java/lms-server/version/v56_8/src/main/webapp/upload/photoboard/</loc>
-         <lastmod>2026-04-22</lastmod>
-    </url>
-    <url>
-         <loc>https://kim-hyunjin.github.io/study/language/java/lms-server/version/v56_8/src/test/resources/</loc>
          <lastmod>2026-04-22</lastmod>
     </url>
     <url>
@@ -4141,39 +3217,7 @@
          <lastmod>2026-04-22</lastmod>
     </url>
     <url>
-         <loc>https://kim-hyunjin.github.io/study/language/java/lms-server/version/v57_1/src/main/resources/</loc>
-         <lastmod>2026-04-22</lastmod>
-    </url>
-    <url>
-         <loc>https://kim-hyunjin.github.io/study/language/java/lms-server/version/v57_1/src/main/webapp/upload/member/</loc>
-         <lastmod>2026-04-22</lastmod>
-    </url>
-    <url>
-         <loc>https://kim-hyunjin.github.io/study/language/java/lms-server/version/v57_1/src/main/webapp/upload/photoboard/</loc>
-         <lastmod>2026-04-22</lastmod>
-    </url>
-    <url>
-         <loc>https://kim-hyunjin.github.io/study/language/java/lms-server/version/v57_1/src/test/resources/</loc>
-         <lastmod>2026-04-22</lastmod>
-    </url>
-    <url>
          <loc>https://kim-hyunjin.github.io/study/language/java/lms-server/version/v57_2/</loc>
-         <lastmod>2026-04-22</lastmod>
-    </url>
-    <url>
-         <loc>https://kim-hyunjin.github.io/study/language/java/lms-server/version/v57_2/src/main/resources/</loc>
-         <lastmod>2026-04-22</lastmod>
-    </url>
-    <url>
-         <loc>https://kim-hyunjin.github.io/study/language/java/lms-server/version/v57_2/src/main/webapp/upload/member/</loc>
-         <lastmod>2026-04-22</lastmod>
-    </url>
-    <url>
-         <loc>https://kim-hyunjin.github.io/study/language/java/lms-server/version/v57_2/src/main/webapp/upload/photoboard/</loc>
-         <lastmod>2026-04-22</lastmod>
-    </url>
-    <url>
-         <loc>https://kim-hyunjin.github.io/study/language/java/lms-server/version/v57_2/src/test/resources/</loc>
          <lastmod>2026-04-22</lastmod>
     </url>
     <url>
@@ -4181,39 +3225,7 @@
          <lastmod>2026-04-22</lastmod>
     </url>
     <url>
-         <loc>https://kim-hyunjin.github.io/study/language/java/lms-server/version/v57_3/src/main/resources/</loc>
-         <lastmod>2026-04-22</lastmod>
-    </url>
-    <url>
-         <loc>https://kim-hyunjin.github.io/study/language/java/lms-server/version/v57_3/src/main/webapp/upload/member/</loc>
-         <lastmod>2026-04-22</lastmod>
-    </url>
-    <url>
-         <loc>https://kim-hyunjin.github.io/study/language/java/lms-server/version/v57_3/src/main/webapp/upload/photoboard/</loc>
-         <lastmod>2026-04-22</lastmod>
-    </url>
-    <url>
-         <loc>https://kim-hyunjin.github.io/study/language/java/lms-server/version/v57_3/src/test/resources/</loc>
-         <lastmod>2026-04-22</lastmod>
-    </url>
-    <url>
          <loc>https://kim-hyunjin.github.io/study/language/java/lms-server/version/v58_1/</loc>
-         <lastmod>2026-04-22</lastmod>
-    </url>
-    <url>
-         <loc>https://kim-hyunjin.github.io/study/language/java/lms-server/version/v58_1/src/main/resources/</loc>
-         <lastmod>2026-04-22</lastmod>
-    </url>
-    <url>
-         <loc>https://kim-hyunjin.github.io/study/language/java/lms-server/version/v58_1/src/main/webapp/upload/member/</loc>
-         <lastmod>2026-04-22</lastmod>
-    </url>
-    <url>
-         <loc>https://kim-hyunjin.github.io/study/language/java/lms-server/version/v58_1/src/main/webapp/upload/photoboard/</loc>
-         <lastmod>2026-04-22</lastmod>
-    </url>
-    <url>
-         <loc>https://kim-hyunjin.github.io/study/language/java/lms-server/version/v58_1/src/test/resources/</loc>
          <lastmod>2026-04-22</lastmod>
     </url>
     <url>
@@ -4221,39 +3233,7 @@
          <lastmod>2026-04-22</lastmod>
     </url>
     <url>
-         <loc>https://kim-hyunjin.github.io/study/language/java/lms-server/version/v58_3/src/main/resources/</loc>
-         <lastmod>2026-04-22</lastmod>
-    </url>
-    <url>
-         <loc>https://kim-hyunjin.github.io/study/language/java/lms-server/version/v58_3/src/main/webapp/upload/member/</loc>
-         <lastmod>2026-04-22</lastmod>
-    </url>
-    <url>
-         <loc>https://kim-hyunjin.github.io/study/language/java/lms-server/version/v58_3/src/main/webapp/upload/photoboard/</loc>
-         <lastmod>2026-04-22</lastmod>
-    </url>
-    <url>
-         <loc>https://kim-hyunjin.github.io/study/language/java/lms-server/version/v58_3/src/test/resources/</loc>
-         <lastmod>2026-04-22</lastmod>
-    </url>
-    <url>
          <loc>https://kim-hyunjin.github.io/study/language/java/lms-server/version/v58_4/</loc>
-         <lastmod>2026-04-22</lastmod>
-    </url>
-    <url>
-         <loc>https://kim-hyunjin.github.io/study/language/java/lms-server/version/v58_4/src/main/resources/</loc>
-         <lastmod>2026-04-22</lastmod>
-    </url>
-    <url>
-         <loc>https://kim-hyunjin.github.io/study/language/java/lms-server/version/v58_4/src/main/webapp/upload/member/</loc>
-         <lastmod>2026-04-22</lastmod>
-    </url>
-    <url>
-         <loc>https://kim-hyunjin.github.io/study/language/java/lms-server/version/v58_4/src/main/webapp/upload/photoboard/</loc>
-         <lastmod>2026-04-22</lastmod>
-    </url>
-    <url>
-         <loc>https://kim-hyunjin.github.io/study/language/java/lms-server/version/v58_4/src/test/resources/</loc>
          <lastmod>2026-04-22</lastmod>
     </url>
     <url>
@@ -4261,39 +3241,7 @@
          <lastmod>2026-04-22</lastmod>
     </url>
     <url>
-         <loc>https://kim-hyunjin.github.io/study/language/java/lms-server/version/v59_1/src/main/resources/</loc>
-         <lastmod>2026-04-22</lastmod>
-    </url>
-    <url>
-         <loc>https://kim-hyunjin.github.io/study/language/java/lms-server/version/v59_1/src/main/webapp/upload/member/</loc>
-         <lastmod>2026-04-22</lastmod>
-    </url>
-    <url>
-         <loc>https://kim-hyunjin.github.io/study/language/java/lms-server/version/v59_1/src/main/webapp/upload/photoboard/</loc>
-         <lastmod>2026-04-22</lastmod>
-    </url>
-    <url>
-         <loc>https://kim-hyunjin.github.io/study/language/java/lms-server/version/v59_1/src/test/resources/</loc>
-         <lastmod>2026-04-22</lastmod>
-    </url>
-    <url>
          <loc>https://kim-hyunjin.github.io/study/language/java/lms-server/version/v60_1/</loc>
-         <lastmod>2026-04-22</lastmod>
-    </url>
-    <url>
-         <loc>https://kim-hyunjin.github.io/study/language/java/lms-server/version/v60_1/src/main/resources/</loc>
-         <lastmod>2026-04-22</lastmod>
-    </url>
-    <url>
-         <loc>https://kim-hyunjin.github.io/study/language/java/lms-server/version/v60_1/src/main/webapp/upload/member/</loc>
-         <lastmod>2026-04-22</lastmod>
-    </url>
-    <url>
-         <loc>https://kim-hyunjin.github.io/study/language/java/lms-server/version/v60_1/src/main/webapp/upload/photoboard/</loc>
-         <lastmod>2026-04-22</lastmod>
-    </url>
-    <url>
-         <loc>https://kim-hyunjin.github.io/study/language/java/lms-server/version/v60_1/src/test/resources/</loc>
          <lastmod>2026-04-22</lastmod>
     </url>
     <url>
@@ -4318,10 +3266,6 @@
     </url>
     <url>
          <loc>https://kim-hyunjin.github.io/study/language/java/myproject/src/main/resources/</loc>
-         <lastmod>2026-04-22</lastmod>
-    </url>
-    <url>
-         <loc>https://kim-hyunjin.github.io/study/language/java/myproject/src/test/java/</loc>
          <lastmod>2026-04-22</lastmod>
     </url>
     <url>
@@ -4353,10 +3297,6 @@
          <lastmod>2026-04-22</lastmod>
     </url>
     <url>
-         <loc>https://kim-hyunjin.github.io/study/language/java/myproject/version/v05/src/test/java/</loc>
-         <lastmod>2026-04-22</lastmod>
-    </url>
-    <url>
          <loc>https://kim-hyunjin.github.io/study/language/java/myproject/version/v05/src/test/resources/</loc>
          <lastmod>2026-04-22</lastmod>
     </url>
@@ -4366,10 +3306,6 @@
     </url>
     <url>
          <loc>https://kim-hyunjin.github.io/study/language/java/myproject/version/v06/src/main/resources/</loc>
-         <lastmod>2026-04-22</lastmod>
-    </url>
-    <url>
-         <loc>https://kim-hyunjin.github.io/study/language/java/myproject/version/v06/src/test/java/</loc>
          <lastmod>2026-04-22</lastmod>
     </url>
     <url>
@@ -4417,175 +3353,7 @@
          <lastmod>2026-04-22</lastmod>
     </url>
     <url>
-         <loc>https://kim-hyunjin.github.io/study/language/java/reflection/api-test-getters/</loc>
-         <lastmod>2026-04-22</lastmod>
-    </url>
-    <url>
          <loc>https://kim-hyunjin.github.io/study/language/java/spring-webmvc/</loc>
-         <lastmod>2026-04-22</lastmod>
-    </url>
-    <url>
-         <loc>https://kim-hyunjin.github.io/study/language/java/spring-webmvc/src/main/resources/</loc>
-         <lastmod>2026-04-22</lastmod>
-    </url>
-    <url>
-         <loc>https://kim-hyunjin.github.io/study/language/java/spring-webmvc/src/test/java/bitcamp/</loc>
-         <lastmod>2026-04-22</lastmod>
-    </url>
-    <url>
-         <loc>https://kim-hyunjin.github.io/study/language/java/spring-webmvc/src/test/resources/</loc>
-         <lastmod>2026-04-22</lastmod>
-    </url>
-    <url>
-         <loc>https://kim-hyunjin.github.io/study/language/java/spring-webmvc/src-01/main/resources/</loc>
-         <lastmod>2026-04-22</lastmod>
-    </url>
-    <url>
-         <loc>https://kim-hyunjin.github.io/study/language/java/spring-webmvc/src-01/test/java/bitcamp/</loc>
-         <lastmod>2026-04-22</lastmod>
-    </url>
-    <url>
-         <loc>https://kim-hyunjin.github.io/study/language/java/spring-webmvc/src-01/test/resources/</loc>
-         <lastmod>2026-04-22</lastmod>
-    </url>
-    <url>
-         <loc>https://kim-hyunjin.github.io/study/language/java/spring-webmvc/src-02/main/resources/</loc>
-         <lastmod>2026-04-22</lastmod>
-    </url>
-    <url>
-         <loc>https://kim-hyunjin.github.io/study/language/java/spring-webmvc/src-02/test/java/bitcamp/</loc>
-         <lastmod>2026-04-22</lastmod>
-    </url>
-    <url>
-         <loc>https://kim-hyunjin.github.io/study/language/java/spring-webmvc/src-02/test/resources/</loc>
-         <lastmod>2026-04-22</lastmod>
-    </url>
-    <url>
-         <loc>https://kim-hyunjin.github.io/study/language/java/spring-webmvc/src-03/main/resources/</loc>
-         <lastmod>2026-04-22</lastmod>
-    </url>
-    <url>
-         <loc>https://kim-hyunjin.github.io/study/language/java/spring-webmvc/src-03/test/java/bitcamp/</loc>
-         <lastmod>2026-04-22</lastmod>
-    </url>
-    <url>
-         <loc>https://kim-hyunjin.github.io/study/language/java/spring-webmvc/src-03/test/resources/</loc>
-         <lastmod>2026-04-22</lastmod>
-    </url>
-    <url>
-         <loc>https://kim-hyunjin.github.io/study/language/java/spring-webmvc/src-04/main/resources/</loc>
-         <lastmod>2026-04-22</lastmod>
-    </url>
-    <url>
-         <loc>https://kim-hyunjin.github.io/study/language/java/spring-webmvc/src-04/test/java/bitcamp/</loc>
-         <lastmod>2026-04-22</lastmod>
-    </url>
-    <url>
-         <loc>https://kim-hyunjin.github.io/study/language/java/spring-webmvc/src-04/test/resources/</loc>
-         <lastmod>2026-04-22</lastmod>
-    </url>
-    <url>
-         <loc>https://kim-hyunjin.github.io/study/language/java/spring-webmvc/src-05/main/resources/</loc>
-         <lastmod>2026-04-22</lastmod>
-    </url>
-    <url>
-         <loc>https://kim-hyunjin.github.io/study/language/java/spring-webmvc/src-05/test/java/bitcamp/</loc>
-         <lastmod>2026-04-22</lastmod>
-    </url>
-    <url>
-         <loc>https://kim-hyunjin.github.io/study/language/java/spring-webmvc/src-05/test/resources/</loc>
-         <lastmod>2026-04-22</lastmod>
-    </url>
-    <url>
-         <loc>https://kim-hyunjin.github.io/study/language/java/spring-webmvc/src-06/main/resources/</loc>
-         <lastmod>2026-04-22</lastmod>
-    </url>
-    <url>
-         <loc>https://kim-hyunjin.github.io/study/language/java/spring-webmvc/src-06/test/java/bitcamp/</loc>
-         <lastmod>2026-04-22</lastmod>
-    </url>
-    <url>
-         <loc>https://kim-hyunjin.github.io/study/language/java/spring-webmvc/src-06/test/resources/</loc>
-         <lastmod>2026-04-22</lastmod>
-    </url>
-    <url>
-         <loc>https://kim-hyunjin.github.io/study/language/java/spring-webmvc/src-07/main/resources/</loc>
-         <lastmod>2026-04-22</lastmod>
-    </url>
-    <url>
-         <loc>https://kim-hyunjin.github.io/study/language/java/spring-webmvc/src-07/test/java/bitcamp/</loc>
-         <lastmod>2026-04-22</lastmod>
-    </url>
-    <url>
-         <loc>https://kim-hyunjin.github.io/study/language/java/spring-webmvc/src-07/test/resources/</loc>
-         <lastmod>2026-04-22</lastmod>
-    </url>
-    <url>
-         <loc>https://kim-hyunjin.github.io/study/language/java/spring-webmvc/src-08/main/resources/</loc>
-         <lastmod>2026-04-22</lastmod>
-    </url>
-    <url>
-         <loc>https://kim-hyunjin.github.io/study/language/java/spring-webmvc/src-08/test/java/bitcamp/</loc>
-         <lastmod>2026-04-22</lastmod>
-    </url>
-    <url>
-         <loc>https://kim-hyunjin.github.io/study/language/java/spring-webmvc/src-08/test/resources/</loc>
-         <lastmod>2026-04-22</lastmod>
-    </url>
-    <url>
-         <loc>https://kim-hyunjin.github.io/study/language/java/spring-webmvc/src-09/main/resources/</loc>
-         <lastmod>2026-04-22</lastmod>
-    </url>
-    <url>
-         <loc>https://kim-hyunjin.github.io/study/language/java/spring-webmvc/src-09/test/java/bitcamp/</loc>
-         <lastmod>2026-04-22</lastmod>
-    </url>
-    <url>
-         <loc>https://kim-hyunjin.github.io/study/language/java/spring-webmvc/src-09/test/resources/</loc>
-         <lastmod>2026-04-22</lastmod>
-    </url>
-    <url>
-         <loc>https://kim-hyunjin.github.io/study/language/java/spring-webmvc/src-10/main/resources/</loc>
-         <lastmod>2026-04-22</lastmod>
-    </url>
-    <url>
-         <loc>https://kim-hyunjin.github.io/study/language/java/spring-webmvc/src-10/test/java/bitcamp/</loc>
-         <lastmod>2026-04-22</lastmod>
-    </url>
-    <url>
-         <loc>https://kim-hyunjin.github.io/study/language/java/spring-webmvc/src-10/test/resources/</loc>
-         <lastmod>2026-04-22</lastmod>
-    </url>
-    <url>
-         <loc>https://kim-hyunjin.github.io/study/language/java/spring-webmvc/src-11/main/resources/</loc>
-         <lastmod>2026-04-22</lastmod>
-    </url>
-    <url>
-         <loc>https://kim-hyunjin.github.io/study/language/java/spring-webmvc/src-11/test/java/bitcamp/</loc>
-         <lastmod>2026-04-22</lastmod>
-    </url>
-    <url>
-         <loc>https://kim-hyunjin.github.io/study/language/java/spring-webmvc/src-11/test/resources/</loc>
-         <lastmod>2026-04-22</lastmod>
-    </url>
-    <url>
-         <loc>https://kim-hyunjin.github.io/study/language/java/spring-webmvc/src-12/main/resources/</loc>
-         <lastmod>2026-04-22</lastmod>
-    </url>
-    <url>
-         <loc>https://kim-hyunjin.github.io/study/language/java/spring-webmvc/src-12/test/java/bitcamp/</loc>
-         <lastmod>2026-04-22</lastmod>
-    </url>
-    <url>
-         <loc>https://kim-hyunjin.github.io/study/language/java/spring-webmvc/src-12/test/resources/</loc>
-         <lastmod>2026-04-22</lastmod>
-    </url>
-    <url>
-         <loc>https://kim-hyunjin.github.io/study/language/java/web-basic/src/main/webapp/upload/</loc>
-         <lastmod>2026-04-22</lastmod>
-    </url>
-    <url>
-         <loc>https://kim-hyunjin.github.io/study/language/javascript/js-ninja/</loc>
          <lastmod>2026-04-22</lastmod>
     </url>
     <url>
@@ -4825,10 +3593,6 @@
          <lastmod>2026-04-22</lastmod>
     </url>
     <url>
-         <loc>https://kim-hyunjin.github.io/study/mobile/ios/swift-learning/</loc>
-         <lastmod>2026-04-22</lastmod>
-    </url>
-    <url>
          <loc>https://kim-hyunjin.github.io/study/mobile/ios/udemy/AutoLayout/</loc>
          <lastmod>2026-04-22</lastmod>
     </url>
@@ -4861,15 +3625,7 @@
          <lastmod>2026-04-22</lastmod>
     </url>
     <url>
-         <loc>https://kim-hyunjin.github.io/study/mobile/ios/udemy/i-am-rich/</loc>
-         <lastmod>2026-04-22</lastmod>
-    </url>
-    <url>
          <loc>https://kim-hyunjin.github.io/study/mobile/react-native/</loc>
-         <lastmod>2026-04-22</lastmod>
-    </url>
-    <url>
-         <loc>https://kim-hyunjin.github.io/study/mobile/react-native/RNNoExpo/</loc>
          <lastmod>2026-04-22</lastmod>
     </url>
     <url>

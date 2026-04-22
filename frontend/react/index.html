@@ -6,7 +6,7 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="학습한 내용을 기록하고 공유하는 기술 블로그입니다.">
+        <meta name="description" content="React의 핵심 개념인 컴포넌트 생명주기, Hooks, 상태 관리(Redux, Context API) 및 성능 최적화와 SSR 실무 패턴 요약">
       
       
         <meta name="author" content="kim-hyunjin">
@@ -25,7 +25,7 @@
     
     
       
-        <title>react practice - Study Log & Blog</title>
+        <title>React 실무 가이드 및 디자인 패턴 - Study Log & Blog</title>
       
     
     
@@ -76,7 +76,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#react-practice" class="md-skip">
+        <a href="#react" class="md-skip">
           콘텐츠로 이동
         </a>
       
@@ -110,7 +110,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              react practice
+              React 실무 가이드 및 디자인 패턴
             
           </span>
         </div>
@@ -232,7 +232,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../backend/README.md" class="md-tabs__link">
+        <a href="../../backend/" class="md-tabs__link">
           
   
   
@@ -434,25 +434,6 @@
   
 
       
-        
-  
-  
-  
-  
-    <li class="md-tabs__item">
-      <a href="../../todo/" class="md-tabs__link">
-        
-  
-  
-    
-  
-  Project Roadmap
-
-      </a>
-    </li>
-  
-
-      
     </ul>
   </div>
 </nav>
@@ -574,7 +555,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../backend/README.md" class="md-nav__link">
+      <a href="../../backend/" class="md-nav__link">
         
   
   
@@ -2747,14 +2728,14 @@
   
   
     <li class="md-nav__item">
-      <a href="../../ai/deeplearning-master/ch02 딥러닝의 핵심 미리보기.ipynb" class="md-nav__link">
+      <a href="../../ai/deeplearning-master/ch02%20%EB%94%A5%EB%9F%AC%EB%8B%9D%EC%9D%98%20%ED%95%B5%EC%8B%AC%20%EB%AF%B8%EB%A6%AC%EB%B3%B4%EA%B8%B0/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    Deep Learning Concepts
+    2장. 딥러닝 핵심 미리보기
   
 
     
@@ -3788,33 +3769,6 @@
   
 
     
-      
-      
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../todo/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Project Roadmap
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-    
   </ul>
 </nav>
                   </div>
@@ -3835,6 +3789,164 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      목차
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🚀 개요
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        💡 1. 핵심 개념 및 컴포넌트 설계
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="💡 1. 핵심 개념 및 컴포넌트 설계">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        컴포넌트와 데이터 흐름
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#hooks" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        생명주기 및 Hooks
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-state-management" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🛠️ 2. 상태 관리 패턴 (State Management)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🛠️ 2. 상태 관리 패턴 (State Management)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#context-api" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Context API
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#redux-with-redux-toolkit" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Redux (with Redux Toolkit)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ⚡ 3. 성능 최적화 및 고급 기법
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="⚡ 3. 성능 최적화 및 고급 기법">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        렌더링 성능 최적화
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        라우팅 및 코드 분할
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🌐 4. 실무 프로젝트 실습
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        📝 배운 점 및 결론
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -3850,14 +3962,76 @@
 
 
 
-<h1 id="react-practice">react practice<a class="headerlink" href="#react-practice" title="Permanent link">&para;</a></h1>
-<p>patiently, persistently, you are bound to succeed</p>
+<h1 id="react">React 실무 가이드 및 디자인 패턴<a class="headerlink" href="#react" title="Permanent link">&para;</a></h1>
+<h2 id="_1">🚀 개요<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
+<p>React는 컴포넌트 기반의 UI 라이브러리로, 현대적인 프런트엔드 개발의 표준입니다. 본 문서는 React의 기초부터 고급 성능 최적화 기법, 다양한 상태 관리 패턴, 그리고 서버 사이드 렌더링(SSR) 및 백엔드 연동 실습 내용을 정리한 종합 가이드입니다.</p>
+<hr />
+<h2 id="1">💡 1. 핵심 개념 및 컴포넌트 설계<a class="headerlink" href="#1" title="Permanent link">&para;</a></h2>
+<h3 id="_2">컴포넌트와 데이터 흐름<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Props &amp; State:</strong> 부모-자식 간의 데이터 전달과 컴포넌트 자체 상태 관리의 원리.</li>
+<li><strong>Event Handling:</strong> React만의 합성 이벤트(Synthetic Event) 시스템 이해.</li>
+<li><strong>Ref:</strong> DOM에 직접 접근하거나 렌더링과 관계없는 값을 관리하는 방법.</li>
+</ul>
+<h3 id="hooks">생명주기 및 Hooks<a class="headerlink" href="#hooks" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>LifeCycle:</strong> 클래스형 컴포넌트의 마운트, 업데이트, 언마운트 과정.</li>
+<li><strong>Hooks:</strong> <code>useState</code>, <code>useEffect</code>, <code>useMemo</code>, <code>useCallback</code>, <code>useRef</code> 등을 통한 함수형 컴포넌트의 상태 및 사이드 이펙트 제어.</li>
+<li><strong>Custom Hooks:</strong> 반복되는 로직을 분리하여 재사용 가능한 커스텀 훅 설계.</li>
+</ul>
+<hr />
+<h2 id="2-state-management">🛠️ 2. 상태 관리 패턴 (State Management)<a class="headerlink" href="#2-state-management" title="Permanent link">&para;</a></h2>
+<p>복잡한 애플리케이션의 상태를 효율적으로 관리하기 위한 다양한 전략을 학습했습니다.</p>
+<h3 id="context-api">Context API<a class="headerlink" href="#context-api" title="Permanent link">&para;</a></h3>
+<ul>
+<li>별도의 라이브러리 없이 전역 상태를 공유하는 React 내장 방식.</li>
+<li>규모가 작은 프로젝트나 단순한 전역 값 전달에 적합.</li>
+</ul>
+<h3 id="redux-with-redux-toolkit">Redux (with Redux Toolkit)<a class="headerlink" href="#redux-with-redux-toolkit" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Flux 아키텍처:</strong> 액션, 리듀서, 스토어를 통한 예측 가능한 상태 관리.</li>
+<li><strong>Middleware:</strong> <code>redux-thunk</code>, <code>redux-saga</code> 등을 이용한 비동기 작업 처리.</li>
+</ul>
+<hr />
+<h2 id="3">⚡ 3. 성능 최적화 및 고급 기법<a class="headerlink" href="#3" title="Permanent link">&para;</a></h2>
+<h3 id="_3">렌더링 성능 최적화<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>React.memo:</strong> 컴포넌트 리렌더링 방지.</li>
+<li><strong>useMemo &amp; useCallback:</strong> 연산 결과 및 함수 재사용.</li>
+<li><strong>Immer:</strong> 불변성 관리 라이브러리를 활용한 복잡한 상태 업데이트 간소화.</li>
+</ul>
+<h3 id="_4">라우팅 및 코드 분할<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>React Router:</strong> SPA(Single Page Application)를 위한 동적 라우팅 구성.</li>
+<li><strong>Code Splitting:</strong> <code>React.lazy</code>와 <code>Suspense</code>를 이용한 초기 로딩 성능 개선.</li>
+</ul>
+<hr />
+<h2 id="4">🌐 4. 실무 프로젝트 실습<a class="headerlink" href="#4" title="Permanent link">&para;</a></h2>
+<ul>
+<li><strong>Todo App:</strong> 기초적인 CRUD 및 컴포넌트 최적화 실습.</li>
+<li><strong>News Viewer:</strong> 외부 API 연동 및 비동기 상태 관리.</li>
+<li><strong>Twitter Clone:</strong> Firebase를 이용한 실시간 데이터베이스 및 인증 연동.</li>
+<li><strong>SSR (Server-Side Rendering):</strong> SEO 및 초기 로딩 속도 향상을 위한 서버 렌더링 구현.</li>
+<li><strong>JWT &amp; Fullstack:</strong> Koa/MongoDB 백엔드와 연동한 인증 시스템 구축.</li>
+</ul>
+<hr />
+<h2 id="_5">📝 배운 점 및 결론<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h2>
+<ul>
+<li><strong>선언적 프로그래밍:</strong> UI가 어떻게 변해야 하는지 기술하는 선언적 방식의 장점을 깊이 이해했습니다.</li>
+<li><strong>컴포넌트 재사용성:</strong> 단일 책임 원칙(SRP)에 따른 컴포넌트 분리가 유지보수에 미치는 영향을 체감했습니다.</li>
+<li><strong>에코시스템 활용:</strong> React 자체뿐만 아니라 다양한 라이브러리를 조합하여 완성도 높은 프로덕트를 만드는 능력을 키웠습니다.</li>
+</ul>
+<hr />
+<p><em>상세 실습 코드는 <code>리액트를 다루는 기술/</code>, <code>udemy/</code>, <code>twitter-clone/</code> 등의 디렉토리를 참고하세요.</em></p>
 
 
 
 
 
 
+
+  
+  
 
 
 

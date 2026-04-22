@@ -6,7 +6,7 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="학습한 내용을 기록하고 공유하는 기술 블로그입니다.">
+        <meta name="description" content="Go(Golang)의 핵심 철학인 단순함과 강력한 동시성 제어(고루틴, 채널), 그리고 웹 서버 구축 및 테 스팅 실습 요약">
       
       
         <meta name="author" content="kim-hyunjin">
@@ -25,7 +25,7 @@
     
     
       
-        <title>Golang basic and web study - Study Log & Blog</title>
+        <title>Go 언어 기초 및 웹 프로그래밍 실습 가이드 - Study Log & Blog</title>
       
     
     
@@ -76,7 +76,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#golang-basic-and-web-study" class="md-skip">
+        <a href="#go" class="md-skip">
           콘텐츠로 이동
         </a>
       
@@ -110,7 +110,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Golang basic and web study
+              Go 언어 기초 및 웹 프로그래밍 실습 가이드
             
           </span>
         </div>
@@ -232,7 +232,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../backend/README.md" class="md-tabs__link">
+        <a href="../../backend/" class="md-tabs__link">
           
   
   
@@ -434,25 +434,6 @@
   
 
       
-        
-  
-  
-  
-  
-    <li class="md-tabs__item">
-      <a href="../../todo/" class="md-tabs__link">
-        
-  
-  
-    
-  
-  Project Roadmap
-
-      </a>
-    </li>
-  
-
-      
     </ul>
   </div>
 </nav>
@@ -574,7 +555,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../backend/README.md" class="md-nav__link">
+      <a href="../../backend/" class="md-nav__link">
         
   
   
@@ -2747,14 +2728,14 @@
   
   
     <li class="md-nav__item">
-      <a href="../../ai/deeplearning-master/ch02 딥러닝의 핵심 미리보기.ipynb" class="md-nav__link">
+      <a href="../../ai/deeplearning-master/ch02%20%EB%94%A5%EB%9F%AC%EB%8B%9D%EC%9D%98%20%ED%95%B5%EC%8B%AC%20%EB%AF%B8%EB%A6%AC%EB%B3%B4%EA%B8%B0/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    Deep Learning Concepts
+    2장. 딥러닝 핵심 미리보기
   
 
     
@@ -3788,33 +3769,6 @@
   
 
     
-      
-      
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../todo/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Project Roadmap
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-    
   </ul>
 </nav>
                   </div>
@@ -3835,6 +3789,153 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      목차
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🚀 개요
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1-go" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        💡 1. Go 언어의 핵심 철학 및 기초 문법
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="💡 1. Go 언어의 핵심 철학 및 기초 문법">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        단순함과 효율성
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        제어 흐름 및 데이터 구조
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-concurrency" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🐹 2. 강력한 동시성 모델 (Concurrency)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🐹 2. 강력한 동시성 모델 (Concurrency)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#goroutine" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        고루틴 (Goroutine)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#channel" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        채널 (Channel)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-web-programming" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🌐 3. 웹 프로그래밍 실습 (Web Programming)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🌐 3. 웹 프로그래밍 실습 (Web Programming)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        주요 실습 내용
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-testing-tooling" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🛠️ 4. 테스팅 및 도구 (Testing &amp; Tooling)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        📝 배운 점 및 결론
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -3850,14 +3951,69 @@
 
 
 
-<h1 id="golang-basic-and-web-study">Golang basic and web study<a class="headerlink" href="#golang-basic-and-web-study" title="Permanent link">&para;</a></h1>
-<p>patiently, persistently, you are bound to succeed</p>
+<h1 id="go">Go 언어 기초 및 웹 프로그래밍 실습 가이드<a class="headerlink" href="#go" title="Permanent link">&para;</a></h1>
+<h2 id="_1">🚀 개요<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
+<p>Go는 Google에서 개발한 오픈 소스 프로그래밍 언어로, 단순하고 효율적이며 신뢰할 수 있는 소프트웨어를 구축하기 위해 설계되었습니다. 본 문서는 Go의 핵심 문법부터 강력한 동시성 제어 모델, 그리고 실무적인 웹 프로그래밍 및 테스팅 기법까지 정리한 종합 가이드입니다.</p>
+<hr />
+<h2 id="1-go">💡 1. Go 언어의 핵심 철학 및 기초 문법<a class="headerlink" href="#1-go" title="Permanent link">&para;</a></h2>
+<h3 id="_2">단순함과 효율성<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>객체지향의 재해석:</strong> 클래스와 상속 대신 <strong>구조체(Struct)</strong>와 <strong>인터페이스(Interface)</strong>를 통한 구성을 지향합니다.</li>
+<li><strong>포인터:</strong> 메모리 주소에 직접 접근할 수 있지만, C와 달리 포인터 연산은 제한하여 안전성을 높였습니다.</li>
+</ul>
+<h3 id="_3">제어 흐름 및 데이터 구조<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>슬라이스 (Slice):</strong> 배열의 상위 호환으로, 동적으로 크기가 조절되는 유연한 배열입니다.</li>
+<li><strong>맵 (Map):</strong> 키-값 쌍을 저장하는 내장 해시 테이블입니다.</li>
+<li><strong>에러 핸들링:</strong> 별도의 예외 처리(try-catch) 대신 함수의 반환 값으로 에러를 명시적으로 처리하는 관례를 따릅니다.</li>
+</ul>
+<hr />
+<h2 id="2-concurrency">🐹 2. 강력한 동시성 모델 (Concurrency)<a class="headerlink" href="#2-concurrency" title="Permanent link">&para;</a></h2>
+<p>Go의 가장 큰 특징은 <strong>고루틴(Goroutine)</strong>과 <strong>채널(Channel)</strong>을 이용한 경량 스레드 모델입니다.</p>
+<h3 id="goroutine">고루틴 (Goroutine)<a class="headerlink" href="#goroutine" title="Permanent link">&para;</a></h3>
+<ul>
+<li>OS 스레드보다 훨씬 가벼운 사용자 수준 스레드로, <code>go</code> 키워드 하나로 수만 개를 동시에 실행할 수 있습니다.</li>
+</ul>
+<h3 id="channel">채널 (Channel)<a class="headerlink" href="#channel" title="Permanent link">&para;</a></h3>
+<ul>
+<li>고루틴 간에 데이터를 주고받는 통로입니다. "공유 메모리로 통신하지 말고, 통신으로 메모리를 공유하라"는 Go의 철학을 대변합니다.</li>
+<li><strong>Select:</strong> 여러 채널 중 데이터가 준비된 채널을 선택하여 처리할 수 있습니다.</li>
+</ul>
+<hr />
+<h2 id="3-web-programming">🌐 3. 웹 프로그래밍 실습 (Web Programming)<a class="headerlink" href="#3-web-programming" title="Permanent link">&para;</a></h2>
+<p>Go의 표준 라이브러리(<code>net/http</code>)만으로도 강력한 웹 서버를 구축할 수 있습니다.</p>
+<h3 id="_4">주요 실습 내용<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>RESTful API:</strong> JSON 기반의 CRUD API 설계 및 구현.</li>
+<li><strong>Middleware:</strong> 데코레이터 패턴을 활용한 로깅, 인증 처리.</li>
+<li><strong>OAuth2:</strong> Google 등 외부 인증 연동 실습.</li>
+<li><strong>EventSource (SSE):</strong> 실시간 데이터 전송 기술 구현.</li>
+<li><strong>File Server:</strong> 정적 파일 서비스 및 템플릿 엔진 활용.</li>
+</ul>
+<hr />
+<h2 id="4-testing-tooling">🛠️ 4. 테스팅 및 도구 (Testing &amp; Tooling)<a class="headerlink" href="#4-testing-tooling" title="Permanent link">&para;</a></h2>
+<ul>
+<li><strong>내장 테스팅:</strong> <code>testing</code> 패키지를 통해 단위 테스트와 벤치마크 테스트를 기본으로 지원합니다.</li>
+<li><strong>Go Modules:</strong> 의존성 관리의 표준으로, <code>go.mod</code>와 <code>go.sum</code>을 통해 프로젝트 패키지를 관리합니다.</li>
+</ul>
+<hr />
+<h2 id="_5">📝 배운 점 및 결론<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h2>
+<ul>
+<li><strong>단순함의 힘:</strong> 복잡한 기능을 언어 차원에서 최소화함으로써 코드의 가독성과 유지보수성이 비약적으로 높아짐을 체감했습니다.</li>
+<li><strong>동시성 제어:</strong> 고루틴과 채널을 통해 복잡한 비동기 로직을 동기식 코드처럼 직관적으로 작성할 수 있는 점이 매우 강력합니다.</li>
+<li><strong>실무 적합성:</strong> 컴파일 속도가 빠르고 단일 바이너리로 배포가 가능하여 마이크로서비스(MSA) 환경에 최적화된 언어임을 이해했습니다.</li>
+</ul>
+<hr />
+<p><em>상세 실습 코드는 <code>tucker/</code>, <code>udemy/</code>, <code>backend/go/</code> 하위의 예제들을 참고하세요.</em></p>
 
 
 
 
 
 
+
+  
+  
 
 
 

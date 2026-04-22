@@ -6,7 +6,7 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="학습한 내용을 기록하고 공유하는 기술 블로그입니다.">
+        <meta name="description" content="Next.js 공식 튜토리얼을 통해 학습한 정적 사이트 생성(SSG), 서버 사이드 렌더링(SSR), 동적 라우팅 및 데이터 페칭 전략 요약">
       
       
         <meta name="author" content="kim-hyunjin">
@@ -29,7 +29,7 @@
     
     
       
-        <title>Next.js Blog - Study Log & Blog</title>
+        <title>Next.js 블로그 구축 튜토리얼: SSR과 SSG의 이해 - Study Log & Blog</title>
       
     
     
@@ -80,7 +80,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#result" class="md-skip">
+        <a href="#nextjs-ssr-ssg" class="md-skip">
           콘텐츠로 이동
         </a>
       
@@ -114,7 +114,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Next.js Blog
+              Next.js 블로그 구축 튜토리얼: SSR과 SSG의 이해
             
           </span>
         </div>
@@ -236,7 +236,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../../backend/README.md" class="md-tabs__link">
+        <a href="../../../backend/" class="md-tabs__link">
           
   
   
@@ -440,25 +440,6 @@
   
 
       
-        
-  
-  
-  
-  
-    <li class="md-tabs__item">
-      <a href="../../../todo/" class="md-tabs__link">
-        
-  
-  
-    
-  
-  Project Roadmap
-
-      </a>
-    </li>
-  
-
-      
     </ul>
   </div>
 </nav>
@@ -580,7 +561,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../backend/README.md" class="md-nav__link">
+      <a href="../../../backend/" class="md-nav__link">
         
   
   
@@ -2753,14 +2734,14 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../ai/deeplearning-master/ch02 딥러닝의 핵심 미리보기.ipynb" class="md-nav__link">
+      <a href="../../../ai/deeplearning-master/ch02%20%EB%94%A5%EB%9F%AC%EB%8B%9D%EC%9D%98%20%ED%95%B5%EC%8B%AC%20%EB%AF%B8%EB%A6%AC%EB%B3%B4%EA%B8%B0/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    Deep Learning Concepts
+    2장. 딥러닝 핵심 미리보기
   
 
     
@@ -3125,6 +3106,24 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Next.js Blog
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
@@ -3141,6 +3140,147 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="목차">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      목차
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🚀 개요
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1-ssg-vs-ssr" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        💡 1. 렌더링 전략: SSG vs SSR
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="💡 1. 렌더링 전략: SSG vs SSR">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#static-generation-ssg" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        정적 사이트 생성 (Static Generation, SSG)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#server-side-rendering-ssr" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        서버 사이드 렌더링 (Server-side Rendering, SSR)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🛠️ 2. 핵심 기능 실습
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🛠️ 2. 핵심 기능 실습">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#dynamic-routes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        동적 라우팅 (Dynamic Routes)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        데이터 페칭 및 처리
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#assets-metadata-and-css" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Assets, Metadata, and CSS
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🌐 3. 배포 및 운영
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        📝 배운 점 및 결론
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -3807,33 +3947,6 @@
   
 
     
-      
-      
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../todo/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Project Roadmap
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-    
   </ul>
 </nav>
                   </div>
@@ -3854,6 +3967,136 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      목차
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🚀 개요
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1-ssg-vs-ssr" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        💡 1. 렌더링 전략: SSG vs SSR
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="💡 1. 렌더링 전략: SSG vs SSR">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#static-generation-ssg" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        정적 사이트 생성 (Static Generation, SSG)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#server-side-rendering-ssr" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        서버 사이드 렌더링 (Server-side Rendering, SSR)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🛠️ 2. 핵심 기능 실습
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🛠️ 2. 핵심 기능 실습">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#dynamic-routes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        동적 라우팅 (Dynamic Routes)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        데이터 페칭 및 처리
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#assets-metadata-and-css" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Assets, Metadata, and CSS
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🌐 3. 배포 및 운영
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        📝 배운 점 및 결론
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -3869,15 +4112,66 @@
 
 
 
-<p>This is a starter template for <a href="https://nextjs.org/learn">Learn Next.js</a>.</p>
-<h1 id="result">result<a class="headerlink" href="#result" title="Permanent link">&para;</a></h1>
-<p>https://nextjs-blog-kim-hyunjin.vercel.app/</p>
+<h1 id="nextjs-ssr-ssg">Next.js 블로그 구축 튜토리얼: SSR과 SSG의 이해<a class="headerlink" href="#nextjs-ssr-ssg" title="Permanent link">&para;</a></h1>
+<h2 id="_1">🚀 개요<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
+<p>Next.js는 React 기반의 프레임워크로, 정적 사이트 생성(SSG)과 서버 사이드 렌더링(SSR)을 완벽하게 지원합니다. 본 문서는 Next.js 공식 튜토리얼을 진행하며 학습한 핵심 개념과 블로그 구축 과정을 정리한 가이드입니다.</p>
+<hr />
+<h2 id="1-ssg-vs-ssr">💡 1. 렌더링 전략: SSG vs SSR<a class="headerlink" href="#1-ssg-vs-ssr" title="Permanent link">&para;</a></h2>
+<p>Next.js의 가장 강력한 기능인 두 가지 사전 렌더링(Pre-rendering) 방식을 학습했습니다.</p>
+<h3 id="static-generation-ssg">정적 사이트 생성 (Static Generation, SSG)<a class="headerlink" href="#static-generation-ssg" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>개념:</strong> 빌드 시점에 HTML을 생성하고 각 요청마다 재사용합니다.</li>
+<li><strong>활용:</strong> 블로그 포스트처럼 내용이 자주 바뀌지 않는 페이지에 적합합니다.</li>
+<li><strong>함수:</strong> <code>getStaticProps</code> (데이터 페칭), <code>getStaticPaths</code> (동적 라우팅 경로 생성).</li>
+</ul>
+<h3 id="server-side-rendering-ssr">서버 사이드 렌더링 (Server-side Rendering, SSR)<a class="headerlink" href="#server-side-rendering-ssr" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>개념:</strong> 매 요청마다 서버에서 HTML을 생성합니다.</li>
+<li><strong>활용:</strong> 항상 최신 데이터를 보여줘야 하는 페이지에 적합합니다.</li>
+<li><strong>함수:</strong> <code>getServerSideProps</code>.</li>
+</ul>
+<hr />
+<h2 id="2">🛠️ 2. 핵심 기능 실습<a class="headerlink" href="#2" title="Permanent link">&para;</a></h2>
+<h3 id="dynamic-routes">동적 라우팅 (Dynamic Routes)<a class="headerlink" href="#dynamic-routes" title="Permanent link">&para;</a></h3>
+<ul>
+<li>파일 이름을 <code>[id].tsx</code>와 같이 대괄호로 감싸서 동적 경로를 생성합니다.</li>
+<li><code>getStaticPaths</code>를 통해 빌드 시 생성할 경로 목록을 정의합니다.</li>
+</ul>
+<h3 id="_2">데이터 페칭 및 처리<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h3>
+<ul>
+<li>외부 마크다운 파일을 읽어 HTML로 변환하는 과정을 라이브러리(<code>remark</code>, <code>gray-matter</code>)와 함께 구현했습니다.</li>
+<li><code>lib/posts.ts</code> 파일을 통해 데이터 로직을 분리하여 관리하는 패턴을 익혔습니다.</li>
+</ul>
+<h3 id="assets-metadata-and-css">Assets, Metadata, and CSS<a class="headerlink" href="#assets-metadata-and-css" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Image Component:</strong> 이미지 최적화 및 레이지 로딩 처리.</li>
+<li><strong>Head Component:</strong> SEO를 위한 메타데이터 관리.</li>
+<li><strong>CSS Modules:</strong> 컴포넌트 단위의 스타일링과 클래스 이름 충돌 방지.</li>
+</ul>
+<hr />
+<h2 id="3">🌐 3. 배포 및 운영<a class="headerlink" href="#3" title="Permanent link">&para;</a></h2>
+<ul>
+<li><strong>Vercel:</strong> Next.js 개발사가 만든 클라우드 플랫폼을 통해 GitHub 연동 및 자동 배포를 실습했습니다.</li>
+<li><strong>API Routes:</strong> API 엔드포인트를 직접 구축하여 서버리스 함수처럼 활용하는 방법을 익혔습니다.</li>
+</ul>
+<hr />
+<h2 id="_3">📝 배운 점 및 결론<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
+<ul>
+<li><strong>성능과 SEO:</strong> 사전 렌더링을 통해 사용자 경험을 높이고 검색 엔진 최적화를 동시에 달성할 수 있음을 확인했습니다.</li>
+<li><strong>개발 생산성:</strong> 복잡한 설정 없이 라우팅, 최적화, 배포가 이루어지는 Next.js의 편리함을 체감했습니다.</li>
+<li><strong>하이브리드 전략:</strong> 페이지별로 SSG와 SSR을 선택적으로 적용할 수 있는 유연성이 Next.js의 큰 장점임을 이해했습니다.</li>
+</ul>
+<hr />
+<p><em>상세 구현 코드는 <code>pages/</code>, <code>lib/</code>, <code>posts/</code> 디렉토리를 참고하세요.</em></p>
 
 
 
 
 
 
+
+  
+  
 
 
 

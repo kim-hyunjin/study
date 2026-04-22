@@ -6,7 +6,7 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="학습한 내용을 기록하고 공유하는 기술 블로그입니다.">
+        <meta name="description" content="병렬성과 유지보수성이 뛰어난 함수형 언어 Elixir의 핵심 개념인 불변성, 패턴 매칭, 파이프 연산자 요약">
       
       
         <meta name="author" content="kim-hyunjin">
@@ -25,7 +25,7 @@
     
     
       
-        <title>hello-elixir - Study Log & Blog</title>
+        <title>Elixir 입문 가이드 - Study Log & Blog</title>
       
     
     
@@ -76,7 +76,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#hello-elixir" class="md-skip">
+        <a href="#elixir" class="md-skip">
           콘텐츠로 이동
         </a>
       
@@ -110,7 +110,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              hello-elixir
+              Elixir 입문 가이드
             
           </span>
         </div>
@@ -232,7 +232,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../backend/README.md" class="md-tabs__link">
+        <a href="../../backend/" class="md-tabs__link">
           
   
   
@@ -434,25 +434,6 @@
   
 
       
-        
-  
-  
-  
-  
-    <li class="md-tabs__item">
-      <a href="../../todo/" class="md-tabs__link">
-        
-  
-  
-    
-  
-  Project Roadmap
-
-      </a>
-    </li>
-  
-
-      
     </ul>
   </div>
 </nav>
@@ -574,7 +555,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../backend/README.md" class="md-nav__link">
+      <a href="../../backend/" class="md-nav__link">
         
   
   
@@ -2747,14 +2728,14 @@
   
   
     <li class="md-nav__item">
-      <a href="../../ai/deeplearning-master/ch02 딥러닝의 핵심 미리보기.ipynb" class="md-nav__link">
+      <a href="../../ai/deeplearning-master/ch02%20%EB%94%A5%EB%9F%AC%EB%8B%9D%EC%9D%98%20%ED%95%B5%EC%8B%AC%20%EB%AF%B8%EB%A6%AC%EB%B3%B4%EA%B8%B0/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    Deep Learning Concepts
+    2장. 딥러닝 핵심 미리보기
   
 
     
@@ -3788,33 +3769,6 @@
   
 
     
-      
-      
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../todo/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Project Roadmap
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-    
   </ul>
 </nav>
                   </div>
@@ -3835,6 +3789,153 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      목차
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🚀 개요
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        💡 1. 함수형 프로그래밍의 기초
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="💡 1. 함수형 프로그래밍의 기초">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#immutability" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        불변성 (Immutability)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pattern-matching" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        패턴 매칭 (Pattern Matching)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-elixir" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🛠️ 2. Elixir만의 강력한 기능
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🛠️ 2. Elixir만의 강력한 기능">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        파이프 연산자 (|&gt;)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#modules-functions" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        모듈과 함수 (Modules &amp; Functions)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🏗️ 3. 생태계 및 도구
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🏗️ 3. 생태계 및 도구">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#mix" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Mix (빌드 도구)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#iex" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        IEx (대화형 쉘)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        📝 배운 점 및 결론
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -3850,13 +3951,72 @@
 
 
 
-<h1 id="hello-elixir">hello-elixir<a class="headerlink" href="#hello-elixir" title="Permanent link">&para;</a></h1>
+<h1 id="elixir">Elixir 입문 가이드<a class="headerlink" href="#elixir" title="Permanent link">&para;</a></h1>
+<h2 id="_1">🚀 개요<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
+<p>Elixir는 Erlang 가상 머신(BEAM) 위에서 동작하는 동적 함수형 언어로, 높은 가용성과 확장성을 가진 애플리케이션을 구축하기 위해 설계되었습니다. 본 문서는 Elixir의 기초 문법과 함수형 프로그래밍의 핵심 개념들을 정리한 가이드입니다.</p>
+<hr />
+<h2 id="1">💡 1. 함수형 프로그래밍의 기초<a class="headerlink" href="#1" title="Permanent link">&para;</a></h2>
+<h3 id="immutability">불변성 (Immutability)<a class="headerlink" href="#immutability" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Elixir의 모든 데이터는 불변입니다. 값을 수정하는 대신 새로운 데이터를 생성합니다.</li>
+<li>복잡한 상태 변화를 추적하기 쉬워지며, 병렬 프로그래밍에서 데이터 경합 문제를 원천적으로 차단합니다.</li>
+</ul>
+<h3 id="pattern-matching">패턴 매칭 (Pattern Matching)<a class="headerlink" href="#pattern-matching" title="Permanent link">&para;</a></h3>
+<ul>
+<li><code>=</code> 연산자는 할당이 아닌 <strong>매치(Match)</strong> 연산자입니다. 좌변과 우변의 구조를 비교하고 변수를 바인딩합니다.
+  <div class="language-elixir highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="p">{</span><span class="n">status</span><span class="p">,</span><span class="w"> </span><span class="n">message</span><span class="p">}</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span><span class="ss">:ok</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;Success&quot;</span><span class="p">}</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="c1"># status -&gt; :ok, message -&gt; &quot;Success&quot;</span>
+</span></code></pre></div></li>
+</ul>
+<hr />
+<h2 id="2-elixir">🛠️ 2. Elixir만의 강력한 기능<a class="headerlink" href="#2-elixir" title="Permanent link">&para;</a></h2>
+<h3 id="_2">파이프 연산자 (<code>|&gt;</code>)<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h3>
+<ul>
+<li>함수의 실행 결과를 다음 함수의 첫 번째 인자로 전달합니다. 코드의 가독성을 획기적으로 높여줍니다.
+  <div class="language-elixir highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="s2">&quot;hello world&quot;</span>
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="o">|&gt;</span><span class="w"> </span><span class="nc">String</span><span class="o">.</span><span class="n">upcase</span><span class="p">()</span>
+</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="o">|&gt;</span><span class="w"> </span><span class="nc">String</span><span class="o">.</span><span class="n">split</span><span class="p">()</span>
+</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a><span class="c1"># [&quot;HELLO&quot;, &quot;WORLD&quot;]</span>
+</span></code></pre></div></li>
+</ul>
+<h3 id="modules-functions">모듈과 함수 (Modules &amp; Functions)<a class="headerlink" href="#modules-functions" title="Permanent link">&para;</a></h3>
+<ul>
+<li><code>defmodule</code>로 모듈을 정의하고, <code>def</code>로 공용 함수를, <code>defp</code>로 비공개 함수를 선언합니다.</li>
+<li><strong>가드 (Guards):</strong> <code>when</code> 키워드를 사용하여 함수 호출 시 인자의 타입을 제한할 수 있습니다.
+  <div class="language-elixir highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="kd">def</span><span class="w"> </span><span class="n">anagrams?</span><span class="p">(</span><span class="n">a</span><span class="p">,</span><span class="w"> </span><span class="n">b</span><span class="p">)</span><span class="w"> </span><span class="ow">when</span><span class="w"> </span><span class="n">is_binary</span><span class="p">(</span><span class="n">a</span><span class="p">)</span><span class="w"> </span><span class="ow">and</span><span class="w"> </span><span class="n">is_binary</span><span class="p">(</span><span class="n">b</span><span class="p">)</span><span class="w"> </span><span class="k">do</span>
+</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="w">  </span><span class="n">sort_string</span><span class="p">(</span><span class="n">a</span><span class="p">)</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="n">sort_string</span><span class="p">(</span><span class="n">b</span><span class="p">)</span>
+</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="k">end</span>
+</span></code></pre></div></li>
+</ul>
+<hr />
+<h2 id="3">🏗️ 3. 생태계 및 도구<a class="headerlink" href="#3" title="Permanent link">&para;</a></h2>
+<h3 id="mix">Mix (빌드 도구)<a class="headerlink" href="#mix" title="Permanent link">&para;</a></h3>
+<ul>
+<li>프로젝트 생성, 의존성 관리, 컴파일, 테스트 실행 등을 담당하는 강력한 도구입니다.</li>
+<li><code>mix new project_name</code>으로 새 프로젝트를 시작할 수 있습니다.</li>
+</ul>
+<h3 id="iex">IEx (대화형 쉘)<a class="headerlink" href="#iex" title="Permanent link">&para;</a></h3>
+<ul>
+<li><code>iex -S mix</code> 명령을 통해 프로젝트 문맥 내에서 실시간으로 코드를 실행하고 테스트할 수 있습니다.</li>
+</ul>
+<hr />
+<h2 id="_3">📝 배운 점 및 결론<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
+<ul>
+<li><strong>선언적 코드:</strong> 파이프 연산자와 패턴 매칭을 통해 '어떻게'가 아닌 '무엇을' 하는지에 집중하는 명확한 코드를 작성할 수 있습니다.</li>
+<li><strong>확장성:</strong> BEAM 엔진의 경량 프로세스 모델을 통해 수백만 개의 동시 프로세스를 효율적으로 관리할 수 있는 잠재력을 확인했습니다.</li>
+<li><strong>문서화:</strong> <code>@moduledoc</code>과 <code>@doc</code>을 통해 코드 내에서 풍부한 문서를 작성하고, 이를 <code>ExDoc</code>을 통해 웹 페이지로 쉽게 생성할 수 있습니다.</li>
+</ul>
+<hr />
+<p><em>상세 실습 코드는 <code>example/lib</code> 하위의 <code>anagram.ex</code>, <code>greeter.ex</code> 등을 참고하세요.</em></p>
 
 
 
 
 
 
+
+  
+  
 
 
 

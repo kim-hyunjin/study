@@ -6,7 +6,7 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="학습한 내용을 기록하고 공유하는 기술 블로그입니다.">
+        <meta name="description" content="Rust 프로그래밍 언어의 핵심 개념인 가변성, 섀도잉, 데이터 타입(Scalar, Compound), 구조체 및 컬렉션 요약">
       
       
         <meta name="author" content="kim-hyunjin">
@@ -25,7 +25,7 @@
     
     
       
-        <title>rust 기초 학습 - Study Log & Blog</title>
+        <title>Rust 기초 학습 가이드 - Study Log & Blog</title>
       
     
     
@@ -110,7 +110,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              rust 기초 학습
+              Rust 기초 학습 가이드
             
           </span>
         </div>
@@ -232,7 +232,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../backend/README.md" class="md-tabs__link">
+        <a href="../../backend/" class="md-tabs__link">
           
   
   
@@ -434,25 +434,6 @@
   
 
       
-        
-  
-  
-  
-  
-    <li class="md-tabs__item">
-      <a href="../../todo/" class="md-tabs__link">
-        
-  
-  
-    
-  
-  Project Roadmap
-
-      </a>
-    </li>
-  
-
-      
     </ul>
   </div>
 </nav>
@@ -574,7 +555,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../backend/README.md" class="md-nav__link">
+      <a href="../../backend/" class="md-nav__link">
         
   
   
@@ -2747,14 +2728,14 @@
   
   
     <li class="md-nav__item">
-      <a href="../../ai/deeplearning-master/ch02 딥러닝의 핵심 미리보기.ipynb" class="md-nav__link">
+      <a href="../../ai/deeplearning-master/ch02%20%EB%94%A5%EB%9F%AC%EB%8B%9D%EC%9D%98%20%ED%95%B5%EC%8B%AC%20%EB%AF%B8%EB%A6%AC%EB%B3%B4%EA%B8%B0/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    Deep Learning Concepts
+    2장. 딥러닝 핵심 미리보기
   
 
     
@@ -3788,33 +3769,6 @@
   
 
     
-      
-      
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../todo/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Project Roadmap
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-    
   </ul>
 </nav>
                   </div>
@@ -3835,6 +3789,192 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      목차
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🚀 개요
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1-variables-mutability" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        💡 1. 변수와 가변성 (Variables &amp; Mutability)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="💡 1. 변수와 가변성 (Variables &amp; Mutability)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#mutability" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        가변성 (Mutability)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#shadowing" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        섀도잉 (Shadowing)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-data-types" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🏗️ 2. 데이터 타입 (Data Types)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🏗️ 2. 데이터 타입 (Data Types)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#scalar-types" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        스칼라 타입 (Scalar Types)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#compound-types" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        복합 타입 (Compound Types)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-structs-enums" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🏛️ 3. 구조체와 열거형 (Structs &amp; Enums)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🏛️ 3. 구조체와 열거형 (Structs &amp; Enums)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#structs" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        구조체 (Structs)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#enums" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        열거형 (Enums)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-common-collections" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        📂 4. 공통 컬렉션 (Common Collections)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="📂 4. 공통 컬렉션 (Common Collections)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#vector" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        벡터 (Vector)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#hash-map" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        해시 맵 (Hash Map)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        📝 배운 점 및 결론
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -3850,13 +3990,105 @@
 
 
 
-<h1 id="rust">rust 기초 학습<a class="headerlink" href="#rust" title="Permanent link">&para;</a></h1>
+<h1 id="rust">Rust 기초 학습 가이드<a class="headerlink" href="#rust" title="Permanent link">&para;</a></h1>
+<h2 id="_1">🚀 개요<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
+<p>Rust는 메모리 안전성, 속도, 병렬성을 동시에 추구하는 시스템 프로그래밍 언어입니다. 본 문서는 Rust의 기초 문법과 핵심 개념들을 실습 코드와 함께 정리한 가이드입니다.</p>
+<hr />
+<h2 id="1-variables-mutability">💡 1. 변수와 가변성 (Variables &amp; Mutability)<a class="headerlink" href="#1-variables-mutability" title="Permanent link">&para;</a></h2>
+<h3 id="mutability">가변성 (Mutability)<a class="headerlink" href="#mutability" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Rust의 변수는 기본적으로 <strong>불변(Immutable)</strong>입니다.</li>
+<li>값을 변경하려면 <code>mut</code> 키워드를 명시해야 합니다.
+  <div class="language-rust highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="kd">let</span><span class="w"> </span><span class="k">mut</span><span class="w"> </span><span class="n">x</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">5</span><span class="p">;</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="n">x</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">6</span><span class="p">;</span><span class="w"> </span><span class="c1">// 가능</span>
+</span></code></pre></div></li>
+</ul>
+<h3 id="shadowing">섀도잉 (Shadowing)<a class="headerlink" href="#shadowing" title="Permanent link">&para;</a></h3>
+<ul>
+<li>이전 변수와 같은 이름으로 새 변수를 선언하여 기존 바인딩을 덮어쓰는 기능입니다.</li>
+<li>타입 변환이 필요할 때 유용하게 사용됩니다.
+  <div class="language-rust highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="kd">let</span><span class="w"> </span><span class="n">spaces</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;   &quot;</span><span class="p">;</span>
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="kd">let</span><span class="w"> </span><span class="n">spaces</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">spaces</span><span class="p">.</span><span class="n">len</span><span class="p">();</span><span class="w"> </span><span class="c1">// 문자열에서 숫자로 타입 변경 가능</span>
+</span></code></pre></div></li>
+</ul>
+<hr />
+<h2 id="2-data-types">🏗️ 2. 데이터 타입 (Data Types)<a class="headerlink" href="#2-data-types" title="Permanent link">&para;</a></h2>
+<h3 id="scalar-types">스칼라 타입 (Scalar Types)<a class="headerlink" href="#scalar-types" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>정수:</strong> <code>i32</code>, <code>u64</code>, <code>isize</code> 등 (기본은 <code>i32</code>)</li>
+<li><strong>부동 소수점:</strong> <code>f32</code>, <code>f64</code> (기본은 <code>f64</code>)</li>
+<li><strong>불리언:</strong> <code>bool</code> (<code>true</code>, <code>false</code>)</li>
+<li><strong>문자:</strong> <code>char</code> (4바이트 유니코드)</li>
+</ul>
+<h3 id="compound-types">복합 타입 (Compound Types)<a class="headerlink" href="#compound-types" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>튜플 (Tuple):</strong> 서로 다른 타입의 값들을 하나로 묶음. 고정된 길이를 가집니다.
+  <div class="language-rust highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="kd">let</span><span class="w"> </span><span class="n">tup</span><span class="p">:</span><span class="w"> </span><span class="p">(</span><span class="kt">i32</span><span class="p">,</span><span class="w"> </span><span class="kt">f64</span><span class="p">,</span><span class="w"> </span><span class="kt">u8</span><span class="p">)</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="mi">500</span><span class="p">,</span><span class="w"> </span><span class="mf">6.4</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="p">);</span>
+</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="kd">let</span><span class="w"> </span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="w"> </span><span class="n">y</span><span class="p">,</span><span class="w"> </span><span class="n">z</span><span class="p">)</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">tup</span><span class="p">;</span><span class="w"> </span><span class="c1">// 구조 분해</span>
+</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="fm">println!</span><span class="p">(</span><span class="s">&quot;{}&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">tup</span><span class="p">.</span><span class="mi">0</span><span class="p">);</span><span class="w"> </span><span class="c1">// 인덱스로 접근</span>
+</span></code></pre></div></li>
+<li><strong>배열 (Array):</strong> 동일한 타입의 값들을 묶음. 고정된 길이를 가지며 스택에 할당됩니다.
+  <div class="language-rust highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="kd">let</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w"> </span><span class="mi">3</span><span class="p">,</span><span class="w"> </span><span class="mi">4</span><span class="p">,</span><span class="w"> </span><span class="mi">5</span><span class="p">];</span>
+</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="kd">let</span><span class="w"> </span><span class="n">b</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="mi">0</span><span class="p">;</span><span class="w"> </span><span class="mi">5</span><span class="p">];</span><span class="w"> </span><span class="c1">// [0, 0, 0, 0, 0]</span>
+</span></code></pre></div></li>
+</ul>
+<hr />
+<h2 id="3-structs-enums">🏛️ 3. 구조체와 열거형 (Structs &amp; Enums)<a class="headerlink" href="#3-structs-enums" title="Permanent link">&para;</a></h2>
+<h3 id="structs">구조체 (Structs)<a class="headerlink" href="#structs" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Classic Struct:</strong> 이름이 있는 필드로 구성됩니다.</li>
+<li><strong>Tuple Struct:</strong> 필드 이름 없이 타입만 정의합니다.</li>
+<li><strong>Unit Struct:</strong> 필드가 없는 구조체입니다.
+  <div class="language-rust highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="k">struct</span><span class="w"> </span><span class="nc">Person</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="n">name</span><span class="p">:</span><span class="w"> </span><span class="nb">String</span><span class="p">,</span><span class="w"> </span><span class="n">age</span><span class="p">:</span><span class="w"> </span><span class="kt">u8</span><span class="w"> </span><span class="p">}</span>
+</span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="k">struct</span><span class="w"> </span><span class="nc">Color</span><span class="p">(</span><span class="kt">i32</span><span class="p">,</span><span class="w"> </span><span class="kt">i32</span><span class="p">,</span><span class="w"> </span><span class="kt">i32</span><span class="p">);</span>
+</span><span id="__span-4-3"><a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a><span class="k">struct</span><span class="w"> </span><span class="nc">AlwaysAlive</span><span class="p">;</span>
+</span></code></pre></div></li>
+</ul>
+<h3 id="enums">열거형 (Enums)<a class="headerlink" href="#enums" title="Permanent link">&para;</a></h3>
+<ul>
+<li>데이터와 함께 상태를 표현할 수 있습니다.
+  <div class="language-rust highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="k">enum</span><span class="w"> </span><span class="nc">WebEvent</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-5-2"><a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a><span class="w">    </span><span class="n">PageLoad</span><span class="p">,</span>
+</span><span id="__span-5-3"><a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a><span class="w">    </span><span class="n">KeyPress</span><span class="p">(</span><span class="kt">char</span><span class="p">),</span>
+</span><span id="__span-5-4"><a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a><span class="w">    </span><span class="n">Click</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="n">x</span><span class="p">:</span><span class="w"> </span><span class="kt">i64</span><span class="p">,</span><span class="w"> </span><span class="n">y</span><span class="p">:</span><span class="w"> </span><span class="kt">i64</span><span class="w"> </span><span class="p">},</span>
+</span><span id="__span-5-5"><a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a><span class="p">}</span>
+</span></code></pre></div></li>
+</ul>
+<hr />
+<h2 id="4-common-collections">📂 4. 공통 컬렉션 (Common Collections)<a class="headerlink" href="#4-common-collections" title="Permanent link">&para;</a></h2>
+<h3 id="vector">벡터 (Vector)<a class="headerlink" href="#vector" title="Permanent link">&para;</a></h3>
+<ul>
+<li>런타임에 크기가 변할 수 있는 동적 배열입니다. 힙에 데이터를 저장합니다.
+  <div class="language-rust highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="kd">let</span><span class="w"> </span><span class="k">mut</span><span class="w"> </span><span class="n">v</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="fm">vec!</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w"> </span><span class="mi">3</span><span class="p">];</span>
+</span><span id="__span-6-2"><a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a><span class="n">v</span><span class="p">.</span><span class="n">push</span><span class="p">(</span><span class="mi">4</span><span class="p">);</span>
+</span></code></pre></div></li>
+</ul>
+<h3 id="hash-map">해시 맵 (Hash Map)<a class="headerlink" href="#hash-map" title="Permanent link">&para;</a></h3>
+<ul>
+<li>키-값 쌍을 저장하는 컬렉션입니다.
+  <div class="language-rust highlight"><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="k">use</span><span class="w"> </span><span class="n">std</span><span class="p">::</span><span class="n">collections</span><span class="p">::</span><span class="n">HashMap</span><span class="p">;</span>
+</span><span id="__span-7-2"><a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a><span class="kd">let</span><span class="w"> </span><span class="k">mut</span><span class="w"> </span><span class="n">scores</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">HashMap</span><span class="p">::</span><span class="n">new</span><span class="p">();</span>
+</span><span id="__span-7-3"><a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a><span class="n">scores</span><span class="p">.</span><span class="n">insert</span><span class="p">(</span><span class="nb">String</span><span class="p">::</span><span class="n">from</span><span class="p">(</span><span class="s">&quot;Blue&quot;</span><span class="p">),</span><span class="w"> </span><span class="mi">10</span><span class="p">);</span>
+</span></code></pre></div></li>
+</ul>
+<hr />
+<h2 id="_2">📝 배운 점 및 결론<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
+<ul>
+<li><strong>강력한 컴파일러:</strong> Rust의 컴파일러는 메모리 오류와 데이터 경합을 사전에 차단하여 런타임 안정성을 보장합니다.</li>
+<li><strong>표현력:</strong> <code>if</code> 문이나 <code>loop</code> 문이 식으로 동작하여 값을 반환할 수 있는 등 현대적인 문법을 갖추고 있습니다.</li>
+<li><strong>도구 생태계:</strong> <code>Cargo</code>를 통해 빌드, 패키지 관리, 테스트를 매우 편리하게 수행할 수 있습니다.</li>
+</ul>
+<hr />
+<p><em>상세 실습 코드는 <code>main.rs</code>, <code>structPractice.rs</code>, <code>collection.rs</code> 등을 참고하세요.</em></p>
 
 
 
 
 
 
+
+  
+  
 
 
 

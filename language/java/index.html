@@ -6,7 +6,7 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="학습한 내용을 기록하고 공유하는 기술 블로그입니다.">
+        <meta name="description" content="Java의 핵심 문법부터 JVM 구조, 멀티스레딩 성능 최적화, 리플렉션 API, 그리고 엔터프라이즈 웹 개발 실습 요약">
       
       
         <meta name="author" content="kim-hyunjin">
@@ -25,7 +25,7 @@
     
     
       
-        <title>Java, Spring 기초 학습 - Study Log & Blog</title>
+        <title>Java Deep Dive: 기초부터 JVM까지 - Study Log & Blog</title>
       
     
     
@@ -76,7 +76,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#java-spring" class="md-skip">
+        <a href="#java-deep-dive-jvm" class="md-skip">
           콘텐츠로 이동
         </a>
       
@@ -110,7 +110,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Java, Spring 기초 학습
+              Java Deep Dive: 기초부터 JVM까지
             
           </span>
         </div>
@@ -232,7 +232,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../backend/README.md" class="md-tabs__link">
+        <a href="../../backend/" class="md-tabs__link">
           
   
   
@@ -434,25 +434,6 @@
   
 
       
-        
-  
-  
-  
-  
-    <li class="md-tabs__item">
-      <a href="../../todo/" class="md-tabs__link">
-        
-  
-  
-    
-  
-  Project Roadmap
-
-      </a>
-    </li>
-  
-
-      
     </ul>
   </div>
 </nav>
@@ -574,7 +555,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../backend/README.md" class="md-nav__link">
+      <a href="../../backend/" class="md-nav__link">
         
   
   
@@ -2747,14 +2728,14 @@
   
   
     <li class="md-nav__item">
-      <a href="../../ai/deeplearning-master/ch02 딥러닝의 핵심 미리보기.ipynb" class="md-nav__link">
+      <a href="../../ai/deeplearning-master/ch02%20%EB%94%A5%EB%9F%AC%EB%8B%9D%EC%9D%98%20%ED%95%B5%EC%8B%AC%20%EB%AF%B8%EB%A6%AC%EB%B3%B4%EA%B8%B0/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    Deep Learning Concepts
+    2장. 딥러닝 핵심 미리보기
   
 
     
@@ -3788,33 +3769,6 @@
   
 
     
-      
-      
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../todo/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Project Roadmap
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-    
   </ul>
 </nav>
                   </div>
@@ -3835,6 +3789,159 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      목차
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🚀 개요
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1-java-jvm" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        💡 1. Java 언어의 핵심 및 JVM 구조
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="💡 1. Java 언어의 핵심 및 JVM 구조">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        객체지향의 정석
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#jvm-java-virtual-machine" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        JVM (Java Virtual Machine)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-multithreading" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🧵 2. 멀티스레딩과 성능 최적화 (Multithreading)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🧵 2. 멀티스레딩과 성능 최적화 (Multithreading)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        주요 학습 내용
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-api-reflection" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🔍 3. 리플렉션 API와 메타 프로그래밍 (Reflection)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🔍 3. 리플렉션 API와 메타 프로그래밍 (Reflection)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        주요 활용 사례
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🌐 4. 웹 및 데이터베이스 프로그래밍
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🌐 4. 웹 및 데이터베이스 프로그래밍">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        기술 스택 실습
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        📝 배운 점 및 결론
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -3850,13 +3957,70 @@
 
 
 
-<h1 id="java-spring">Java, Spring 기초 학습<a class="headerlink" href="#java-spring" title="Permanent link">&para;</a></h1>
+<h1 id="java-deep-dive-jvm">Java Deep Dive: 기초부터 JVM까지<a class="headerlink" href="#java-deep-dive-jvm" title="Permanent link">&para;</a></h1>
+<h2 id="_1">🚀 개요<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
+<p>Java는 안정성과 확장성이 뛰어난 객체지향 프로그래밍 언어로, 엔터프라이즈 환경의 표준으로 자리 잡고 있습니다. 본 문서는 Java의 기초 문법을 넘어 JVM의 동작 원리, 고급 병렬 처리 기법, 리플렉션 API 활용 등 심도 있는 학습 내용을 정리한 종합 가이드입니다.</p>
+<hr />
+<h2 id="1-java-jvm">💡 1. Java 언어의 핵심 및 JVM 구조<a class="headerlink" href="#1-java-jvm" title="Permanent link">&para;</a></h2>
+<h3 id="_2">객체지향의 정석<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>추상화, 상속, 다형성, 캡슐화:</strong> 객체지향 4대 원칙을 기반으로 한 견고한 설계 실습.</li>
+<li><strong>Generic &amp; Interface:</strong> 유연하고 재사용 가능한 코드 구조 설계.</li>
+</ul>
+<h3 id="jvm-java-virtual-machine">JVM (Java Virtual Machine)<a class="headerlink" href="#jvm-java-virtual-machine" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>메모리 구조:</strong> Stack, Heap, Method Area의 역할과 데이터 흐름 이해.</li>
+<li><strong>Garbage Collection:</strong> 다양한 GC 알고리즘(G1, ZGC 등)과 메모리 관리 최적화 기법.</li>
+<li><strong>Class Loader:</strong> 클래스 로딩 과정과 동적 로딩의 원리 분석.</li>
+</ul>
+<hr />
+<h2 id="2-multithreading">🧵 2. 멀티스레딩과 성능 최적화 (Multithreading)<a class="headerlink" href="#2-multithreading" title="Permanent link">&para;</a></h2>
+<p>현대 애플리케이션의 성능을 결정짓는 핵심 병렬 처리 기술을 다룹니다.</p>
+<h3 id="_3">주요 학습 내용<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Thread Lifecycle:</strong> 생성, 실행, 종료 및 조인(<code>join</code>) 메커니즘.</li>
+<li><strong>Synchronization:</strong> <code>Lock</code>, <code>ReentrantLock</code>, <code>Condition</code>을 이용한 동기화 제어.</li>
+<li><strong>Lock-Free 알고리즘:</strong> 원자적 연산(<code>AtomicInteger</code> 등)을 통한 성능 극대화.</li>
+<li><strong>Virtual Threads (Project Loom):</strong> 경량 스레드를 통한 대규모 동시성 처리 실습.</li>
+<li><strong>I/O Bound 애플리케이션:</strong> 비차단(Non-blocking) I/O와 스레드 효율성 최적화.</li>
+</ul>
+<hr />
+<h2 id="3-api-reflection">🔍 3. 리플렉션 API와 메타 프로그래밍 (Reflection)<a class="headerlink" href="#3-api-reflection" title="Permanent link">&para;</a></h2>
+<p>프레임워크의 동작 원리를 이해하기 위한 리플렉션 기술을 심도 있게 다룹니다.</p>
+<h3 id="_4">주요 활용 사례<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>동적 객체 생성:</strong> 런타임에 클래스 정보를 읽어 인스턴스를 생성하고 메서드를 호출.</li>
+<li><strong>Annotation &amp; Proxy:</strong> 커스텀 어노테이션 설계와 동적 프록시를 통한 AOP 구현.</li>
+<li><strong>JSON Writer:</strong> 리플렉션을 이용한 자바 객체의 JSON 직렬화 라이브러리 직접 구현.</li>
+<li><strong>Config Parser:</strong> 설정 파일을 읽어 객체의 필드에 값을 동적으로 주입.</li>
+</ul>
+<hr />
+<h2 id="4">🌐 4. 웹 및 데이터베이스 프로그래밍<a class="headerlink" href="#4" title="Permanent link">&para;</a></h2>
+<h3 id="_5">기술 스택 실습<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>JDBC:</strong> 데이터베이스 연결 프로그래밍 및 커넥션 풀 활용.</li>
+<li><strong>HTTP:</strong> HTTP 프로토콜의 이해와 서블릿(Servlet) 컨테이너 동작 분석.</li>
+<li><strong>Spring Web MVC:</strong> 스프링 프레임워크를 이용한 현대적인 웹 애플리케이션 구조 설계.</li>
+<li><strong>Log4j:</strong> 로그 관리 및 전략적 로깅 시스템 구축.</li>
+</ul>
+<hr />
+<h2 id="_6">📝 배운 점 및 결론<a class="headerlink" href="#_6" title="Permanent link">&para;</a></h2>
+<ul>
+<li><strong>기본의 중요성:</strong> JVM 레벨의 동작 방식을 이해함으로써 더 효율적이고 안정적인 코드 작성이 가능해졌습니다.</li>
+<li><strong>추상화의 위력:</strong> 리플렉션과 제네릭을 결합하여 범용적인 라이브러리를 만드는 경험을 통해 프레임워크 설계 능력을 키웠습니다.</li>
+<li><strong>병렬 프로그래밍:</strong> 멀티스레드 환경에서의 데이터 일관성과 성능 사이의 트레이드오프를 심도 있게 고찰했습니다.</li>
+</ul>
+<hr />
+<p><em>상세 실습 코드는 <code>java-basic/</code>, <code>multithreading/</code>, <code>reflection/</code>, <code>spring-webmvc/</code> 등의 디렉토리를 참고하세요.</em></p>
 
 
 
 
 
 
+
+  
+  
 
 
 
