@@ -49,7 +49,7 @@ plugins:
   - search
   - roamlinks
   - mermaid2
-  - jupyter:
+  - mkdocs-jupyter:
       execute: false
       ignore: ["*.ipynb_checkpoints/*"]
 
