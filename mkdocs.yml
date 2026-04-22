@@ -169,4 +169,3 @@ nav:
           - "코드의 구린내와 리팩토링 전략 (Post)": design-architecture/design-pattern-and-refactoring/note/리팩토링/post.md
   - Security:
       - Hacking & Backdoor: hacking/README.md
-  - Project Roadmap: todo.md

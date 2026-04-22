@@ -68,17 +68,34 @@
 - [x] **바닥부터 시작하는 딥러닝 핵심 요약** (`ai/deeplearning-from-scratch/README.md` 분석)
 - [x] **디자인 패턴의 정석: 실무 적용 가이드** (`design-architecture/design-pattern-and-refactoring/note/디자인 패턴/디자인패턴.md` 분석)
 - [x] **코드의 구린내(Code Smell)와 리팩토링 전략** (`design-architecture/design-pattern-and-refactoring/note/리팩토링/코드의 구린내.md` 분석)
-- [x] **자연어 처리(NLP)와 단어 임베딩의 이해** (`ai/deeplearning-master/ch17 자연어 처리와 단어 임베딩.ipynb` 분석)
+- [x] **자연어 처리(NLP)와 단어 임베딩의 이해** (`ai/deeplearning-master/ch17 자연어 처리와 단어 임베딩.ipynb`  분석)
 - [x] **순환 신경망(RNN)으로 시퀀스 데이터 다루기** (`ai/deeplearning-master/ch18 시퀀스 배열로 다루는 순환 신경망 RNN.ipynb` 분석)
 - [x] **머신러닝 알고리즘 TOP 10 총정리** (`ai/deeplearning-master/가장 많이 쓰이는 머신 러닝 알고리즘 TOP 10.ipynb` 분석)
 - [x] **효율적인 문제 해결을 위한 사고 과정** (`algorithms/note/문제 해결 개관.md` 분석)
 - [x] **SOLID를 넘어선 유연한 설계 원칙** (`design-architecture/design-pattern-and-refactoring/note/디자인 패턴/디자인 원칙.md` 분석)
 - [x] **딥러닝 모델 설계와 데이터 전처리 파이프라인** (`ai/deeplearning-master/ch10 딥러닝 모델 설계하기.ipynb` 분석)
-- [x] **딥러닝을 위한 선형 회귀와 로지스틱 회귀 모델** (`ai/deeplearning-master/ch06 로지스틱 회귀 모델.ipynb` 분석)
+- [x] **딥러닝을 위한 선형 회귀와 로지스틱 회귀 모델** (`ai/deeplearning-master/ch06 로지스틱 회귀 모델.ipynb`  분석)
+
+---
+
+## 📈 퀄리티 보강 필요 항목 (Quality Improvement Required)
+부실한 내용을 보강하거나 적절한 포스트로 변환이 필요한 항목들입니다.
+
+- [x] **Kotlin In Action 핵심 요약** (`docs/language/kotlin/kotlin-in-action/README.md`)
+- [x] **Rust 기초 학습 가이드** (`docs/language/rust/README.md`)
+- [x] **Elixir 입문 가이드** (`docs/language/elixir/README.md`)
+- [x] **Go 언어 기초 및 웹 프로그래밍 실습** (`docs/language/go/README.md`)
+- [x] **Java Deep Dive - 기초부터 JVM까지** (`docs/language/java/README.md`)
+- [x] **React 실무 가이드 및 디자인 패턴** (`docs/frontend/react/README.md`)
+- [x] **Kotlin Spring - 웹 서비스 구축 실습** (`docs/backend/spring/kotlin-spring/README.md`)
+- [x] **Android 앱 개발 학습 로드맵** (`docs/mobile/android/README.md`)
+- [x] **iOS 및 Swift 개발 기초** (`docs/mobile/ios/README.md`)
+- [x] **Next.js 블로그 구축 튜토리얼** (`docs/frontend/nextjs/nextjs-blog/README.md`)
 
 ---
 
 ## 💡 참고 사항
+
 - 각 포스트는 소스코드 분석을 통해 **구현 배경, 핵심 코드 snippet, 배운 점**을 포함하도록 함.
 - Mermaid 다이어그램을 적극 활용하여 아키텍처를 시각화함.
 - Jupyter Notebook (`.ipynb`) 파일은 `mkdocs-jupyter`를 통해 직접 노출함.
