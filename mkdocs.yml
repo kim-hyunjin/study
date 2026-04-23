@@ -60,6 +60,8 @@ plugins:
   - search
   - roamlinks
   - mermaid2
+  - awesome-pages:
+      collapse_single_pages: true
   - mkdocs-jupyter:
       execute: false
       ignore: ["*.ipynb_checkpoints/*"]
@@ -87,96 +89,12 @@ markdown_extensions:
 
 nav:
   - Home: README.md
-  - Backend:
-      - Overview: backend/README.md
-      - MSA: backend/msa/README.md
-      - Distributed System: backend/distributed-system/README.md
-      - Database Engineering:
-          - Overview: backend/database-engineering/README.md
-          - Internals & Theory:
-              - ACID: backend/database-engineering/resources/ACID.md
-              - B-trees vs B+trees: backend/database-engineering/resources/B-trees-vs-B+trees.md
-              - Bloom Filter: backend/database-engineering/resources/bloom-filter.md
-              - Database Engines: backend/database-engineering/resources/Database-Engines.md
-              - Eventual Consistency: backend/database-engineering/resources/Eventual-Consistency.md
-              - Homomorphic Encryption: backend/database-engineering/resources/동형 암호화.md
-              - MongoDB Architecture: backend/database-engineering/resources/MongoDB architecture.md
-              - Row vs Column Oriented: backend/database-engineering/resources/Row-Based-vs-Column-Based-Databases.md
-              - Replication: backend/database-engineering/resources/Replication.md
-              - Sharding: backend/database-engineering/resources/Sharding.md
-              - Partitioning: backend/database-engineering/resources/Partitioning.md
-          - SQL Tuning Case Studies:
-              - Tuning Overview: backend/database-engineering/tune/README.md
-              - 기본 키 변형 개선: backend/database-engineering/tune/기본 키를 변형하는 나쁜 sql문 튜닝.md
-              - 중복 제거(DISTINCT) 최적화: backend/database-engineering/tune/습관적으로 중복을 제거하는 나쁜 sql문 튜닝.md
-              - 잘못된 열 속성 개선: backend/database-engineering/tune/잘못된 열 속성으로 비효율적으로 작성한 나쁜 sql문 튜닝.md
-              - 상관 서브쿼리 조인 변환: backend/database-engineering/tune/메인 테이블에 계속 의존하는 나쁜 sql문 튜닝.md
-              - 인덱스 선두 컬럼 활용: backend/database-engineering/tune/비효율적인 인덱스를 사용하는 나쁜 sql문 튜닝.md
-              - 대소문자 구분 및 Collation: backend/database-engineering/tune/대소문자가 섞인 데이터와 비교하는 나쁜 sql문 튜닝.md
-              - 함수 사용 지양 및 인덱스: backend/database-engineering/tune/사용하지 않는 함수를 포함하는 나쁜 sql문 튜닝.md
-              - UNION vs UNION ALL: backend/database-engineering/tune/다수 쿼리를 UNION 연산자로만 합치는 나쁜 sql문 튜닝.md
-              - 페이징 성능 최적화: backend/database-engineering/tune/비효율적인 페이징을 수행하는 나쁜 sql문 튜닝.md
-              - 인덱스 매칭 오류 개선: backend/database-engineering/tune/엉뚱한 인덱스를 사용하는 나쁜 sql문 튜닝.md
-              - 불필요한 조인 제거: backend/database-engineering/tune/불필요한 조인을 수행하는 나쁜 sql문 튜닝.md
-              - 암시적 형변환 방지: backend/database-engineering/tune/형변환으로 인덱스를 활용하지 못하는 나쁜 sql문 튜닝.md
-              - 대량 데이터 변경 부하: backend/database-engineering/tune/큰 규모의 데이터 변경으로 인덱스에 영향을 주는 나쁜 sql문 튜닝.md
-              - 조인 순서 및 BNL: backend/database-engineering/tune/작은 테이블이 먼저 조인에 참여하는 나쁜 sql문 튜닝.md
-              - 분산 및 파티셔닝 전략: backend/database-engineering/tune/분산 없이 큰 규모의 데이터를 사용하는 나쁜 sql문 튜닝.md
-          - Advanced Topics:
-              - Indexing strategy: backend/database-engineering/resources/식별자와 비식별자 인덱싱, Index 스캔과 Index Only 스캔.md
-              - Why Page Reads?: backend/database-engineering/resources/데이터베이스가 행 대신에 페이지를 읽는 이유.md
-              - Repeatable Read & Snapshot: backend/database-engineering/resources/repeatable read isolation and snapshot.md
-              - Security Best Practice: backend/database-engineering/resources/웹앱에서 보안과 성능을 높이기 위한 best practice.md
-      - Backend Engineering:
-          - Protocols: backend/backend-engineering/resources/Fundamentals+of+Backend+Communications+and+Protocols.md
-          - Request Journey: backend/backend-engineering/resources/The_Journey_of_a_Request_to_the_Backend.md
-          - Networking (TCP/UDP/TLS): backend/backend-engineering/resources/IP-TCP-UDP-TLS-Slides.md
-          - TCP Slow Start: backend/backend-engineering/resources/A Client-Side Argument for Changing TCP Slow Start.md
-          - Kafka Long Polling: backend/backend-engineering/resources/Apache-kafka-long-polling.md
-          - RabbitMQ Push API: backend/backend-engineering/resources/rabbitMQ-pushAPI.md
-          - PostgreSQL Optimization:
-              - Async Commit: backend/backend-engineering/resources/asynchronous-commits-postgres.md
-              - Async Replication: backend/backend-engineering/resources/asynchronous-replication-postgres.md
-              - Pipelining: backend/backend-engineering/resources/Postgres-Pipelining.md
-          - Advanced I/O: backend/backend-engineering/resources/asynchronous-io-linux-thread.md
-      - Performance Test: backend/performance-test/README.md
-      - NestJS (Slack): backend/nestjs/slack-clone/README.md
-      - Node.js (Zoom): backend/nodejs/zoom-clone/README.md
-      - Django (Airbnb): backend/django/airbnb-rest/README.md
-      - Go Backend: backend/go/go-backend/README.md
-  - AI & LangChain:
-      - Deep Learning:
-          - Overview: ai/deeplearning-from-scratch/README.md
-          - "밑바닥부터 시작하는 딥러닝 핵심 요약 (Post)": ai/deeplearning-from-scratch/post.md
-      - LangChain: ai/langchain/README.md
-      - Notebooks:
-          - "딥러닝의 기초: 회귀 모델 (Post)": ai/deeplearning-master/post_regression.md
-          - "딥러닝 모델 설계 가이드 (Post)": ai/deeplearning-master/post_model_design.md
-          - "머신러닝 알고리즘 TOP 10 (Post)": ai/deeplearning-master/post_ml_top10.md
-          - "NLP와 단어 임베딩의 이해 (Post)": ai/deeplearning-master/post_nlp.md
-          - "RNN과 어텐션 메커니즘 (Post)": ai/deeplearning-master/post_rnn.md
-          - Deep Learning Concepts: ai/deeplearning-master/ch02 딥러닝의 핵심 미리보기.ipynb
-          - LangChain Embedding: ai/langchain/udemy-masterclass/embedding/scores.ipynb
-  - Algorithms:
-      - Problem Solving Patterns:
-          - Overview: algorithms/README.md
-          - "효율적인 문제 해결 사고 과정 (Post)": algorithms/note/post_problem_solving.md
-      - Grind 75 Solutions: algorithms/grind75/
-  - Frontend:
-      - Overview: frontend/README.md
-      - Next.js Blog: frontend/nextjs/nextjs-blog/README.md
-  - Language:
-      - Overview: language/README.md
-  - Blockchain:
-      - Lottery DApp: blockchain/README.md
-  - Mobile:
-      - Mobile Development: mobile/README.md
-  - Design & Architecture:
-      - Design Patterns:
-          - Overview: design-architecture/README.md
-          - "디자인 패턴 실무 적용 가이드 (Post)": design-architecture/design-pattern-and-refactoring/note/디자인 패턴/post.md
-          - "유연한 설계 원칙 (Post)": design-architecture/design-pattern-and-refactoring/note/디자인 패턴/post_principles.md
-      - Refactoring:
-          - "코드의 구린내와 리팩토링 전략 (Post)": design-architecture/design-pattern-and-refactoring/note/리팩토링/post.md
-  - Security:
-      - Hacking & Backdoor: hacking/README.md
+  - Backend: backend/
+  - AI & LangChain: ai/
+  - Algorithms: algorithms/
+  - Frontend: frontend/
+  - Language: language/
+  - Blockchain: blockchain/
+  - Mobile: mobile/
+  - Design & Architecture: design-architecture/
+  - Security: hacking/
