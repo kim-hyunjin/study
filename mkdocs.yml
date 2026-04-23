@@ -62,6 +62,14 @@ plugins:
   - mermaid2
   - awesome-pages:
       collapse_single_pages: true
+  - blog:
+      post_dir: .
+      post_url_format: "{categories}/{title}"
+      post_readtime: true
+      post_excerpt: true
+      archive: true
+      categories: true
+      tags: true
   - mkdocs-jupyter:
       execute: false
       ignore: ["*.ipynb_checkpoints/*"]
@@ -86,15 +94,3 @@ markdown_extensions:
   - pymdownx.snippets
   - toc:
       permalink: true
-
-nav:
-  - Home: README.md
-  - Backend: backend/
-  - AI & LangChain: ai/
-  - Algorithms: algorithms/
-  - Frontend: frontend/
-  - Language: language/
-  - Blockchain: blockchain/
-  - Mobile: mobile/
-  - Design & Architecture: design-architecture/
-  - Security: hacking/
