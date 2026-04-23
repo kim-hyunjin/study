@@ -1,5 +1,5 @@
 ---
-title: "리터럴"
+title: "Java 기초: 리터럴의 이해와 종류"
 date: 2019-12-06 18:10:00 -0400
 categories: jekyll update
 ---

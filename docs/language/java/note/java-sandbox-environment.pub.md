@@ -1,5 +1,5 @@
 ---
-title: "샌드박스"
+title: "Java 샌드박스 보안 환경 이해하기"
 date: 2019-12-12 18:10:00 -0400
 categories: jekyll update
 ---

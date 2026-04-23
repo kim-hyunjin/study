@@ -26,6 +26,10 @@ exclude_docs: |
   **/*.sql
   **/*.gradle
   **/*.xml
+  **/*.md
+  **/*.ipynb
+  !**/*.pub.md
+  !**/*.pub.ipynb
 
 theme:
   name: material

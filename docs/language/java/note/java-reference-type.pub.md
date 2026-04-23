@@ -1,5 +1,5 @@
 ---
-title: "reference"
+title: "Java 참조 자료형(Reference Type)의 특징"
 date: 2019-12-13 18:10:00 -0400
 categories: jekyll update
 ---
