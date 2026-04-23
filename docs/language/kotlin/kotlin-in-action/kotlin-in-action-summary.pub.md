@@ -1,5 +1,5 @@
 ---
-title: "Kotlin In Action: 코틀린 핵심 개념 요약"
+title: "Kotlin In Action 코틀린 핵심 개념 요약"
 description: "Kotlin In Action 도서를 통해 학습한 코틀린의 핵심 문법, 타입 시스템, 함수형 프로그래밍 및 고급 기능 요약 가이드"
 date: 2026-04-22
 categories:
