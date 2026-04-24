@@ -1,2 +1,5 @@
 # 1. 대용량 데이터셋 (SQL 폭탄 방지)
 content/backend/database-engineering/tune/sql/** linguist-documentation
+
+*.yml linguist-documentation
+*.yaml linguist-documentation
