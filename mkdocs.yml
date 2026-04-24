@@ -5,6 +5,7 @@ site_url: https://kim-hyunjin.github.io/study/
 
 exclude_docs: |
   **/*
+  !index.md
   !**/*.pub.md
   !**/*.pub.ipynb
   !assets/**
@@ -40,14 +41,6 @@ plugins:
   - roamlinks
   - awesome-pages:
       collapse_single_pages: true
-  - blog:
-      post_dir: .
-      post_url_format: "{categories}/{title}"
-      post_readtime: true
-      post_excerpt: optional
-      archive: true
-      categories: true
-      tags: true
   - mkdocs-jupyter:
       execute: false
       ignore: ["*.ipynb_checkpoints/*"]
