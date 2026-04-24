@@ -1,5 +1,5 @@
 ---
-title: Re [PATCH 09/13] aio add support for async openat()
+title: LaHaise가 제안한 AIO 인터페이스에 대한 Linus Torvalds의 답변
 date: 2026-04-23
 categories:
   - Backend
