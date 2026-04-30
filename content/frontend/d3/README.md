@@ -71,3 +71,13 @@ export default defineConfig([
   },
 ])
 ```
+
+## Project Setup
+
+The project is configured with a Gemini hook to automatically format files on every change using Prettier.
+
+### Commands
+- `npm run dev`: Start development server
+- `npm run build`: Build for production
+- `npm run lint`: Run ESLint
+- `npm run format`: Run Prettier
