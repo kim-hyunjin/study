@@ -1,5 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { BookOpen, Code2, PlayCircle } from "lucide-react";
+import { HooksAnimation } from "../components/animations/HooksAnimation";
 import { JSXAnimation } from "../components/animations/JSXAnimation";
 import { RenderCycleAnimation } from "../components/animations/RenderCycleAnimation";
 import { StateFlowAnimation } from "../components/animations/StateFlowAnimation";
@@ -31,6 +32,8 @@ function LessonComponent() {
 				return <StateFlowAnimation />;
 			case "render-cycle":
 				return <RenderCycleAnimation />;
+			case "hooks":
+				return <HooksAnimation />;
 			default:
 				return null;
 		}

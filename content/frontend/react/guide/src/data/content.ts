@@ -3,7 +3,7 @@ export type Lesson = {
 	title: string;
 	content: string;
 	code: string;
-	animationType: "jsx-structure" | "state-flow" | "render-cycle";
+	animationType: "jsx-structure" | "state-flow" | "render-cycle" | "hooks";
 };
 
 export const lessons: Lesson[] = [
@@ -112,5 +112,65 @@ function Header() {
 }
 */`,
 		animationType: "render-cycle",
+	},
+	{
+		id: "hooks-internals",
+		title: "훅의 작동 원리 (Hooks Internals)",
+		content: `
+      # 리액트 훅의 내부 구현과 동작 방식
+      리액트 훅은 단순한 상태 저장소가 아니라, Fiber 아키텍처 위에서 정교하게 설계된 데이터 구조입니다.
+
+      **1. Hook 객체의 상세 구조:**
+      각 훅은 내부적으로 다음과 같은 필드를 가진 객체로 표현됩니다:
+      - **memoizedState**: 훅의 현재 상태 값 (useState인 경우 실제 데이터, useEffect인 경우 이펙트 객체).
+      - **baseState**: 업데이트가 겹칠 때 기준이 되는 상태.
+      - **queue**: 상태 업데이트 요청(Update)들이 대기하는 큐.
+      - **next**: 다음 훅 객체를 가리키는 포인터.
+
+      **2. Dispatcher의 역할:**
+      리액트는 현재 어떤 단계(Mount, Update)에 있느냐에 따라 다른 훅 함수를 할당합니다.
+      - **HooksDispatcherOnMount**: 컴포넌트가 처음 렌더링될 때 사용되는 훅 세트.
+      - **HooksDispatcherOnUpdate**: 상태 변경 등으로 인해 재렌더링될 때 사용되는 훅 세트.
+      이 Dispatcher 덕분에 우리는 동일한 \`useState\`를 호출하지만, 내부적으로는 상황에 맞는 최적화된 로직이 실행됩니다.
+
+      **4. 훅 호출이 끝난 후 (Finalization):**
+      컴포넌트 함수가 모든 훅을 호출하고 종료되면 다음과 같은 후속 작업이 이루어집니다:
+      1. **일관성 검사**: 리액트는 이번에 호출된 훅의 개수가 이전 렌더링 때와 일치하는지 확인합니다. 만약 포인터가 남거나 부족하다면 리액트는 "Rendered more/fewer hooks than during the previous render" 에러를 발생시킵니다.
+      2. **이펙트 스케줄링**: \`useEffect\`나 \`useLayoutEffect\` 같은 훅들은 즉시 실행되지 않고, Fiber의 \`updateQueue\`에 저장되어 나중에 **Commit 단계**에서 한꺼번에 실행될 준비를 마칩니다.
+      3. **다음 작업 이동**: 현재 컴포넌트의 Fiber 작업이 완료되면, 제어권은 자식이나 형제 Fiber로 넘어가거나 부모로 돌아가 전체 가상 DOM 트리를 완성합니다.
+
+      결국 훅은 컴포넌트의 **'상태 기억 장치'** 역할을 하며, 호출이 끝난 후에는 그 결과를 바탕으로 실제 DOM에 반영할 차이점을 계산하게 됩니다.
+    `,
+		code: `// 훅 호출 완료 후의 내부 상태 예시
+/*
+FiberNode = {
+  memoizedState: Hook1, // Linked List의 시작점
+  updateQueue: {        // 실행 대기 중인 Effect 리스트
+    lastEffect: {
+      tag: 5, // useEffect
+      create: () => { ... },
+      destroy: () => { ... },
+      next: ...
+    }
+  },
+  flags: PassiveStatic | PerformedWork, // Commit 단계에서 할 일 표시
+}
+*/
+
+function MyComponent() {
+  const [count, setCount] = useState(0);
+  useEffect(() => {
+    console.log("Effect runs after commit!");
+  }, [count]);
+
+  return <div>{count}</div>;
+  
+  // 1. 모든 훅 호출 완료 (Linked List 순회 끝)
+  // 2. 리액트는 'updateQueue'에 이펙트를 차곡차곡 쌓아둠
+  // 3. 컴포넌트가 JSX를 리턴하면 Render 단계의 이 노드 작업은 종료
+  // 4. 나중에 Commit 단계에서 updateQueue를 돌며 이펙트 실행
+}
+`,
+		animationType: "hooks",
 	},
 ];
