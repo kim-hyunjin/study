@@ -49,22 +49,23 @@ function LessonComponent() {
 				</div>
 				<div className="flex-1 overflow-auto p-8 prose prose-invert max-w-none">
 					{currentLesson.content.split("\n").map((line, i) => {
+						const key = `${line.substring(0, 10)}-${i}`;
 						if (line.trim().startsWith("#")) {
 							return (
-								<h1 key={i} className="text-2xl font-bold mb-4">
+								<h1 key={key} className="text-2xl font-bold mb-4">
 									{line.replace("#", "").trim()}
 								</h1>
 							);
 						}
 						if (line.trim().startsWith("**")) {
 							return (
-								<p key={i} className="font-bold text-blue-300 mt-6">
+								<p key={key} className="font-bold text-blue-300 mt-6">
 									{line.replace(/\*\*/g, "").trim()}
 								</p>
 							);
 						}
 						return (
-							<p key={i} className="text-gray-400 mb-2 leading-relaxed">
+							<p key={key} className="text-gray-400 mb-2 leading-relaxed">
 								{line.trim()}
 							</p>
 						);

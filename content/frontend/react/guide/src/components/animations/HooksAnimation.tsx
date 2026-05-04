@@ -56,7 +56,8 @@ export const HooksAnimation = () => {
 								animate={{
 									scale: activeIndex === index ? 1.05 : 1,
 									borderColor: activeIndex === index ? "#a855f7" : "#374151",
-									backgroundColor: activeIndex === index ? "#1e1b4b" : "#111827",
+									backgroundColor:
+										activeIndex === index ? "#1e1b4b" : "#111827",
 								}}
 								className="w-28 h-20 rounded-lg border-2 p-3 flex flex-col justify-between transition-colors relative"
 							>

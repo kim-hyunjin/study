@@ -10,13 +10,21 @@
 
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as LessonsRouteImport } from './routes/lessons'
+import { Route as ChallengesRouteImport } from './routes/challenges'
 import { Route as IndexRouteImport } from './routes/index'
 import { Route as LessonsIndexRouteImport } from './routes/lessons.index'
+import { Route as ChallengesIndexRouteImport } from './routes/challenges.index'
 import { Route as LessonsLessonIdRouteImport } from './routes/lessons.$lessonId'
+import { Route as ChallengesChallengeIdRouteImport } from './routes/challenges.$challengeId'
 
 const LessonsRoute = LessonsRouteImport.update({
   id: '/lessons',
   path: '/lessons',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ChallengesRoute = ChallengesRouteImport.update({
+  id: '/challenges',
+  path: '/challenges',
   getParentRoute: () => rootRouteImport,
 } as any)
 const IndexRoute = IndexRouteImport.update({
@@ -29,40 +37,79 @@ const LessonsIndexRoute = LessonsIndexRouteImport.update({
   path: '/',
   getParentRoute: () => LessonsRoute,
 } as any)
+const ChallengesIndexRoute = ChallengesIndexRouteImport.update({
+  id: '/',
+  path: '/',
+  getParentRoute: () => ChallengesRoute,
+} as any)
 const LessonsLessonIdRoute = LessonsLessonIdRouteImport.update({
   id: '/$lessonId',
   path: '/$lessonId',
   getParentRoute: () => LessonsRoute,
 } as any)
+const ChallengesChallengeIdRoute = ChallengesChallengeIdRouteImport.update({
+  id: '/$challengeId',
+  path: '/$challengeId',
+  getParentRoute: () => ChallengesRoute,
+} as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
+  '/challenges': typeof ChallengesRouteWithChildren
   '/lessons': typeof LessonsRouteWithChildren
+  '/challenges/$challengeId': typeof ChallengesChallengeIdRoute
   '/lessons/$lessonId': typeof LessonsLessonIdRoute
+  '/challenges/': typeof ChallengesIndexRoute
   '/lessons/': typeof LessonsIndexRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
+  '/challenges/$challengeId': typeof ChallengesChallengeIdRoute
   '/lessons/$lessonId': typeof LessonsLessonIdRoute
+  '/challenges': typeof ChallengesIndexRoute
   '/lessons': typeof LessonsIndexRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
+  '/challenges': typeof ChallengesRouteWithChildren
   '/lessons': typeof LessonsRouteWithChildren
+  '/challenges/$challengeId': typeof ChallengesChallengeIdRoute
   '/lessons/$lessonId': typeof LessonsLessonIdRoute
+  '/challenges/': typeof ChallengesIndexRoute
   '/lessons/': typeof LessonsIndexRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/' | '/lessons' | '/lessons/$lessonId' | '/lessons/'
+  fullPaths:
+    | '/'
+    | '/challenges'
+    | '/lessons'
+    | '/challenges/$challengeId'
+    | '/lessons/$lessonId'
+    | '/challenges/'
+    | '/lessons/'
   fileRoutesByTo: FileRoutesByTo
-  to: '/' | '/lessons/$lessonId' | '/lessons'
-  id: '__root__' | '/' | '/lessons' | '/lessons/$lessonId' | '/lessons/'
+  to:
+    | '/'
+    | '/challenges/$challengeId'
+    | '/lessons/$lessonId'
+    | '/challenges'
+    | '/lessons'
+  id:
+    | '__root__'
+    | '/'
+    | '/challenges'
+    | '/lessons'
+    | '/challenges/$challengeId'
+    | '/lessons/$lessonId'
+    | '/challenges/'
+    | '/lessons/'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
+  ChallengesRoute: typeof ChallengesRouteWithChildren
   LessonsRoute: typeof LessonsRouteWithChildren
 }
 
@@ -73,6 +120,13 @@ declare module '@tanstack/react-router' {
       path: '/lessons'
       fullPath: '/lessons'
       preLoaderRoute: typeof LessonsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/challenges': {
+      id: '/challenges'
+      path: '/challenges'
+      fullPath: '/challenges'
+      preLoaderRoute: typeof ChallengesRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/': {
@@ -89,6 +143,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof LessonsIndexRouteImport
       parentRoute: typeof LessonsRoute
     }
+    '/challenges/': {
+      id: '/challenges/'
+      path: '/'
+      fullPath: '/challenges/'
+      preLoaderRoute: typeof ChallengesIndexRouteImport
+      parentRoute: typeof ChallengesRoute
+    }
     '/lessons/$lessonId': {
       id: '/lessons/$lessonId'
       path: '/$lessonId'
@@ -96,8 +157,29 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof LessonsLessonIdRouteImport
       parentRoute: typeof LessonsRoute
     }
+    '/challenges/$challengeId': {
+      id: '/challenges/$challengeId'
+      path: '/$challengeId'
+      fullPath: '/challenges/$challengeId'
+      preLoaderRoute: typeof ChallengesChallengeIdRouteImport
+      parentRoute: typeof ChallengesRoute
+    }
   }
 }
+
+interface ChallengesRouteChildren {
+  ChallengesChallengeIdRoute: typeof ChallengesChallengeIdRoute
+  ChallengesIndexRoute: typeof ChallengesIndexRoute
+}
+
+const ChallengesRouteChildren: ChallengesRouteChildren = {
+  ChallengesChallengeIdRoute: ChallengesChallengeIdRoute,
+  ChallengesIndexRoute: ChallengesIndexRoute,
+}
+
+const ChallengesRouteWithChildren = ChallengesRoute._addFileChildren(
+  ChallengesRouteChildren,
+)
 
 interface LessonsRouteChildren {
   LessonsLessonIdRoute: typeof LessonsLessonIdRoute
@@ -114,6 +196,7 @@ const LessonsRouteWithChildren =
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
+  ChallengesRoute: ChallengesRouteWithChildren,
   LessonsRoute: LessonsRouteWithChildren,
 }
 export const routeTree = rootRouteImport
