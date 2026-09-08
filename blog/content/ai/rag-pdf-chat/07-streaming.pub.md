@@ -170,6 +170,62 @@ class StreamingHandler(BaseCallbackHandler):
 이게 없으면 LLM 호출이 실패했을 때 제너레이터가 `queue.get()`에서 **영원히 기다립니다.**
 스트리밍 코드에서 에러 경로를 빠뜨리면 요청이 매달린 채 서버 자원을 잡아먹습니다.
 
+### 콜백만으로는 막지 못하는 구멍
+
+그런데 `on_llm_error`는 **LLM 호출이 시작된 뒤**의 실패만 잡습니다.
+체인에는 LLM에 도달하기 전 단계가 여럿 있습니다.
+
+- 벡터 DB 연결 실패나 타임아웃 (검색 단계)
+- 대화 기록을 읽는 DB 쿼리 실패 (메모리 단계)
+- 프롬프트 조립 중의 `KeyError`
+
+여기서 예외가 나면 **콜백은 한 번도 호출되지 않습니다.** 워커 스레드는 예외를 안고 조용히 죽고,
+큐에는 아무것도 들어가지 않습니다. 제너레이터는 `queue.get()`에서 영원히 블로킹되고,
+그 요청은 응답도 에러도 없이 매달립니다. 서버 입장에서는 **가장 나쁜 종류의 실패**입니다.
+
+해결은 종료 신호를 콜백이 아니라 **`finally`에 두는 것**입니다.
+어떤 경로로 끝나든 반드시 한 번은 신호가 나가게 만듭니다.
+
+```python
+class StreamableChain:
+    def stream(self, input):
+        queue = Queue()
+        handler = StreamingHandler(queue)
+        error = None
+
+        def task(app_context):
+            nonlocal error
+            app_context.push()
+            try:
+                self(input, callbacks=[handler])
+            except Exception as exc:          # 검색·메모리·프롬프트 단계의 실패까지 포함
+                error = exc
+                current_app.logger.exception("chain failed")
+            finally:
+                queue.put(None)               # 성공하든 실패하든 반드시 종료 신호
+
+        Thread(target=task, args=[current_app.app_context()]).start()
+
+        while True:
+            token = queue.get()
+            if token is None:
+                break
+            yield token
+
+        if error is not None:
+            # 이미 200으로 응답이 시작됐으므로 상태 코드는 바꿀 수 없다.
+            # 사용자가 중단을 알아챌 수 있도록 본문에 남긴다.
+            yield "\n\n[오류로 응답이 중단되었습니다]"
+```
+
+이렇게 하면 `on_llm_end`/`on_llm_error`가 넣은 `None`과 `finally`의 `None`이
+**두 번 들어갈 수 있지만** 문제가 되지 않습니다. 제너레이터는 첫 `None`에서 루프를 끝내고,
+남은 값은 버려지는 큐와 함께 사라집니다. **종료 신호는 모자란 것보다 겹치는 편이 낫습니다.**
+
+에러를 본문에 덧붙이는 부분도 눈여겨보세요. 뒤의 4절에서 다시 나오지만 스트리밍 응답은
+**첫 바이트를 보내는 순간 상태 코드가 확정**되므로, 도중에 500을 보낼 방법이 없습니다.
+남은 선택은 "본문으로 알리기"뿐입니다.
+
 ## 4. 서버: 스트리밍 HTTP 응답
 
 Flask에서 제너레이터를 그대로 응답으로 흘려보냅니다(`app/web/views/conversation_views.py`).
@@ -294,7 +350,8 @@ const text = decoder.decode(value, { stream: true });
 
 - 스트리밍은 실제 속도가 아니라 **체감 속도**를 바꾼다. 첫 토큰까지의 시간이 핵심 지표다.
 - 최신 LangChain은 `chain.stream()` / `astream_events()`로 대부분 해결된다.
-- 직접 구현한다면 **큐 + 스레드 + 종료 sentinel** 패턴이다. 에러 경로에서도 반드시 종료 신호를 보낸다.
+- 직접 구현한다면 **큐 + 스레드 + 종료 sentinel** 패턴이다.
+  종료 신호는 콜백이 아니라 **`finally`** 에 둔다. 콜백은 LLM 이전 단계의 실패를 잡지 못한다.
 - **콜백은 체인의 모든 LLM에 전파된다.** `run_id`나 태그로 어떤 호출인지 구분하라.
 - 압축용 LLM은 `streaming=False`. 아니면 내부 문장이 새어 나가고 스트림이 조기 종료된다.
 - 프록시 버퍼링과 "에러는 스트림 시작 전에" 두 가지가 운영에서 발목을 잡는다.

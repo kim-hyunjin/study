@@ -253,7 +253,7 @@ golden = [
     {
         "question": "ReAct의 핵심 아이디어는?",
         "answer": "추론(reasoning)과 행동(acting)을 번갈아 수행해 서로를 보완하는 것",
-        "pages": [1, 2],
+        "pages": [1, 2],       # 사람이 보는 페이지 번호(1부터)
     },
     # ... 30개
 ]
@@ -276,7 +276,8 @@ def mrr(retriever, cases) -> float:
     for case in cases:
         docs = retriever.invoke(case["question"])
         for rank, doc in enumerate(docs, start=1):
-            if doc.metadata.get("page") in case["pages"]:
+            # page_label은 인제스트에서 1-based로 맞춰 둔 값이다 (2편)
+            if doc.metadata.get("page_label") in case["pages"]:
                 total += 1 / rank
                 break
     return total / len(cases)

@@ -98,7 +98,7 @@ print(chain.invoke({"input": q})["answer"])
 from langchain_core.prompts import PromptTemplate
 
 document_prompt = PromptTemplate.from_template(
-    "[출처: {page}쪽]\n{page_content}"
+    "[출처: {page_label}쪽]\n{page_content}"
 )
 
 combine = create_stuff_documents_chain(
@@ -110,7 +110,11 @@ combine = create_stuff_documents_chain(
 ```
 
 `{page_content}`는 본문, 그 외 중괄호 변수는 **메타데이터 키**입니다.
-2편에서 `page`를 메타데이터에 심어 둔 것이 여기서 열매를 맺습니다.
+2편에서 `page_label`을 메타데이터에 심어 둔 것이 여기서 열매를 맺습니다.
+
+여기서 `page`가 아니라 `page_label`을 쓰는 것이 중요합니다.
+`PyPDFLoader`의 `page`는 0부터 시작하므로, 그대로 넣으면 모든 출처가 한 쪽씩 밀립니다.
+템플릿 안에서는 `+ 1` 같은 계산을 할 수 없으니, **인제스트에서 미리 변환해 둔 값**이 필요합니다(2편).
 
 이제 `{context}`는 이렇게 조립됩니다.
 
@@ -135,11 +139,11 @@ ReAct는 추론(Reasoning)과 행동(Acting)을 번갈아 수행하는 프레임
 result = chain.invoke({"input": q})
 
 sources = sorted({
-    (doc.metadata.get("pdf_id"), doc.metadata.get("page", 0) + 1)
+    (doc.metadata.get("pdf_id"), doc.metadata["page_label"])
     for doc in result["context"]
 })
 print(result["answer"])
-print("근거:", ", ".join(f"{p}쪽" for _, p in sources))
+print("근거:", ", ".join(f"{page}쪽" for _, page in sources))
 ```
 
 UI에서는 이 페이지 번호를 **PDF 뷰어의 해당 페이지로 이동하는 링크**로 만들면 좋습니다.
@@ -275,6 +279,20 @@ from langchain.chains.retrieval import create_retrieval_chain
 load_dotenv()
 embeddings = OpenAIEmbeddings(model="text-embedding-3-small")
 
+SYSTEM = """당신은 업로드된 문서에 대해 답변하는 도우미입니다.
+
+규칙:
+1. 아래 <context>에 있는 내용만 근거로 답하세요.
+2. context에 답이 없으면 "문서에서 해당 내용을 찾을 수 없습니다"라고 답하고,
+   추측하거나 일반 지식으로 채우지 마세요.
+3. 답변에 사용한 근거의 페이지 번호를 문장 끝에 (p.12) 형식으로 표기하세요.
+4. 한국어로, 간결하게 답하세요.
+
+<context>
+{context}
+</context>"""
+
+# ── ① 인제스트 ──────────────────────────────────────────
 if not os.path.exists("faiss_index"):
     docs = PyPDFLoader("paper.pdf").load()
     chunks = RecursiveCharacterTextSplitter(
@@ -282,8 +300,13 @@ if not os.path.exists("faiss_index"):
         separators=["\n\n", "\n", ". ", "다. ", " ", ""],
     ).split_documents(docs)
     chunks = [c for c in chunks if len(c.page_content.strip()) >= 100]
+
+    for chunk in chunks:                      # 사람이 읽는 페이지 번호를 미리 심는다 (2편)
+        chunk.metadata["page_label"] = chunk.metadata.get("page", 0) + 1
+
     FAISS.from_documents(chunks, embeddings).save_local("faiss_index")
 
+# ── ② 질의 ──────────────────────────────────────────────
 store = FAISS.load_local("faiss_index", embeddings,
                          allow_dangerous_deserialization=True)
 retriever = store.as_retriever(
@@ -291,10 +314,10 @@ retriever = store.as_retriever(
 )
 
 prompt = ChatPromptTemplate.from_messages([
-    ("system", SYSTEM),          # 위 2절의 시스템 프롬프트
+    ("system", SYSTEM),
     ("human", "{input}"),
 ])
-document_prompt = PromptTemplate.from_template("[출처: {page}쪽]\n{page_content}")
+document_prompt = PromptTemplate.from_template("[출처: {page_label}쪽]\n{page_content}")
 
 chain = create_retrieval_chain(
     retriever,
@@ -307,8 +330,11 @@ chain = create_retrieval_chain(
 
 result = chain.invoke({"input": "이 문서의 핵심 주장을 3문장으로 요약해줘"})
 print(result["answer"])
-print("근거:", sorted({d.metadata["page"] + 1 for d in result["context"]}))
+print("근거:", sorted({d.metadata["page_label"] for d in result["context"]}))
 ```
+
+> 이미 `faiss_index`를 만들어 둔 상태라면 청크에 `page_label`이 없습니다.
+> 인덱스 디렉터리를 지우고 다시 실행하세요. **메타데이터를 바꾸면 재인덱싱이 필요합니다.**
 
 여기까지가 **RAG의 본체**입니다. 6편부터는 이것을 "서비스"로 만드는 이야기입니다.
 

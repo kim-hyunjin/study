@@ -303,7 +303,7 @@ docs = history_aware_retriever.invoke({
     "chat_history": history,
 })
 for d in docs:
-    print(d.metadata.get("page"), d.page_content[:80])
+    print(d.metadata.get("page_label"), d.page_content[:80])
 ```
 
 검색된 문서가 엉뚱하다면 압축 단계를 의심하세요. 압축 프롬프트를 조금 더 구체적으로

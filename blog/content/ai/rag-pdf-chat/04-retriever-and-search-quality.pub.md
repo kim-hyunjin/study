@@ -253,6 +253,7 @@ retriever.add_documents(docs)
 질문과 "정답이 들어 있는 페이지"를 20~30쌍 만들어 두세요. 만드는 데 한 시간이면 됩니다.
 
 ```python
+# pages는 PDF 뷰어에 보이는 번호, 즉 1부터 세는 사람 기준 페이지다
 eval_set = [
     {"q": "ReAct의 핵심 아이디어는?", "pages": [1, 2]},
     {"q": "실험에 사용한 벤치마크는?", "pages": [5]},
@@ -262,7 +263,9 @@ eval_set = [
 def hit_rate(retriever, eval_set) -> float:
     hits = 0
     for case in eval_set:
-        found = {d.metadata.get("page") for d in retriever.invoke(case["q"])}
+        # 2편에서 심어 둔 1-based page_label과 비교한다.
+        # 0부터 세는 raw `page`와 비교하면 검색이 멀쩡해도 점수가 0으로 나온다.
+        found = {d.metadata.get("page_label") for d in retriever.invoke(case["q"])}
         if found & set(case["pages"]):
             hits += 1
     return hits / len(eval_set)
