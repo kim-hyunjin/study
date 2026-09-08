@@ -28,11 +28,13 @@ def get_messages_by_conversation_id(
     Returns:
         List[AIMessage | HumanMessage | SystemMessage]: LangChain 메시지 객체 목록
     """
-    # 이 대화의 메시지를 생성 시간순으로 데이터베이스에서 쿼리
+    # 이 대화의 메시지를 생성 시간 오름차순으로 쿼리한다.
+    # 대화 기록은 오래된 것부터 이어져야 질문 압축 프롬프트와
+    # 윈도우 메모리(최근 k개)가 올바르게 동작한다.
     messages = (
         db.session.query(Message)
         .filter_by(conversation_id=conversation_id)
-        .order_by(Message.created_on.desc())
+        .order_by(Message.created_on.asc())
     )
     
     # 각 데이터베이스 메시지를 LangChain 메시지 객체로 변환

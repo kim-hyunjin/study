@@ -168,8 +168,9 @@ retriever_map = {
 }
 ```
 
-> 참고: `pinecone_3`이 k=2로 되어 있어 `pinecone_2`와 사실상 동일합니다(k=3 의도로 보임).
-> 실험 결과를 해석할 때 주의하세요.
+> 이렇게 같은 리트리버를 파라미터만 바꿔 여러 개 등록해두면 "k가 몇일 때 답변이 좋은가"를
+> 실제 사용자 피드백으로 비교할 수 있습니다. 다만 **등록된 조합이 실제로 서로 달라야** 의미가
+> 있습니다 — 예전에는 `pinecone_3`도 k=2로 되어 있어 `pinecone_2`와 구분되지 않았습니다.
 
 ---
 
@@ -275,9 +276,10 @@ class SqlMessageHistory(BaseChatMessageHistory, BaseModel):
 | `sql_buffer_memory` | `ConversationBufferMemory` | 전체 기록 사용. 정확하지만 길어지면 토큰 폭증 |
 | `sql_window_memory` | `ConversationBufferWindowMemory(k=2)` | 최근 2턴만 사용. 저렴·빠름, 오래된 맥락은 손실 |
 
-> 주의: `get_messages_by_conversation_id`는 `created_on.desc()`로 정렬해 **최신 메시지가 먼저** 옵니다.
-> 대화 기록은 보통 시간순(asc)이어야 하므로, 압축 프롬프트에 뒤집힌 순서로 들어갑니다.
-> 직접 만들 때는 `asc()`로 두고, 윈도우 메모리는 "뒤에서 k턴"을 취하도록 하세요.
+> 주의: 이때 메시지는 반드시 **시간 오름차순(`created_on.asc()`)** 으로 돌려줘야 합니다.
+> 최신순(desc)으로 주면 질문 압축 프롬프트에 대화가 거꾸로 들어가고,
+> `ConversationBufferWindowMemory(k=2)`가 "최근 2턴"이 아니라 "가장 오래된 2턴"을 집습니다.
+> 눈에 잘 안 띄면서 답변 품질을 조용히 망가뜨리는 종류의 버그입니다.
 
 ---
 
@@ -370,11 +372,13 @@ class StreamingConversationalRetrievalChain(
 "어떤 청크가 검색됐고, 프롬프트가 어떻게 조립됐고, 토큰을 얼마나 썼는지"를 볼 수 없으면
 RAG 디버깅은 불가능에 가깝습니다. **트레이싱은 선택이 아니라 필수**입니다.
 
-> `score.py`에는 `client.hincrby("llm_srore_values", ...)`처럼 키에 오타(`srore`)가 있고,
-> 읽을 때는 `f"{component_type}_score_values"`를 씁니다. 쓰는 키와 읽는 키가 달라
-> 점수가 반영되지 않습니다. 따라 만들 때는 키를 상수로 뽑아 쓰세요.
-> 또한 `hincrby`는 정수만 다루므로 0~1 실수 점수는 0으로 뭉개집니다 —
-> 점수를 100배 정수로 저장하거나 `hincrbyfloat`를 쓰는 편이 맞습니다.
+> 이 되먹임 구조에서 실수하기 쉬운 두 가지가 있습니다.
+>
+> 1. **읽는 키와 쓰는 키가 달라지는 것.** 예전 `score.py`는 쓸 때 `llm_srore_values`(오타),
+>    읽을 때 `llm_score_values`를 써서 점수가 전혀 반영되지 않았습니다. 지금은
+>    `_values_key()` / `_counts_key()` 헬퍼로 키를 한 곳에서 만들어 이 실수를 구조적으로 막습니다.
+> 2. **정수 연산으로 실수 점수를 누적하는 것.** `hincrby`는 정수만 다루므로 0.75 같은 점수가
+>    0으로 절삭됩니다. 점수 합계는 `hincrbyfloat`, 평가 횟수는 `hincrby`로 나눠 써야 합니다.
 
 ---
 
