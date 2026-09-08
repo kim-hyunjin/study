@@ -17,6 +17,7 @@ export interface TopicBreadcrumb {
 }
 
 const TOPIC_LABELS: Record<string, string> = {
+  ai: 'AI',
   algorithms: 'Algorithms',
   backend: 'Backend',
   blockchain: 'Blockchain',
@@ -25,6 +26,7 @@ const TOPIC_LABELS: Record<string, string> = {
   language: 'Language',
   mobile: 'Mobile',
   security: 'Security',
+  'ai/rag-pdf-chat': 'RAG PDF Chat',
   'backend/backend-engineering': 'Backend Engineering',
   'backend/backend-engineering/asynchronous-processing': 'Asynchronous Processing',
   'backend/backend-engineering/communications': 'Communications',
@@ -49,6 +51,7 @@ const TOPIC_LABELS: Record<string, string> = {
 };
 
 const TOPIC_ORDER = [
+  'ai',
   'algorithms',
   'backend',
   'blockchain',
